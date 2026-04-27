@@ -195,6 +195,12 @@
                 <div class="grid grid-cols-1 gap-2" id="service-list">
                   <!-- 服务项目列表将通过JS动态生成 -->
                 </div>
+                <div id="expand-btn" class="mt-4 text-center">
+                  <button onclick="toggleServices()" class="text-primary font-medium hover:underline flex items-center justify-center gap-2 mx-auto">
+                    <span id="expand-text">查看更多服务项目</span>
+                    <i id="expand-icon" class="ri-arrow-down-s-line text-xl"></i>
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -283,20 +289,21 @@
 
       <!-- about -->
       <section id="about" class="about mt-[30px] xl:mt-[50px] relative z-20 scroll-mt-[70px] bg-blue-100">
-        <div class="container mx-auto">
+        <div class="max-w-[1400px] mx-auto">
           <div
-            class="flex py-28 flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[2px]"
+            class="flex py-20 flex-col xl:flex-row text-center xl:text-left justify-start items-center gap-8 xl:gap-16 w-full"
           >
             <!-- text -->
             <div
-              class="about__text flex-1 order-2 xl:order-none max-w-xl flex flex-col items-center xl:items-start gap-8"
+              class="about__text flex-1 order-2 xl:order-none w-full flex flex-col items-start gap-6"
             >
-              <h2 class="h2">We Create The Art of Stylish Living Stylishy</h2>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the of readable content of a page when lookings at its
-                layouts the points of using that it has a more-or-less normal.
-              </p>
+              <h2 class="text-5xl xl:text-6xl font-bold text-primary">About us</h2>
+              <h3 class="text-2xl font-bold text-primary">公司简介</h3>
+              <div class="text-xl text-secondary leading-relaxed text-left w-full">
+                <p class="mb-4">西安长亮商贸有限公司成立于2016年。简单来说，我们主要做三大块业务：废旧物资回收、工程拆除和各类物资买卖。</p>
+                <p class="mb-4">我们在西安干这行很多年了，经验丰富。只要您有废旧电线电缆、铜铝不锈钢、稀缺金属，或者工厂淘汰下来的机电设备，我们都长期高价上门回收。此外，我们自己就有专业的施工队，不管您是需要拆厂房钢结构、拆卸大型机器，还是做室内外装修，我们都能帮您拆卸+回收一次搞定，省心省力。</p>
+                <p>做生意，我们最讲究实在：免费上门估价，看好货直接当面结清，并且绝不泄露客户的任何信息。不管您是厂房要清空大批设备，还是库房里有少量积压，找我们准没错。长亮商贸干活利索，价格公道，期待跟您交个朋友，长期合作！</p>
+              </div>
               <!-- phone -->
               <div
                 class="flex items-center justify-center w-full xl:justify-start gap-4"
@@ -307,8 +314,8 @@
                   <i class="ri-phone-fill text-accent text-4xl"></i>
                 </div>
                 <div class="text-left">
-                  <div class="text-2xl font-bold">0821 6094 5033</div>
-                  <div>Call Us Anytime</div>
+                  <div class="text-2xl font-bold">13619222442</div>
+                  <div>期待您的来电</div>
                 </div>
                 <!-- btn -->
                 <button class="btn btn-primary">
@@ -319,7 +326,7 @@
 
             <!-- image -->
             <div
-              class="about__img order-1 xl:flex hidden xl:order-none max-w-[50%]"
+              class="about__img flex-shrink-0 order-1 xl:flex hidden xl:order-none max-w-[35%]"
             >
               <img src="./assets/about/gate.png" alt="about_image" />
             </div>
@@ -972,18 +979,39 @@
 
       let currentService = null;
       let currentImageIndex = 0;
+      let isExpanded = false;
+      const COLLAPSED_COUNT = 11; // 西安铝合金回收之后折叠
+
+      function toggleServices() {
+        isExpanded = !isExpanded;
+        const expandText = document.getElementById('expand-text');
+        const expandIcon = document.getElementById('expand-icon');
+
+        if (isExpanded) {
+          expandText.textContent = '收起服务项目';
+          expandIcon.classList.remove('ri-arrow-down-s-line');
+          expandIcon.classList.add('ri-arrow-up-s-line');
+        } else {
+          expandText.textContent = '查看更多服务项目';
+          expandIcon.classList.remove('ri-arrow-up-s-line');
+          expandIcon.classList.add('ri-arrow-down-s-line');
+        }
+        initServices();
+      }
 
       function initServices() {
         const serviceList = document.getElementById('service-list');
-        serviceList.innerHTML = services.map((s, i) => `
-          <div class="service-item p-1 rounded-xl cursor-pointer transition-all duration-300 hover:bg-white flex items-center gap-3 ${i === 0 ? 'bg-white shadow-md' : ''}" onclick="selectService(${i})" id="service-${s.id}">
+        const displayServices = isExpanded ? services : services.slice(0, COLLAPSED_COUNT);
+
+        serviceList.innerHTML = displayServices.map((s, i) => `
+          <div class="service-item p-1 rounded-xl cursor-pointer transition-all duration-300 hover:bg-white flex items-center gap-3 ${i === 0 ? 'bg-white shadow-md' : ''}" onclick="selectService(${services.indexOf(s)})" id="service-${s.id}">
             <i class="${s.icon} text-2xl text-accent"></i>
             <span class="text-primary font-medium">${s.name}</span>
           </div>
         `).join('');
-        // 默认选中第一个
-        if (services.length > 0) {
-          selectService(0);
+
+        if (displayServices.length > 0) {
+          selectService(isExpanded ? 0 : 0);
         }
       }
 
@@ -1007,11 +1035,21 @@
           <span>${service.name}</span>
         `;
 
-        // 更新图片网格 (3x3)
-        const imagesHtml = Array(9).fill(`<div><img src="./assets/content/content.jpg" alt="${service.name}" class="w-full h-full object-cover rounded-lg" /></div>`).join('');
-        document.getElementById('service-images').innerHTML = imagesHtml;
-        // 同步高度
-        syncServiceImageHeight();
+        // 根据展开状态设置不同的布局
+        const imagesDiv = document.getElementById('service-images');
+        if (isExpanded) {
+          // 展开状态：3列布局 (3x3)
+          imagesDiv.className = 'grid grid-cols-3 gap-3';
+          imagesDiv.style.gridTemplateRows = 'repeat(3, 1fr)';
+        } else {
+          // 收起状态：3列1行布局 (1x3)，让图片占满整行高度
+          imagesDiv.className = 'grid grid-cols-3 gap-3';
+          imagesDiv.style.gridTemplateRows = '1fr';
+        }
+        // 根据展开状态显示不同数量的图片 (收起1x3=3张，展开3x3=9张)
+        const imageCount = isExpanded ? 9 : 3;
+        const imagesHtml = Array(imageCount).fill(`<div class="h-full"><img src="./assets/content/content.jpg" alt="${service.name}" class="w-full h-full object-cover rounded-lg" /></div>`).join('');
+        imagesDiv.innerHTML = imagesHtml;
 
         // 更新描述
         document.getElementById('service-desc').innerHTML = `
@@ -1023,6 +1061,9 @@
             </div>
           </div>
         `;
+
+        // 同步高度
+        syncServiceImageHeight();
       }
 
       function nextImage() {
@@ -1056,21 +1097,39 @@
         const descDiv = document.getElementById('service-desc');
 
         if (leftCol && rightDiv && imagesDiv && descDiv) {
-          // 获取左侧整列高度
-          const leftHeight = leftCol.offsetHeight;
-          // 获取描述区域高度 + margin
-          const descHeight = descDiv.offsetHeight + 20;
-          // 标题区域高度
-          const headerHeight = 60;
-          // padding
-          const padding = 48;
-          // 图片区域高度 = 左侧高度 - 描述高度 - 标题 - padding
-          const imagesHeight = leftHeight - descHeight - headerHeight - padding;
+          if (isExpanded) {
+            // 展开状态：直接计算并设置高度
+            const leftHeight = leftCol.offsetHeight;
+            const descHeight = descDiv.offsetHeight + 20;
+            const headerHeight = 50;
+            const padding = 48;
+            const totalRowsHeight = leftHeight - descHeight - headerHeight - padding;
 
-          // 设置图片容器高度
-          imagesDiv.style.height = imagesHeight + 'px';
-          // 设置右侧容器高度与左侧一致
-          rightDiv.style.height = leftHeight + 'px';
+            rightDiv.style.height = leftHeight + 'px';
+            imagesDiv.style.height = totalRowsHeight + 'px';
+          } else {
+            // 收起状态：先让右侧高度变为auto，让内容决定高度
+            rightDiv.style.height = 'auto';
+            imagesDiv.style.height = 'auto';
+
+            // 强制触发重排
+            void rightDiv.offsetHeight;
+            void imagesDiv.offsetHeight;
+
+            // 获取右侧收缩后的实际高度
+            const rightActualHeight = rightDiv.offsetHeight-110;
+
+            // 重新设置右侧高度
+            rightDiv.style.height = rightActualHeight + 'px';
+
+            // 获取图片收缩后的实际高度，减去10px微调
+            const imagesActualHeight = imagesDiv.offsetHeight - 110;
+
+            // 设置图片高度
+            if (imagesActualHeight > 0) {
+              imagesDiv.style.height = imagesActualHeight + 'px';
+            }
+          }
         }
       }
 
