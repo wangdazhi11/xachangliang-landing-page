@@ -11,7 +11,7 @@ html {
 }
 
 .scale-wrapper {
-  transform: scale(0.85);
+  transform: scale(0.80);
   transform-origin: top center;
   min-height: 100vh;
 }
