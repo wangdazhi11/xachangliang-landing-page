@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interior Company Landing Page</title>
-    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,24 +14,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      href=":/https/fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <!-- swiper css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.1.3/swiper-bundle.min.css" />
   </head>
   <body class="bg-gray-100">
-    <!-- header -->
-    <header class="sticky top-0 h-[70px] shadow-xl z-30 bg-white">
-      <div class="container mx-auto flex justify-between h-full items-center">
-        <!-- logo -->
-        <a href="#">
-          <img
-            class="h-8 lg:max-h-[85px]"
-            src="./assets/logo1.png"
-            alt="logo"
-          />
+    <!-- 右侧固定图标 -->
+    <div id="sidebar" class="fixed right-0 top-[55%] z-50 flex flex-col gap-4">
+      <!-- 箭头 -->
+      <div class="relative">
+        <a href="#home" onmouseenter="showBackToTop()" onmouseleave="hideBackToTop()" onclick="showBackToTop(); setTimeout(hideBackToTop, 1000); window.scrollTo({top:0, behavior:'smooth'}); return false;" class="w-12 h-12 bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="back-to-top-icon" class="ri-arrow-up-line text-2xl"></i>
         </a>
+        <div id="back-to-top-content" class="absolute right-full top-0 mr-2 bg-white text-primary rounded-lg shadow-xl px-3 py-3 hidden flex items-center justify-center">
+          <span class="whitespace-nowrap text-sm">回到顶部</span>
+        </div>
+      </div>
+      <!-- 电话 -->
+      <div class="relative">
+        <div onclick="togglePhone()" onmouseenter="showPhone()" onmouseleave="hidePhone()" class="w-12 h-12 bg-green-600 flex items-center justify-center text-white hover:bg-green-700 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="phone-icon" class="ri-phone-line text-2xl"></i>
+        </div>
+        <div id="phone-content" class="absolute right-full top-0 mr-2 bg-white rounded-lg shadow-xl p-4 whitespace-nowrap hidden">
+          <p class="text-green-600 font-bold text-lg">13619222442</p>
+          <a href="tel:13619222442" class="text-sm text-blue-600 hover:underline">点击拨打</a>
+        </div>
+      </div>
+      <!-- 微信 -->
+      <div class="relative">
+        <div onclick="toggleWechat()" onmouseenter="showWechat()" onmouseleave="hideWechat()" class="w-12 h-12 bg-green-500 flex items-center justify-center text-white hover:bg-green-600 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="wechat-icon" class="ri-wechat-fill text-2xl"></i>
+        </div>
+        <div id="wechat-content" class="absolute right-full top-0 mr-2 bg-white rounded-lg shadow-xl p-4 hidden min-w-[200px]">
+          <p class="text-center text-sm text-gray-600 mb-2">扫码添加微信</p>
+          <img src="./assets/hero/side/vx.png" alt="微信二维码" class="w-48 h-auto object-contain" />
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <header class="sticky top-0 shadow-xl z-30 bg-white w-full">
+      <div class="w-full flex items-center justify-between h-full py-2 px-4 lg:px-8">
+        <!-- logo with text -->
+      <div class="flex items-center gap-6 flex-shrink-0">
+          <a href="#">
+            <img
+              class="h-14 lg:max-h-[120px]"
+              src="./assets/logo1.png"
+              alt="logo"
+            />
+          </a>
+          <!-- company info -->
+          <div class="hidden xl:flex items-center gap-8">
+            <!-- left text -->
+            <div class="flex flex-col">
+              <h3 class="text-lg font-primary text-primary leading-tight whitespace-nowrap">专业废旧物资回收公司</h3>
+              <p class="text-sm text-secondary font-secondary whitespace-nowrap">主营：物资回收、废品回收、二手机械设备回收</p>
+            </div>
+            <!-- right text - phone -->
+            <div class="flex items-center gap-2 border-l-2 border-accent pl-4">
+              <img src="./assets/phone.jpeg" alt="phone" class="w-6 h-6 object-contain" />
+              <div class="flex flex-col">
+                <span class="text-sm text-primary font-secondary">服务热线</span>
+                <span class="text-lg font-bold text-blue-600 font-secondary">13619222442</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- nav mobile version -->
 
         <nav>
@@ -46,58 +96,135 @@
             id="nav_menu"
           >
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#home">Home</a>
+              <a class="text-lg p-4 hover:text-primary" href="#home">网站主页</a>
             </li>
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#about">About</a>
+              <a class="text-lg p-4 hover:text-primary" href="#about">长亮简介</a>
             </li>
             <li>
               <a class="text-lg p-4 hover:text-primary" href="#testimonials"
-                >Testimonials</a
+                >回收项目</a
               >
             </li>
             <li>
               <a class="text-lg p-4 hover:text-primary" href="#our_work"
-                >Our Work</a
+                >回收案例</a
               >
             </li>
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#news">News</a>
+              <a class="text-lg p-4 hover:text-primary" href="#news">荣誉资质</a>
             </li>
             <li>
               <a class="text-lg p-4 hover:text-primary" href="#contact"
-                >Contact</a
+                >联系我们</a
               >
             </li>
           </ul>
         </nav>
       </div>
     </header>
+    <!-- 缩放包装器 -->
+    <div class="scale-wrapper">
+    <!-- hero - full width, outside main -->
+    <section
+      id="home"
+      class="hero relative z-20 scroll-mt-[70px]"
+    >
+      <div class="max-w-[1920px] mx-auto overflow-hidden">
+        <div class="hero-slider flex transition-transform duration-1000 ease-in-out">
+          <img
+            src="./assets/hero/bg1.png"
+            alt="hero background"
+            class="w-full flex-shrink-0 object-cover"
+          />
+          <img
+            src="./assets/hero/bg2.png"
+            alt="hero background"
+            class="w-full flex-shrink-0 object-cover"
+          />
+          <img
+            src="./assets/hero/bg1.png"
+            alt="hero background"
+            class="w-full flex-shrink-0 object-cover"
+          />
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 container mx-auto flex items-center justify-center xl:justify-start"
+      >
+        <!-- text -->
+        <div
+          class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start ml-10"
+        >
+          <!-- 艺术字标题：金色描边字体 -->
+          <h1 class="artistic-title mb-8 px-6 py-4 text-5xl lg:text-7xl font-primary whitespace-nowrap">
+            专业资源回收
+          </h1>
+          <!-- 黑色小字 -->
+          <p class="mb-8 text-black text-lg lg:text-xl font-secondary max-w-xl">
+            专门致力于物资废品回收、电器电缆回收、二手机械设备回收、空调回收等大型机械设备回收
+          </p>
+          <!-- 可点击复制的电话 -->
+          <button
+            onclick="copyPhone()"
+            class="btn btn-primary mx-auto xl:mx-0 cursor-pointer"
+            title="点击复制电话号码"
+          >
+            <span id="phone-text">联系电话：13619222442</span>
+            <i class="ri-arrow-right-line text-accent"></i>
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- page wrapper -->
     <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
-      <!-- hero -->
-      <section
-        style="background-image: url(./assets/hero/bg.jpg)"
-        id="home"
-        class="hero h-[550px] xl:h-[570px] bg-center lg:bg-cover bg-no-repeat bg-fixed relative z-20"
-      >
-        <div
-          class="container mx-auto h-full flex items-center justify-center xl:justify-start"
-        >
-          <!-- text -->
-          <div
-            class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
-          >
-            <h1 class="h1_alt mb-8">Let Your Home Be Unique</h1>
-            <p class="mb-8">
-              There are many variations of the passages of Lorem ipsum from
-              available, variations of the passages.
-            </p>
-            <button class="btn btn-primary mx-auto xl:mx-0">
-              Get Free Estimation
-              <i class="ri-arrow-right-line text-accent"></i>
-            </button>
+
+      <!-- 回收服务项目 -->
+      <section id="services" class="services mt-5 relative z-20 scroll-mt-[70px]">
+        <div class="max-w-[1800px] mx-auto px-4">
+          <!-- 服务内容区域 -->
+          <div class="flex flex-col xl:flex-row gap-8" id="service-container">
+            <!-- 左侧服务列表 -->
+            <div class="xl:w-1/3" id="service-left">
+              <div class="bg-accent-secondary rounded-[30px] p-6">
+                <h3 class="text-xl font-bold text-primary mb-6 flex items-center gap-2">
+                  <i class="ri-list-check-2 text-accent"></i>
+                  服务项目
+                </h3>
+                <div class="grid grid-cols-1 gap-2" id="service-list">
+                  <!-- 服务项目列表将通过JS动态生成 -->
+                </div>
+              </div>
+            </div>
+
+            <!-- 右侧图片展示 -->
+            <div class="xl:w-2/3 flex flex-col" id="service-right">
+              <div class="bg-white rounded-[30px] shadow-xl p-6 flex flex-col">
+                <div class="flex items-center justify-between mb-6">
+                  <h3 id="service-title" class="text-xl font-bold text-primary flex items-center gap-2">
+                    <i class="ri-image-line text-accent"></i>
+                    <span>请选择左侧服务项目</span>
+                  </h3>
+                  <div class="flex gap-2">
+                    <button onclick="prevImage()" class="w-10 h-10 bg-accent-secondary rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                      <i class="ri-arrow-left-s-line text-xl"></i>
+                    </button>
+                    <button onclick="nextImage()" class="w-10 h-10 bg-accent-secondary rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                      <i class="ri-arrow-right-s-line text-xl"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- 图片网格 -->
+                <div id="service-images" class="grid grid-cols-3 gap-3">
+                  <!-- 图片将通过JS动态生成 -->
+                </div>
+                <!-- 服务描述 -->
+                <div id="service-desc" class="mt-4 p-4 bg-accent-secondary rounded-xl">
+                  <p class="text-secondary text-center">点击左侧服务项目，查看详情图片和介绍</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -159,7 +286,7 @@
       </section>
 
       <!-- about -->
-      <section id="about" class="about mt-[80px] xl:mt-[200px] relative z-20">
+      <section id="about" class="about mt-[80px] xl:mt-[200px] relative z-20 scroll-mt-[70px]">
         <div class="container mx-auto">
           <div
             class="flex py-28 flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[2px]"
@@ -207,7 +334,7 @@
       <!-- testimonials -->
       <section
         id="testimonials"
-        class="testimonial mt-[80px] xl:mt-[200px] relative z-20"
+        class="testimonial mt-[80px] xl:mt-[200px] relative z-20 scroll-mt-[70px]"
       >
         <div
           class="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
@@ -340,7 +467,7 @@
       </section>
 
       <!-- work -->
-      <section id="our_work" class="work mt-[80px] xl:mt-[150px] relative z-20">
+      <section id="our_work" class="work mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[70px]">
         <div class="container mx-auto">
           <!-- text -->
           <div class="text-center mb-24">
@@ -464,7 +591,7 @@
       </section>
 
       <!-- news -->
-      <section id="news" class="news mt-[80px] xl:mt-[10px] relative z-20">
+      <section id="news" class="news mt-[80px] xl:mt-[10px] relative z-20 scroll-mt-[70px]">
         <div class="container mx-auto px-8">
           <!-- text  -->
           <div class="max-w-[810px] mx-auto text-center mb-[52px]">
@@ -549,7 +676,7 @@
       <!-- contact -->
       <section
         id="contact"
-        class="contact mt-[80px] xl:mt-[150px] relative z-20"
+        class="contact mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[70px]"
       >
         <div
           class="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[80px]"
@@ -645,11 +772,316 @@
       </footer>
     </main>
 
-    <!-- scroll reveal js -->
-    <script src="./js/scrollreveal.min.js"></script>
-    <!-- swiper -->
-    <script src="./js/swiper-bundle.min.js"></script>
     <!-- main js -->
-    <script src="./js/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      function copyPhone() {
+        const phone = '13619222442';
+        navigator.clipboard.writeText(phone).then(() => {
+          const btn = document.querySelector('.btn-primary');
+          const originalText = btn.innerHTML;
+          btn.innerHTML = '<i class="ri-check-line text-accent"></i> 已复制到剪贴板';
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+          }, 2000);
+        }).catch(err => {
+          console.error('复制失败:', err);
+        });
+      }
+
+      let phoneSticky = false;
+      let wechatSticky = false;
+
+      function togglePhone() {
+        const phoneContent = document.getElementById('phone-content');
+        const wechatContent = document.getElementById('wechat-content');
+        const phoneIcon = document.getElementById('phone-icon');
+
+        // 关闭微信内容并重置状态
+        wechatContent.classList.add('hidden');
+        wechatSticky = false;
+        document.getElementById('wechat-icon').classList.remove('ri-close-line');
+        document.getElementById('wechat-icon').classList.add('ri-wechat-fill');
+
+        // 切换电话内容
+        phoneSticky = !phoneSticky;
+        phoneContent.classList.toggle('hidden');
+        if (phoneContent.classList.contains('hidden')) {
+          phoneIcon.classList.remove('ri-close-line');
+          phoneIcon.classList.add('ri-phone-line');
+          phoneSticky = false;
+        } else {
+          phoneIcon.classList.remove('ri-phone-line');
+          phoneIcon.classList.add('ri-close-line');
+        }
+      }
+
+      function showPhone() {
+        clearTimeout(window.phoneHideTimer);
+        const phoneContent = document.getElementById('phone-content');
+        const phoneIcon = document.getElementById('phone-icon');
+        phoneContent.classList.remove('hidden');
+        phoneIcon.classList.remove('ri-phone-line');
+        phoneIcon.classList.add('ri-close-line');
+      }
+
+      function hidePhone() {
+        if (!phoneSticky) {
+          window.phoneHideTimer = setTimeout(() => {
+            const phoneContent = document.getElementById('phone-content');
+            const phoneIcon = document.getElementById('phone-icon');
+            phoneContent.classList.add('hidden');
+            phoneIcon.classList.remove('ri-close-line');
+            phoneIcon.classList.add('ri-phone-line');
+          }, 300);
+        }
+      }
+
+      function toggleWechat() {
+        const phoneContent = document.getElementById('phone-content');
+        const wechatContent = document.getElementById('wechat-content');
+        const wechatIcon = document.getElementById('wechat-icon');
+
+        // 关闭电话内容并重置状态
+        phoneContent.classList.add('hidden');
+        phoneSticky = false;
+        document.getElementById('phone-icon').classList.remove('ri-close-line');
+        document.getElementById('phone-icon').classList.add('ri-phone-line');
+
+        // 切换微信内容
+        wechatSticky = !wechatSticky;
+        wechatContent.classList.toggle('hidden');
+        if (wechatContent.classList.contains('hidden')) {
+          wechatIcon.classList.remove('ri-close-line');
+          wechatIcon.classList.add('ri-wechat-fill');
+          wechatSticky = false;
+        } else {
+          wechatIcon.classList.remove('ri-wechat-fill');
+          wechatIcon.classList.add('ri-close-line');
+        }
+      }
+
+      function showWechat() {
+        clearTimeout(window.wechatHideTimer);
+        const wechatContent = document.getElementById('wechat-content');
+        const wechatIcon = document.getElementById('wechat-icon');
+        wechatContent.classList.remove('hidden');
+        wechatIcon.classList.remove('ri-wechat-fill');
+        wechatIcon.classList.add('ri-close-line');
+      }
+
+      function hideWechat() {
+        if (!wechatSticky) {
+          window.wechatHideTimer = setTimeout(() => {
+            const wechatContent = document.getElementById('wechat-content');
+            const wechatIcon = document.getElementById('wechat-icon');
+            wechatContent.classList.add('hidden');
+            wechatIcon.classList.remove('ri-close-line');
+            wechatIcon.classList.add('ri-wechat-fill');
+          }, 300);
+        }
+      }
+
+      function toggleBackToTop() {
+        const phoneContent = document.getElementById('phone-content');
+        const wechatContent = document.getElementById('wechat-content');
+        const backToTopContent = document.getElementById('back-to-top-content');
+        const backToTopIcon = document.getElementById('back-to-top-icon');
+
+        // 关闭电话和微信内容
+        phoneContent.classList.add('hidden');
+        wechatContent.classList.add('hidden');
+        document.getElementById('phone-icon').classList.remove('ri-close-line');
+        document.getElementById('phone-icon').classList.add('ri-phone-line');
+        document.getElementById('wechat-icon').classList.remove('ri-close-line');
+        document.getElementById('wechat-icon').classList.add('ri-wechat-fill');
+
+        // 切换回到顶部内容
+        backToTopContent.classList.toggle('hidden');
+        if (backToTopContent.classList.contains('hidden')) {
+          backToTopIcon.classList.remove('ri-close-line');
+          backToTopIcon.classList.add('ri-arrow-up-line');
+        } else {
+          backToTopIcon.classList.remove('ri-arrow-up-line');
+          backToTopIcon.classList.add('ri-close-line');
+        }
+      }
+
+      let backToTopTimer;
+      function showBackToTop() {
+        clearTimeout(backToTopTimer);
+        const backToTopContent = document.getElementById('back-to-top-content');
+        backToTopContent.classList.remove('hidden');
+      }
+      function hideBackToTop() {
+        backToTopTimer = setTimeout(() => {
+          const backToTopContent = document.getElementById('back-to-top-content');
+          backToTopContent.classList.add('hidden');
+        }, 1000);
+      }
+
+      // Hero轮播图自动滑动（始终右滑，无限循环）
+      let currentSlide = 0;
+      const slider = document.querySelector('.hero-slider');
+      const totalSlides = slider.children.length;
+      const realSlideCount = totalSlides - 1; // 减去克隆的那张
+      let sliding = false;
+
+      function slideNext() {
+        if (sliding) return;
+        sliding = true;
+
+        currentSlide++;
+        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        setTimeout(() => {
+          if (currentSlide >= realSlideCount) {
+            // 回到真正的第一张，无动画跳转
+            currentSlide = 0;
+            slider.style.transition = 'none';
+            slider.style.transform = 'translateX(0)';
+            // 强制重绘
+            slider.offsetHeight;
+            slider.style.transition = 'transform 1s ease-in-out';
+          }
+          sliding = false;
+        }, 1000);
+      }
+
+      setInterval(slideNext, 4000);
+
+      // 回收服务项目数据
+      const services = [
+        { id: 'tong', name: '西安废铜回收', icon: 'riCopperCoinLine', desc: '专业回收各类废铜，包括黄铜、紫铜、电解铜等高价回收' },
+        { id: 'dianlan', name: '西安废旧电缆回收', icon: 'riCableLine', desc: '回收各种规格型号的废旧电线电缆，量大从优' },
+        { id: 'gaoya', name: '西安高压电缆回收', icon: 'riFlashlightLine', desc: '专业回收高压电缆、电力电缆、控制电缆等' },
+        { id: 'guangfu', name: '西安光伏电缆回收', icon: 'riSunLine', desc: '回收太阳能光伏电站退役电缆及相关设备' },
+        { id: 'tongxin', name: '西安通信电缆回收', icon: 'riSignalTowerLine', desc: '回收通信光缆、同轴电缆、网络线缆等' },
+        { id: 'ershou', name: '西安二手电缆回收', icon: 'riRefreshLine', desc: '回收二手库存电缆，工程剩余电缆' },
+        { id: 'gongdi', name: '西安工地电线回收', icon: 'riConstructionLine', desc: '回收建筑工地剩余电线电缆及施工设备' },
+        { id: 'bianyaqi', name: '西安变压器回收', icon: 'riPowerLine', desc: '回收各种容量变压器，干式变压器、油浸式变压器' },
+        { id: 'feilu', name: '西安废铝回收', icon: 'riRecycleLine', desc: '回收工业废铝、建筑铝材、铝合金废料' },
+        { id: 'luhejin', name: '西安铝合金回收', icon: 'riSquareLine', desc: '回收铝合金、不锈钢铜等金属废料' },
+        { id: 'buxiu', name: '西安不锈钢回收', icon: 'riShieldStarLine', desc: '回收201、304、316等各型号不锈钢' },
+        { id: '304', name: '西安304不锈钢回收', icon: 'riShieldCheckLine', desc: '专业回收304不锈钢废料及边角料' },
+        { id: 'peidian', name: '西安配电柜回收', icon: 'riDashboardLine', desc: '回收高低压配电柜、控制柜、开关柜等' },
+        { id: 'peidianxiang', name: '西安配电箱回收', icon: 'riDatabaseLine', desc: '回收各类配电箱、照明箱、动力箱' },
+        { id: 'gaodiya', name: '西安高低压电力设备回收', icon: 'riGovernmentLine', desc: '回收高低压成套电力设备及配套设施' },
+        { id: 'jinshu', name: '西安旧金属回收', icon: 'riGoldLine', desc: '回收各类有色金属、黑色金属废料' },
+        { id: 'feiliao', name: '西安工业废料回收', icon: 'riFactoryLine', desc: '回收工厂工业废料、生产边角料等' },
+        { id: 'chaiqian', name: '西安拆迁物资回收', icon: 'riHomeLine', desc: '回收拆迁工地废旧物资、设备及金属' },
+        { id: 'kucun', name: '西安库存电缆物资回收', icon: 'riArchiveLine', desc: '回收库存积压电缆及工程剩余材料' },
+        { id: 'dianli', name: '西安废旧电力器材回收', icon: 'riThunderstormsLine', desc: '回收电力局、变电站退役电力器材' }
+      ];
+
+      let currentService = null;
+      let currentImageIndex = 0;
+
+      function initServices() {
+        const serviceList = document.getElementById('service-list');
+        serviceList.innerHTML = services.map((s, i) => `
+          <div class="service-item p-3 rounded-xl cursor-pointer transition-all duration-300 hover:bg-white flex items-center gap-3 ${i === 0 ? 'bg-white shadow-md' : ''}" onclick="selectService(${i})" id="service-${s.id}">
+            <i class="${s.icon} text-2xl text-accent"></i>
+            <span class="text-primary font-medium">${s.name}</span>
+          </div>
+        `).join('');
+        // 默认选中第一个
+        if (services.length > 0) {
+          selectService(0);
+        }
+      }
+
+      function selectService(index) {
+        const service = services[index];
+        currentService = service;
+        currentImageIndex = 0;
+
+        // 更新列表样式
+        document.querySelectorAll('.service-item').forEach((el, i) => {
+          if (i === index) {
+            el.classList.add('bg-white', 'shadow-md');
+          } else {
+            el.classList.remove('bg-white', 'shadow-md');
+          }
+        });
+
+        // 更新标题
+        document.getElementById('service-title').innerHTML = `
+          <i class="${service.icon} text-accent"></i>
+          <span>${service.name}</span>
+        `;
+
+        // 更新图片网格 (3x3)
+        const imagesHtml = Array(9).fill(`<div><img src="./assets/content/content.jpg" alt="${service.name}" class="w-full h-full object-cover rounded-lg" /></div>`).join('');
+        document.getElementById('service-images').innerHTML = imagesHtml;
+        // 同步高度
+        syncServiceImageHeight();
+
+        // 更新描述
+        document.getElementById('service-desc').innerHTML = `
+          <div class="flex items-start gap-4">
+            <i class="${service.icon} text-3xl text-accent flex-shrink-0"></i>
+            <div>
+              <h4 class="font-bold text-primary mb-2">${service.name}</h4>
+              <p class="text-secondary">${service.desc}</p>
+            </div>
+          </div>
+        `;
+      }
+
+      function nextImage() {
+        if (!currentService) return;
+        currentImageIndex = (currentImageIndex + 1) % 9;
+        updateImageDisplay();
+      }
+
+      function prevImage() {
+        if (!currentService) return;
+        currentImageIndex = (currentImageIndex - 1 + 9) % 9;
+        updateImageDisplay();
+      }
+
+      function updateImageDisplay() {
+        const images = document.querySelectorAll('#service-images img');
+        images.forEach((img, i) => {
+          const offset = (i + currentImageIndex) % 9;
+          img.style.opacity = offset === 0 ? '1' : '0.5';
+        });
+      }
+
+      // 初始化服务列表
+      initServices();
+
+      // 同步右侧图片高度与左侧一致
+      function syncServiceImageHeight() {
+        const leftCol = document.getElementById('service-left');
+        const rightDiv = document.querySelector('#service-right > div');
+        const imagesDiv = document.getElementById('service-images');
+        const descDiv = document.getElementById('service-desc');
+
+        if (leftCol && rightDiv && imagesDiv && descDiv) {
+          // 获取左侧整列高度
+          const leftHeight = leftCol.offsetHeight;
+          // 获取描述区域高度 + margin
+          const descHeight = descDiv.offsetHeight + 20;
+          // 标题区域高度
+          const headerHeight = 60;
+          // padding
+          const padding = 48;
+          // 图片区域高度 = 左侧高度 - 描述高度 - 标题 - padding
+          const imagesHeight = leftHeight - descHeight - headerHeight - padding;
+
+          // 设置图片容器高度
+          imagesDiv.style.height = imagesHeight + 'px';
+          // 设置右侧容器高度与左侧一致
+          rightDiv.style.height = leftHeight + 'px';
+        }
+      }
+
+      // 初始化后同步一次
+      setTimeout(syncServiceImageHeight, 200);
+      window.addEventListener('resize', syncServiceImageHeight);
+    </script>
+    </div>
   </body>
 </html>
