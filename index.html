@@ -131,7 +131,7 @@
     <!-- hero -->
     <section
       id="home"
-      class="hero relative z-20 scroll-mt-[70px]"
+      class="hero relative z-20 scroll-mt-[100px]"
     >
       <div class="overflow-hidden">
         <div class="hero-slider flex transition-transform duration-800 ease-in-out">
@@ -181,7 +181,7 @@
     </section>
 
       <!-- 回收服务项目 -->
-      <section id="services" class="services mt-5 relative z-20 scroll-mt-[70px]">
+      <section id="services" class="services mt-5 relative z-20 scroll-mt-[100px]">
         <div class="max-w-[1800px] mx-auto px-4">
           <!-- 服务内容区域 -->
           <div class="flex flex-col xl:flex-row gap-8" id="service-container">
@@ -239,7 +239,7 @@
     <!-- scale-wrapper结束 -->
 
     <!-- about - 放在scale-wrapper外，背景色可延伸至视口两端 -->
-    <section id="about" class="about relative z-20 scroll-mt-[70px] bg-blue-100">
+    <section id="about" class="about relative z-20 scroll-mt-[100px] bg-blue-100">
       <div class="max-w-[1400px] mx-auto">
         <div
           class="flex py-8 flex-col xl:flex-row text-center xl:text-left justify-start items-center gap-4 xl:gap-[200px] w-full"
@@ -273,24 +273,24 @@
     <!-- testimonials -->
       <section
         id="testimonials"
-        class="testimonial relative z-20 scroll-mt-[70px]"
+        class="testimonial relative z-20 scroll-mt-[100px]"
       >
         <div
           class="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
         >
-          <div class="flex flex-col items-center pt-[50px] pb-[0px]">
-            <h2 class="testimonial__title h2 mb-12 text-center">
-              公司联盟
+          <div class="flex flex-col items-center pt-[30px] pb-[0px]">
+            <h2 class="testimonial__title h2 mb-6 text-center">
+              公司联盟成员
             </h2>
             <!-- slider -->
             <div class="w-full">
-              <div class="testimonial__slider swiper h-[600px]">
+              <div class="testimonial__slider swiper h-[480px]">
                 <div class="swiper-wrapper">
                   <!-- slides 1-->
                   <div class="swiper-slide">
                     <!-- item -->
                     <div
-                      class="testimonial__item w-full max-w-[550px] h-[420px] bg-white rounded-[30px] flex flex-col justify-center p-10 pb-14 mx-auto shadow-xl"
+                      class="testimonial__item w-full max-w-[600px] h-[420px] bg-white rounded-[30px] flex flex-col justify-center p-10 pb-14 mx-auto shadow-xl"
                     >
                       <div class="flex gap-4 mb-6">
                         <img
@@ -314,7 +314,7 @@
                   <div class="swiper-slide">
                     <!-- item -->
                     <div
-                      class="testimonial__item w-full max-w-[550px] h-[420px] bg-white rounded-[30px] flex flex-col justify-center p-10  mx-auto shadow-xl"
+                      class="testimonial__item w-full max-w-[1000px] h-[420px] bg-white rounded-[30px] flex flex-col justify-center p-10  mx-auto shadow-xl"
                     >
                       <div class="flex gap-4 mb-6">
                         <img
@@ -338,7 +338,7 @@
                   <div class="swiper-slide">
                     <!-- item -->
                     <div
-                      class="testimonial__item w-full max-w-[550px] h-[420px] bg-white rounded-[30px] flex flex-col justify-center p-10 pb-14 mx-auto shadow-xl"
+                      class="testimonial__item w-full max-w-[600px] h-[420px] bg-white rounded-[30px] flex flex-col justify-center p-10 pb-14 mx-auto shadow-xl"
                     >
                       <div class="flex gap-4 mb-6">
                         <img
@@ -362,7 +362,7 @@
                   <div class="swiper-slide">
                     <!-- item -->
                     <div
-                      class="testimonial__item w-full max-w-[550px] h-[420px] bg-white rounded-[30px] flex flex-col justify-center p-10 pb-14 mx-auto shadow-xl"
+                      class="testimonial__item w-full max-w-[600px] h-[420px] bg-white rounded-[30px] flex flex-col justify-center p-10 pb-14 mx-auto shadow-xl"
                     >
                       <div class="flex gap-4 mb-6">
                         <img
@@ -391,22 +391,71 @@
       </section>
 
       <!-- brands -->
-      <section class="brands mt-[80px] xl:mt-[200px] relative z-20">
-        <div class="container mx-auto">
-          <div
-            class="flex flex-col xl:flex-row justify-between items-center gap-12"
-          >
-            <img class="brands__img" src="assets/brands/01.svg" alt="" />
-            <img class="brands__img" src="assets/brands/02.svg" alt="" />
-            <img class="brands__img" src="assets/brands/03.svg" alt="" />
-            <img class="brands__img" src="assets/brands/04.svg" alt="" />
-            <img class="brands__img" src="assets/brands/05.svg" alt="" />
-          </div>
-        </div>
+      <section class="brands mt-[10px] xl:mt-[20px] relative z-20 bg-accent">
+        <div class="flex flex-col xl:flex-row items-stretch gap-12 px-8 py-16">
+              <!-- 左侧标题 -->
+              <div class="flex-shrink-0 flex items-center justify-center xl:justify-start">
+                <div class="text-center xl:text-left">
+                  <h2 class="text-4xl xl:text-5xl font-primary text-white mb-4">招标合作伙伴</h2>
+                  <p class="text-lg text-white/80 mt-4">携手共创 互利共赢</p>
+                </div>
+              </div>
+              <!-- 右侧品牌网格 -->
+              <div class="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌1" />
+                  <span class="text-sm text-white font-medium">品牌1</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌2" />
+                  <span class="text-sm text-white font-medium">品牌2</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌3" />
+                  <span class="text-sm text-white font-medium">品牌3</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌4" />
+                  <span class="text-sm text-white font-medium">品牌4</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌5" />
+                  <span class="text-sm text-white font-medium">品牌5</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌6" />
+                  <span class="text-sm text-white font-medium">品牌6</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌7" />
+                  <span class="text-sm text-white font-medium">品牌7</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌8" />
+                  <span class="text-sm text-white font-medium">品牌8</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌9" />
+                  <span class="text-sm text-white font-medium">品牌9</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌10" />
+                  <span class="text-sm text-white font-medium">品牌10</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌11" />
+                  <span class="text-sm text-white font-medium">品牌11</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <img class="brands__img w-24 h-24 object-contain" src="assets/brands/01.svg" alt="品牌12" />
+                  <span class="text-sm text-white font-medium">品牌12</span>
+                </div>
+              </div>
+            </div>
       </section>
 
       <!-- work -->
-      <section id="our_work" class="work mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[70px]">
+      <section id="our_work" class="work mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[100px]">
         <div class="container mx-auto">
           <!-- text -->
           <div class="text-center mb-24">
@@ -530,7 +579,7 @@
       </section>
 
       <!-- news -->
-      <section id="news" class="news mt-[80px] xl:mt-[10px] relative z-20 scroll-mt-[70px]">
+      <section id="news" class="news mt-[80px] xl:mt-[10px] relative z-20 scroll-mt-[100px]">
         <div class="container mx-auto px-8">
           <!-- text  -->
           <div class="max-w-[810px] mx-auto text-center mb-[52px]">
@@ -615,7 +664,7 @@
       <!-- contact -->
       <section
         id="contact"
-        class="contact mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[70px]"
+        class="contact mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[100px]"
       >
         <div
           class="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[80px]"
