@@ -31,7 +31,7 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   modules: [Autoplay],
   autoplay: {
-    delay: 0,
+    delay: 500,
     disableOnInteraction: false,
     reverseDirection: false,
     stopOnLastSlide: false,
@@ -41,6 +41,8 @@ const swiper = new Swiper(".swiper", {
     sticky: false,
   },
   speed: 4000,
+  simulateTouch: false,
+  allowTouchMove: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -60,11 +62,14 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// 确保自动播放一直运行
-swiper.autoplay.start();
-
-// 确保自动播放启动
-swiper.autoplay.start();
+// 鼠标悬停停止自动播放
+const swiperContainer = document.querySelector(".swiper");
+swiperContainer.addEventListener("mouseenter", () => {
+  swiper.autoplay.stop();
+});
+swiperContainer.addEventListener("mouseleave", () => {
+  swiper.autoplay.start();
+});
 
 // scroll reveal animation using Intersection Observer
 const observerOptions = {
