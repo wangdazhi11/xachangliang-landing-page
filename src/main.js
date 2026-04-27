@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import { Autoplay } from 'swiper/modules';
 import ScrollReveal from 'scrollreveal';
 
 const navTriggerBtn = document.querySelector("#nav_trigger_btn");
@@ -29,6 +30,18 @@ navLinks.forEach((link) => {
 // swiper
 const swiper = new Swiper(".swiper", {
   loop: true,
+  modules: [Autoplay],
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    reverseDirection: false,
+    stopOnLastSlide: false,
+  },
+  freeMode: {
+    enabled: true,
+    sticky: false,
+  },
+  speed: 4000,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -48,12 +61,19 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+// 确保自动播放一直运行
+swiper.autoplay.start();
+
+// 确保自动播放启动
+swiper.autoplay.start();
+
 // scroll reveal animation
 const sr = ScrollReveal({
   origin: "bottom",
   distance: "60px",
   duration: 700,
   delay: 50,
+  viewFactor: 0.2,
 });
 
 // hero
