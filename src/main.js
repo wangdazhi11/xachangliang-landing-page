@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
-import ScrollReveal from 'scrollreveal';
 
 const navTriggerBtn = document.querySelector("#nav_trigger_btn");
 const navMenu = document.querySelector("#nav_menu");
@@ -67,53 +66,30 @@ swiper.autoplay.start();
 // 确保自动播放启动
 swiper.autoplay.start();
 
-// scroll reveal animation
-const sr = ScrollReveal({
-  origin: "bottom",
-  distance: "60px",
-  duration: 700,
-  delay: 50,
-  viewFactor: 0.2,
+// scroll reveal animation using Intersection Observer
+const observerOptions = {
+  root: null,
+  rootMargin: "0px 0px -50px 0px",
+  threshold: 0.1
+};
+
+const revealCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const delay = el.dataset.revealDelay || 0;
+      setTimeout(() => {
+        el.classList.add("revealed");
+      }, delay);
+      observer.unobserve(el);
+    }
+  });
+};
+
+const revealObserver = new IntersectionObserver(revealCallback, observerOptions);
+
+document.querySelectorAll(".hero__text, .steps__step__1, .steps__step__2, .steps__step__3, .about__text, .about__img, .testimonial__bg, .testimonial__title, .testimonial__slider, .brands__img, .work__title, .work__subtitle, .work__grid, .stats, .stats__item, .news__title, .news__subtitle, .news__item, .contact__container, .contact__text, .footer__item, .footer__copyrights").forEach((el, index) => {
+  el.classList.add("reveal");
+  el.dataset.revealDelay = index * 50;
+  revealObserver.observe(el);
 });
-
-// hero
-sr.reveal(".hero__text", { origin: "top" });
-
-// steps
-sr.reveal(".steps__step__1", { distance: "100px", interval: 100 });
-sr.reveal(".steps__step__2", { distance: "200px", interval: 100 });
-sr.reveal(".steps__step__3", { distance: "300px", interval: 100 });
-
-// about
-sr.reveal(".about__text", { origin: "left" });
-sr.reveal(".about__img", { origin: "right", delay: 800 });
-
-// testimonial
-sr.reveal(".testimonial__bg", { delay: 800 });
-sr.reveal(".testimonial__title");
-sr.reveal(".testimonial__slider", { delay: 1000 });
-
-// brands
-sr.reveal(".brands__img", { delay: 600, distance: "100px", interval: 100 });
-
-// work
-sr.reveal(".work__title");
-sr.reveal(".work__subtitle", { delay: 800 });
-sr.reveal(".work__grid", { delay: 1000 });
-
-// stats
-sr.reveal(".stats");
-sr.reveal(".stats__item", { distance: "100px", interval: 100 });
-
-//  news
-sr.reveal(".news__title");
-sr.reveal(".news__subtitle", { delay: 800 });
-sr.reveal(".news__item", { distance: "100px", interval: 100, delay: 1000 });
-
-// contact
-sr.reveal(".contact__container");
-sr.reveal(".contact__text", { delay: 800 });
-
-// footer
-sr.reveal(".footer__item", { distance: "100px", interval: 100, delay: 1000 });
-sr.reveal(".footer__copyrights");
