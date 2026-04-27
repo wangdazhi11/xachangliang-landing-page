@@ -125,12 +125,15 @@
     </header>
     <!-- 缩放包装器 -->
     <div class="scale-wrapper">
-    <!-- hero - full width, outside main -->
+    <!-- page wrapper -->
+    <main class="main-wrapper">
+
+    <!-- hero -->
     <section
       id="home"
       class="hero relative z-20 scroll-mt-[70px]"
     >
-      <div class="max-w-[1920px] mx-auto overflow-hidden">
+      <div class="overflow-hidden">
         <div class="hero-slider flex transition-transform duration-800 ease-in-out">
           <img
             src="./assets/hero/bg1.png"
@@ -176,9 +179,6 @@
         </div>
       </div>
     </section>
-
-    <!-- page wrapper -->
-    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
 
       <!-- 回收服务项目 -->
       <section id="services" class="services mt-5 relative z-20 scroll-mt-[70px]">
@@ -234,6 +234,7 @@
           </div>
         </div>
       </section>
+    </main>
     </div>
     <!-- scale-wrapper结束 -->
 
@@ -268,17 +269,18 @@
 
     <!-- 新的scale-wrapper开始 -->
     <div class="scale-wrapper">
+    <main class="main-wrapper pt-[10px] xl:pt-[20px]">
     <!-- testimonials -->
       <section
         id="testimonials"
-        class="testimonial mt-[80px] xl:mt-[200px] relative z-20 scroll-mt-[70px]"
+        class="testimonial relative z-20 scroll-mt-[70px]"
       >
         <div
           class="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
         >
-          <div class="flex flex-col items-center pt-[80px] pb-[110px]">
-            <h2 class="testimonial__title h2 mb-9 text-center">
-              What Clients Say
+          <div class="flex flex-col items-center pt-[20px] pb-[110px]">
+            <h2 class="testimonial__title h3 mb-5 text-center">
+              公司联盟
             </h2>
             <!-- slider -->
             <div class="w-full">
@@ -708,6 +710,8 @@
         </p>
       </footer>
     </main>
+    </div>
+    <!-- scale-wrapper结束 -->
 
     <!-- main js -->
     <script type="module" src="/src/main.js"></script>

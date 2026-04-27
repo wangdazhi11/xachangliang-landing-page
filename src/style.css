@@ -11,8 +11,17 @@ html {
 }
 
 .scale-wrapper {
+  --content-max-width: calc(1420px / 0.7);
   zoom: 70%;
-  min-height: 100vh;
+}
+
+.scale-wrapper > main,
+.scale-wrapper .main-wrapper {
+  max-width: var(--content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  overflow: hidden;
 }
 
 a {
