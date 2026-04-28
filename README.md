@@ -1,68 +1,138 @@
-![Thumbnail](./public/thumbnail_luxespace.png)
+# 西安长亮商贸有限公司 - 企业官网
 
-# 🏢 LuxeSpace – Company Landing Page (Frontend Static)
-
-**LuxeSpace** is a simple and elegant company landing page designed for an interior design business. Built using **HTML**, **TailwindCSS**, and **Swiper.js**, this project focuses on delivering a clean, responsive, and modern layout to professionally present business information.
+专业的废旧物资回收公司landing page，展示公司服务、团队成员、合作伙伴等信息。
 
 ---
 
-## 1. Project Overview
+## 项目简介
 
-A static single-page site showcasing company details such as services, testimonials, portfolio, articles, and contact information. Ideal as a starting template for company profiles or static business landing pages.
-
----
-
-## 2. Goals
-
-- Create a modern, professional landing page layout.
-- Learn and apply responsive design using TailwindCSS.
-- Integrate a testimonial slider with Swiper.js.
-- Practice building user-friendly navigation and clean HTML structure.
+西安长亮商贸有限公司成立于2016年，主要从事废旧物资回收、工程拆除和各类物资买卖业务。本项目是公司官方网站的前端静态页面，采用响应式设计，支持移动端和桌面端访问。
 
 ---
 
-## 3. Challenges
+## 主要功能
 
-- Structuring a responsive layout for multiple screen sizes.
-- Implementing sticky navigation and smooth scroll.
-- Building a testimonial carousel using Swiper.js.
-- Maintaining visual consistency while using semantic HTML tags.
-
----
-
-## 4. Tech Stack
-
-- **HTML + TailwindCSS** – Responsive layout and utility-first styling.
-- **Remix Icons** – For clean and modern UI icons.
-- **Swiper.js** – For interactive testimonial slider.
-- **ScrollReveal** – For scroll-based animation effects.
+- **Hero轮播图** - 自动轮播展示公司形象
+- **服务项目展示** - 支持展开/收起，展示20+回收服务项目
+- **公司简介** - 图文环绕布局展示公司信息
+- **团队成员** - Swiper滑动卡片展示团队成员
+- **招标合作伙伴** - 品牌网格展示合作伙伴
+- **响应式设计** - 完美适配移动端和桌面端
+- **回到顶部** - 右侧悬浮按钮快速回到顶部
+- **联系电话** - 一键复制电话号码，点击可拨打
 
 ---
 
-## 5. Folder Structure
+## 技术栈
+
+- **HTML5** - 页面结构
+- **TailwindCSS** - 响应式布局和样式
+- **Swiper.js** - 轮播图和滑动组件
+- **Remix Icons** - 图标库
+- **Vite** - 构建工具
+
+---
+
+## 项目结构
 
 ```
-project/
-├── index.html              # Main page structure
-├── /assets                 # Images and icons
-├── /css                    # Swiper CSS files
-├── /js                     # ScrollReveal and Swiper logic
-├── /dist/output.css        # Tailwind compiled CSS
+interior_company_landing_page/
+├── index.html              # 主页面
+├── src/
+│   ├── style.css           # 自定义样式
+│   └── main.js             # JavaScript逻辑
+├── assets/
+│   ├── hero/               # Hero轮播图片
+│   ├── about/              # 关于我们图片
+│   ├── testimonial/        # 团队成员头像
+│   ├── brands/             # 合作伙伴logo
+│   ├── content/            # 服务项目图片
+│   └── news/               # 新闻图片
+├── package.json
+└── README.md
 ```
 
 ---
 
-## 6. What I Learned
+## 快速开始
 
-- How to build responsive layouts with TailwindCSS.
-- Basic integration of third-party JS libraries like Swiper.js and ScrollReveal.
-- Importance of semantic HTML and accessible design.
-- Structuring frontend projects with maintainability in mind.
+### 安装依赖
+
+```bash
+npm install
+```
+
+### 开发模式
+
+```bash
+npm run dev
+```
+
+### 构建生产版本
+
+```bash
+npm run build
+```
 
 ---
 
-## 🌐 Live Preview
+## 页面模块
 
-[https://luxespace.netlify.app/](https://luxespace.netlify.app/)
+| 模块 | 说明 |
+|------|------|
+| Header | 导航栏，显示logo、服务热线、菜单 |
+| Hero | 轮播图，展示公司主标语 |
+| Services | 服务项目列表，支持展开/收起 |
+| About | 公司简介，图文环绕布局 |
+| Testimonials | 团队成员卡片轮播 |
+| Brands | 招标合作伙伴展示 |
+| Footer | 页脚信息 |
 
 ---
+
+## 联系方式
+
+- **公司名称**：西安长亮商贸有限公司
+- **服务热线**：13619222442
+- **主营业务**：废旧物资回收、工程拆除、物资买卖
+
+---
+
+## 待办任务
+
+### 一、服务项目详情页
+- [ ] 为每个服务项目创建独立详情页面
+- [ ] 点击服务项目右上角跳转按钮进入详情页
+- [ ] 详情页展示服务详细介绍、图片画廊、联系方式
+
+### 二、图片资源完善
+- [ ] 替换Hero轮播图为公司实际场景图片
+- [ ] 更新团队成员真实头像照片
+- [ ] 添加合作伙伴实际品牌logo
+- [ ] 完善服务项目相关图片素材
+- [ ] 优化图片大小和格式，提升加载速度
+
+### 三、桌面端侧边栏功能
+- [ ] 左侧增加"企业档案"悬浮入口
+- [ ] 右侧增加"百度搜一搜"超链接入口
+- [ ] 实现侧边栏的展开/收起交互效果
+- [ ] 适配不同屏幕尺寸的显示效果
+
+### 四、页脚区域完善
+- [ ] 完善页脚公司信息展示
+- [ ] 添加快速导航链接
+- [ ] 添加备案信息和版权说明
+- [ ] 添加社交媒体链接（微信公众号等）
+- [ ] 优化页脚在移动端的排版布局
+
+### 五、其他优化
+- [ ] SEO优化：添加meta标签、结构化数据
+- [ ] 性能优化：图片懒加载、代码压缩
+- [ ] 添加loading动画效果
+- [ ] 完善无障碍访问支持
+
+---
+
+## License
+
+MIT License
