@@ -760,7 +760,7 @@
 
     <!-- main js -->
     <script type="module" src="/src/main.js"></script>
-    <script>
+    <script type="module">
       function copyPhone() {
         const phone = '13619222442';
         navigator.clipboard.writeText(phone).then(() => {
@@ -1031,7 +1031,8 @@
         }
         // 根据展开状态显示不同数量的图片 (收起1x3=3张，展开3x3=9张)
         const imageCount = isExpanded ? 9 : 3;
-        const imagesHtml = Array(imageCount).fill(`<div class="h-full"><img src="/assets/content/content.jpg" alt="${service.name}" class="w-full h-full object-cover rounded-lg" /></div>`).join('');
+        const contentImg = new URL('/assets/content/content.jpg', import.meta.url).href;
+        const imagesHtml = Array(imageCount).fill(`<div class="h-full"><img src="${contentImg}" alt="${service.name}" class="w-full h-full object-cover rounded-lg" /></div>`).join('');
         imagesDiv.innerHTML = imagesHtml;
 
         // 同步高度
@@ -1103,6 +1104,21 @@
       // 初始化后同步一次
       setTimeout(syncServiceImageHeight, 200);
       window.addEventListener('resize', syncServiceImageHeight);
+
+      // 将函数绑定到window，以便HTML onclick调用
+      window.copyPhone = copyPhone;
+      window.togglePhone = togglePhone;
+      window.showPhone = showPhone;
+      window.hidePhone = hidePhone;
+      window.toggleWechat = toggleWechat;
+      window.showWechat = showWechat;
+      window.hideWechat = hideWechat;
+      window.showBackToTop = showBackToTop;
+      window.hideBackToTop = hideBackToTop;
+      window.toggleServices = toggleServices;
+      window.selectService = selectService;
+      window.prevImage = prevImage;
+      window.nextImage = nextImage;
     </script>
     </div>
   </body>
