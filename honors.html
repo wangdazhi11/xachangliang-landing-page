@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>荣誉资质 - 西安长亮商贸有限公司</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100" data-page="honors">
+    <!-- 右侧固定图标 -->
+    <div id="sidebar" class="fixed right-6 top-[55%] z-50 flex flex-col gap-4">
+      <div class="relative">
+        <a href="#home" onmouseenter="showBackToTop()" onmouseleave="hideBackToTop()" onclick="showBackToTop(); setTimeout(hideBackToTop, 500); window.scrollTo({top:0, behavior:'smooth'}); return false;" class="w-12 h-12 bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="back-to-top-icon" class="ri-arrow-up-line text-2xl"></i>
+        </a>
+        <div id="back-to-top-content" class="absolute right-full top-0 mr-2 bg-white text-primary rounded-lg shadow-xl px-3 py-3 hidden flex items-center justify-center">
+          <span class="whitespace-nowrap text-sm">回到顶部</span>
+        </div>
+      </div>
+      <div class="relative">
+        <div onclick="togglePhone()" onmouseenter="showPhone()" onmouseleave="hidePhone()" class="w-12 h-12 bg-green-600 flex items-center justify-center text-white hover:bg-green-700 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="phone-icon" class="ri-phone-line text-2xl"></i>
+        </div>
+        <div id="phone-content" class="absolute right-full top-0 mr-2 bg-white rounded-lg shadow-xl p-4 whitespace-nowrap hidden">
+          <p class="text-green-600 font-bold text-lg">13619222442</p>
+          <a href="tel:13619222442" class="text-sm text-blue-600 hover:underline">点击拨打</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div onclick="toggleWechat()" onmouseenter="showWechat()" onmouseleave="hideWechat()" class="w-12 h-12 bg-green-500 flex items-center justify-center text-white hover:bg-green-600 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="wechat-icon" class="ri-wechat-fill text-2xl"></i>
+        </div>
+        <div id="wechat-content" class="absolute right-full top-0 mr-2 bg-white rounded-lg shadow-xl p-4 hidden min-w-[200px]">
+          <p class="text-center text-sm text-gray-600 mb-2">扫码添加微信</p>
+          <img src="/assets/hero/side/vx.png" alt="微信二维码" class="w-48 h-auto object-contain" />
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <header class="sticky top-0 shadow-xl z-30 bg-white w-full">
+      <div class="w-full flex items-center justify-between h-full py-2 px-3 lg:px-8">
+        <div class="flex items-center gap-2 lg:gap-6 flex-shrink-0">
+          <a href="/index.html">
+            <img class="h-8 lg:max-h-[120px]" src="/assets/logo1.png" alt="logo" />
+          </a>
+          <div class="flex items-center gap-2 lg:gap-8">
+            <a href="tel:13619222442" class="flex lg:hidden items-center gap-1 border-l-2 border-accent pl-2">
+              <img src="/assets/phone.jpeg" alt="phone" class="w-4 h-4 object-contain" />
+              <div class="flex flex-col">
+                <span class="text-[8px] text-primary">服务热线</span>
+                <span class="text-xs font-bold text-blue-600">13619222442</span>
+              </div>
+            </a>
+            <div class="hidden xl:flex items-center gap-8">
+              <div class="flex flex-col">
+                <h3 class="text-lg font-primary text-primary leading-tight whitespace-nowrap">专业废旧物资回收公司</h3>
+                <p class="text-sm text-secondary font-secondary whitespace-nowrap">主营：物资回收、废品回收、二手机械设备回收</p>
+              </div>
+              <div class="flex items-center gap-2 border-l-2 border-accent pl-4">
+                <img src="/assets/phone.jpeg" alt="phone" class="w-6 h-6 object-contain" />
+                <div class="flex flex-col">
+                  <span class="text-sm text-primary font-secondary">服务热线</span>
+                  <span class="text-lg font-bold text-blue-600 font-secondary">13619222442</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <div class="cursor-pointer lg:hidden h-8 lg:h-full" id="nav_trigger_btn">
+            <i class="ri-menu-line text-4xl text-primary"></i>
+          </div>
+          <ul class="fixed w-full h-0 p-0 bg-white overflow-hidden top-[70px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
+            <li><a class="text-lg p-4 hover:text-primary" href="/index.html" data-page="home">网站主页</a></li>
+            <li><a class="text-lg p-4 hover:text-primary" href="/about.html" data-page="about">长亮简介</a></li>
+            <li><a class="text-lg p-4 hover:text-primary" href="/projects.html" data-page="projects">回收项目</a></li>
+            <li><a class="text-lg p-4 hover:text-primary" href="/cases.html" data-page="cases">回收案例</a></li>
+            <li><a class="text-lg p-4 hover:text-primary" href="/honors.html" data-page="honors">荣誉资质</a></li>
+            <li><a class="text-lg p-4 hover:text-primary" href="/contact.html" data-page="contact">联系我们</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- 缩放包装器 -->
+    <div class="scale-wrapper">
+    <main class="main-wrapper">
+    <!-- hero -->
+    <section id="home" class="hero relative z-20">
+      <div class="overflow-hidden">
+        <div class="hero-slider flex transition-transform duration-800 ease-in-out">
+          <img src="/assets/hero/bg1.png" alt="hero background" class="w-full flex-shrink-0 object-cover" />
+          <img src="/assets/hero/bg2.png" alt="hero background" class="w-full flex-shrink-0 object-cover" />
+          <img src="/assets/hero/bg1.png" alt="hero background" class="w-full flex-shrink-0 object-cover" />
+        </div>
+      </div>
+      <div class="absolute inset-0 container mx-auto flex items-center justify-center xl:justify-start">
+        <div class="hero__text w-full max-w-[567px] px-4 flex flex-col items-center text-center xl:text-left lg:items-start xl:ml-10">
+          <h1 class="artistic-title mb-3 lg:mb-8 px-3 lg:px-6 py-1 lg:py-4 text-2xl sm:text-4xl lg:text-7xl font-primary">专业资源回收</h1>
+          <p class="mb-3 lg:mb-8 text-black text-sm lg:text-xl font-secondary max-w-xl px-2">专门致力于物资废品回收、电器电缆回收、二手机械设备回收、空调回收等大型机械设备回收</p>
+          <button onclick="copyPhone()" class="btn btn-primary mx-auto xl:mx-0 cursor-pointer" title="点击复制电话号码">
+            <span id="phone-text">联系电话：13619222442</span>
+            <i class="ri-arrow-right-line text-accent"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+      <section class="py-16 px-4">
+        <div class="max-w-[1400px] mx-auto">
+          <h2 class="text-3xl xl:text-5xl font-bold text-primary text-center mb-12">荣誉资质</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-xl p-6 text-center">
+              <div class="w-full h-48 bg-accent-secondary rounded-xl mb-4 flex items-center justify-center">
+                <i class="ri-award-line text-6xl text-accent"></i>
+              </div>
+              <h3 class="text-lg font-bold text-primary mb-2">营业执照</h3>
+              <p class="text-secondary text-sm">合法注册经营，资质齐全</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-6 text-center">
+              <div class="w-full h-48 bg-accent-secondary rounded-xl mb-4 flex items-center justify-center">
+                <i class="ri-shield-check-line text-6xl text-accent"></i>
+              </div>
+              <h3 class="text-lg font-bold text-primary mb-2">环保资质</h3>
+              <p class="text-secondary text-sm">符合环保要求，合规经营</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-6 text-center">
+              <div class="w-full h-48 bg-accent-secondary rounded-xl mb-4 flex items-center justify-center">
+                <i class="ri-medal-line text-6xl text-accent"></i>
+              </div>
+              <h3 class="text-lg font-bold text-primary mb-2">行业荣誉</h3>
+              <p class="text-secondary text-sm">多年行业经验，口碑良好</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- footer -->
+    <footer class="footer mt-[40px] xl:mt-[80px] relative z-20">
+      <div class="container mx-auto px-0">
+        <div class="flex flex-row flex-wrap justify-center gap-4 xl:flex-nowrap xl:gap-[100px] xl:justify-center xl:mb-[80px]">
+          <div class="footer__item">
+            <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">快速导航</h3>
+            <ul class="flex flex-col gap-0 xl:gap-4">
+              <li><a class="xl:text-[20px]" href="/about.html">长亮简介</a></li>
+              <li><a class="xl:text-[20px]" href="/projects.html">回收项目</a></li>
+              <li><a class="xl:text-[20px]" href="/cases.html">回收案例</a></li>
+              <li><a class="xl:text-[20px]" href="/honors.html">荣誉资质</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">联系</h3>
+            <div class="flex flex-col gap-1.5 xl:gap-2">
+              <p class="xl:text-[22px]">业务对接：王先生</p>
+              <p class="xl:text-[22px]">咨询热线：13619222442</p>
+              <p class="xl:text-[22px]">公司地址：西安市未央区阳光北郡1号</p>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">扫一扫关注微信</h3>
+            <img src="/assets/hero/side/vx.png" alt="微信二维码" class="w-16 xl:w-32 h-auto object-contain mx-auto xl:mx-0" />
+          </div>
+        </div>
+      </div>
+      <p class="footer_copyright text-center text-[10px] xl:text-lg py-4 xl:py-6 bg-white xl:border-t">
+        Copyright &copy; 西安长亮商贸有限公司 2026. All rights reserved
+      </p>
+    </footer>
+    </main>
+    </div>
+    <script type="module" src="/src/pages/subpage.js"></script>
+  </body>
+</html>

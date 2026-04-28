@@ -164,6 +164,21 @@ h6 {
   scroll-behavior: smooth;
 } */
 
+/* 移动端footer链接字号覆盖全局a的20px */
+@media (max-width: 1023px) {
+  .footer a {
+    font-size: 10px !important;
+    line-height: 1.2;
+  }
+  .footer p {
+    font-size: 10px !important;
+    line-height: 1.2;
+  }
+  .footer li {
+    line-height: 1.2;
+  }
+}
+
 /* 服务项目列表样式 */
 .service-item {
   font-size: 18px;

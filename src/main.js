@@ -1,101 +1,65 @@
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
+import { initNav } from './shared/nav.js';
+import { initHeroCarousel } from './shared/hero-carousel.js';
+import { initSidebar } from './shared/sidebar.js';
+import { initScrollReveal } from './shared/scroll-reveal.js';
+import { copyPhone } from './shared/copy-phone.js';
 
-const navTriggerBtn = document.querySelector("#nav_trigger_btn");
-const navMenu = document.querySelector("#nav_menu");
-const navLinks = document.querySelectorAll("#nav_menu a"); // Select all nav links
+// 绑定全局函数
+window.copyPhone = copyPhone;
 
-// Toggle nav menu when clicking the nav button
-navTriggerBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-is-open");
-  if (navMenu.classList.contains("nav-is-open")) {
-    navMenu.style.height = "350px"; // Expand the menu when opened
-  } else {
-    navMenu.style.height = "0px"; // Collapse the menu when closed
-  }
-});
+// 初始化共享模块
+initNav();
+initHeroCarousel();
+initSidebar();
+initScrollReveal();
 
-// Close the menu and smooth scroll to section on link click
-navLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
-    const targetSection = document.querySelector(link.getAttribute("href"));
-
-    // Smooth scroll to the section
-    targetSection.scrollIntoView({ behavior: "smooth" });
+// swiper - 团队成员轮播（仅主页）
+const swiperEl = document.querySelector(".swiper");
+if (swiperEl) {
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    modules: [Autoplay],
+    autoplay: {
+      delay: 500,
+      disableOnInteraction: false,
+      reverseDirection: false,
+      stopOnLastSlide: false,
+    },
+    freeMode: {
+      enabled: true,
+      sticky: false,
+    },
+    speed: 4000,
+    simulateTouch: false,
+    allowTouchMove: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    slidesPerView: 3,
+    spaceBetween: 20,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      960: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
   });
-});
 
-// swiper
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  modules: [Autoplay],
-  autoplay: {
-    delay: 500,
-    disableOnInteraction: false,
-    reverseDirection: false,
-    stopOnLastSlide: false,
-  },
-  freeMode: {
-    enabled: true,
-    sticky: false,
-  },
-  speed: 4000,
-  simulateTouch: false,
-  allowTouchMove: false,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  slidesPerView: 3,
-  spaceBetween: 20,
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    960: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-// 鼠标悬停停止自动播放
-const swiperContainer = document.querySelector(".swiper");
-swiperContainer.addEventListener("mouseenter", () => {
-  swiper.autoplay.stop();
-});
-swiperContainer.addEventListener("mouseleave", () => {
-  swiper.autoplay.start();
-});
-
-// scroll reveal animation using Intersection Observer
-const observerOptions = {
-  root: null,
-  rootMargin: "0px 0px -50px 0px",
-  threshold: 0.1
-};
-
-const revealCallback = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const el = entry.target;
-      const delay = el.dataset.revealDelay || 0;
-      setTimeout(() => {
-        el.classList.add("revealed");
-      }, delay);
-      observer.unobserve(el);
-    }
+  // 鼠标悬停停止自动播放
+  const swiperContainer = document.querySelector(".swiper");
+  swiperContainer.addEventListener("mouseenter", () => {
+    swiper.autoplay.stop();
   });
-};
-
-const revealObserver = new IntersectionObserver(revealCallback, observerOptions);
-
-document.querySelectorAll(".hero__text, .steps__step__1, .steps__step__2, .steps__step__3, .about__text, .about__img, .testimonial__bg, .testimonial__title, .testimonial__slider, .brands__img, .work__title, .work__subtitle, .work__grid, .stats, .stats__item, .news__title, .news__subtitle, .news__item, .contact__container, .contact__text, .footer__item, .footer__copyrights").forEach((el, index) => {
-  el.classList.add("reveal");
-  el.dataset.revealDelay = index * 50;
-  revealObserver.observe(el);
-});
+  swiperContainer.addEventListener("mouseleave", () => {
+    swiper.autoplay.start();
+  });
+}

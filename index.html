@@ -14,15 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href=":/https/fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.1.3/swiper-bundle.min.css" />
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100" data-page="home">
     <!-- 右侧固定图标 -->
-    <div id="sidebar" class="fixed right-0 top-[55%] z-50 flex flex-col gap-4">
+    <div id="sidebar" class="fixed right-6 top-[55%] z-50 flex flex-col gap-4">
       <!-- 箭头 -->
       <div class="relative">
         <a href="#home" onmouseenter="showBackToTop()" onmouseleave="hideBackToTop()" onclick="showBackToTop(); setTimeout(hideBackToTop, 500); window.scrollTo({top:0, behavior:'smooth'}); return false;" class="w-12 h-12 bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors rounded-l-lg shadow-lg cursor-pointer">
@@ -107,28 +107,22 @@
             id="nav_menu"
           >
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#home">网站主页</a>
+              <a class="text-lg p-4 hover:text-primary" href="/index.html" data-page="home">网站主页</a>
             </li>
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#about">长亮简介</a>
+              <a class="text-lg p-4 hover:text-primary" href="/about.html" data-page="about">长亮简介</a>
             </li>
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#testimonials"
-                >回收项目</a
-              >
+              <a class="text-lg p-4 hover:text-primary" href="/projects.html" data-page="projects">回收项目</a>
             </li>
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#our_work"
-                >回收案例</a
-              >
+              <a class="text-lg p-4 hover:text-primary" href="/cases.html" data-page="cases">回收案例</a>
             </li>
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#news">荣誉资质</a>
+              <a class="text-lg p-4 hover:text-primary" href="/honors.html" data-page="honors">荣誉资质</a>
             </li>
             <li>
-              <a class="text-lg p-4 hover:text-primary" href="#contact"
-                >联系我们</a
-              >
+              <a class="text-lg p-4 hover:text-primary" href="/contact.html" data-page="contact">联系我们</a>
             </li>
           </ul>
         </nav>
@@ -694,78 +688,38 @@
       </section>
 
       <!-- footer -->
-      <footer class="footer mt-[80px] xl:mt-[150px] relative z-20">
+      <footer class="footer mt-[40px] xl:mt-[80px] relative z-20">
         <div class="container mx-auto px-0">
-          <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
-            <div
-              class="footer__item w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
-            >
-              <!-- logo -->
-              <a class="flex justify-center xl:justify-start mb-8" href="#">
-                <img src="/assets/logo.svg" alt="logo_image" />
-              </a>
-              <p class="mb-8 text-xl">
-                It is a long established fact that a reader will be distracted
-                lookings.
-              </p>
-              <!-- socials -->
-              <ul
-                class="text-primary w-full flex justify-center gap-[54px] xl:justify-start"
-              >
-                <li>
-                  <a href="#"><i class="ri-facebook-fill"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="ri-twitter-fill"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="ri-linkedin-fill"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="ri-instagram-fill"></i></a>
-                </li>
+          <div class="flex flex-row flex-wrap justify-center gap-4 xl:flex-nowrap xl:gap-[100px] xl:justify-center xl:mb-[80px]">
+            <!-- pages -->
+            <div class="footer__item">
+              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">快速导航</h3>
+              <ul class="flex flex-col gap-0 xl:gap-4">
+                <li><a class="xl:text-[20px]" href="/about.html">长亮简介</a></li>
+                <li><a class="xl:text-[20px]" href="/projects.html">回收项目</a></li>
+                <li><a class="xl:text-[20px]" href="/cases.html">回收案例</a></li>
+                <li><a class="xl:text-[20px]" href="/honors.html">荣誉资质</a></li>
               </ul>
             </div>
-            <div
-              class="flex flex-1 flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end"
-            >
-              <!-- pages -->
-              <div class="footer__item">
-                <h3 class="h3 mb-3">Pages</h3>
-                <ul class="flex flex-col gap-4">
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">Testimonials</a></li>
-                  <li><a href="">Our Work</a></li>
-                  <li><a href="">News</a></li>
-                  <li><a href="">Contact</a></li>
-                </ul>
-              </div>
 
-              <!-- services -->
-              <div class="footer__item">
-                <h3 class="h3 mb-3">Services</h3>
-                <ul class="flex flex-col gap-4">
-                  <li><a href="#">Kitchen</a></li>
-                  <li><a href="#">Living Area</a></li>
-                  <li><a href="#">Bathroom</a></li>
-                  <li><a href="#">Bedroom</a></li>
-                </ul>
+            <!-- contact -->
+            <div class="footer__item">
+              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">联系</h3>
+              <div class="flex flex-col gap-1 xl:gap-2">
+                <p class="xl:text-[22px]">业务对接：王先生</p>
+                <p class="xl:text-[22px]">咨询热线：13619222442</p>
+                <p class="xl:text-[22px]">公司地址：西安市未央区阳光北郡1号</p>
               </div>
-
-              <!-- contact -->
-              <div class="footer__item">
-                <h3 class="h3 mb-3">Contact</h3>
-                <div>
-                  <p>55 East Birchwood Ave. Brooklyn, New York</p>
-                  <p>contact@luxespace</p>
-                  <p>(123) 456-7890</p>
-                </div>
-              </div>
+            </div>
+            <!-- wechat -->
+            <div class="footer__item">
+              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">扫一扫关注微信</h3>
+              <img src="/assets/hero/side/vx.png" alt="微信二维码" class="w-16 xl:w-32 h-auto object-contain mx-auto xl:mx-0" />
             </div>
           </div>
         </div>
         <p
-          class="footer_copyright text-center text-lg py-10 bg-white xl:border-t"
+          class="footer_copyright text-center text-[10px] xl:text-lg py-4 xl:py-6 bg-white xl:border-t"
         >
           Copyright &copy; 西安长亮商贸有限公司 2026. All rights reserved
         </p>
@@ -777,182 +731,7 @@
     <!-- main js -->
     <script type="module" src="/src/main.js"></script>
     <script type="module">
-      function copyPhone() {
-        const phone = '13619222442';
-        navigator.clipboard.writeText(phone).then(() => {
-          const btn = document.querySelector('.btn-primary');
-          const originalText = btn.innerHTML;
-          btn.innerHTML = '<i class="ri-check-line text-accent"></i> 已复制到剪贴板';
-          setTimeout(() => {
-            btn.innerHTML = originalText;
-          }, 2000);
-        }).catch(err => {
-          console.error('复制失败:', err);
-        });
-      }
-
-      let phoneSticky = false;
-      let wechatSticky = false;
-
-      function togglePhone() {
-        const phoneContent = document.getElementById('phone-content');
-        const wechatContent = document.getElementById('wechat-content');
-        const phoneIcon = document.getElementById('phone-icon');
-
-        // 关闭微信内容并重置状态
-        wechatContent.classList.add('hidden');
-        wechatSticky = false;
-        document.getElementById('wechat-icon').classList.remove('ri-close-line');
-        document.getElementById('wechat-icon').classList.add('ri-wechat-fill');
-
-        // 切换电话内容
-        phoneSticky = !phoneSticky;
-        phoneContent.classList.toggle('hidden');
-        if (phoneContent.classList.contains('hidden')) {
-          phoneIcon.classList.remove('ri-close-line');
-          phoneIcon.classList.add('ri-phone-line');
-          phoneSticky = false;
-        } else {
-          phoneIcon.classList.remove('ri-phone-line');
-          phoneIcon.classList.add('ri-close-line');
-        }
-      }
-
-      function showPhone() {
-        clearTimeout(window.phoneHideTimer);
-        const phoneContent = document.getElementById('phone-content');
-        const phoneIcon = document.getElementById('phone-icon');
-        phoneContent.classList.remove('hidden');
-        phoneIcon.classList.remove('ri-phone-line');
-        phoneIcon.classList.add('ri-close-line');
-      }
-
-      function hidePhone() {
-        if (!phoneSticky) {
-          window.phoneHideTimer = setTimeout(() => {
-            const phoneContent = document.getElementById('phone-content');
-            const phoneIcon = document.getElementById('phone-icon');
-            phoneContent.classList.add('hidden');
-            phoneIcon.classList.remove('ri-close-line');
-            phoneIcon.classList.add('ri-phone-line');
-          }, 300);
-        }
-      }
-
-      function toggleWechat() {
-        const phoneContent = document.getElementById('phone-content');
-        const wechatContent = document.getElementById('wechat-content');
-        const wechatIcon = document.getElementById('wechat-icon');
-
-        // 关闭电话内容并重置状态
-        phoneContent.classList.add('hidden');
-        phoneSticky = false;
-        document.getElementById('phone-icon').classList.remove('ri-close-line');
-        document.getElementById('phone-icon').classList.add('ri-phone-line');
-
-        // 切换微信内容
-        wechatSticky = !wechatSticky;
-        wechatContent.classList.toggle('hidden');
-        if (wechatContent.classList.contains('hidden')) {
-          wechatIcon.classList.remove('ri-close-line');
-          wechatIcon.classList.add('ri-wechat-fill');
-          wechatSticky = false;
-        } else {
-          wechatIcon.classList.remove('ri-wechat-fill');
-          wechatIcon.classList.add('ri-close-line');
-        }
-      }
-
-      function showWechat() {
-        clearTimeout(window.wechatHideTimer);
-        const wechatContent = document.getElementById('wechat-content');
-        const wechatIcon = document.getElementById('wechat-icon');
-        wechatContent.classList.remove('hidden');
-        wechatIcon.classList.remove('ri-wechat-fill');
-        wechatIcon.classList.add('ri-close-line');
-      }
-
-      function hideWechat() {
-        if (!wechatSticky) {
-          window.wechatHideTimer = setTimeout(() => {
-            const wechatContent = document.getElementById('wechat-content');
-            const wechatIcon = document.getElementById('wechat-icon');
-            wechatContent.classList.add('hidden');
-            wechatIcon.classList.remove('ri-close-line');
-            wechatIcon.classList.add('ri-wechat-fill');
-          }, 300);
-        }
-      }
-
-      function toggleBackToTop() {
-        const phoneContent = document.getElementById('phone-content');
-        const wechatContent = document.getElementById('wechat-content');
-        const backToTopContent = document.getElementById('back-to-top-content');
-        const backToTopIcon = document.getElementById('back-to-top-icon');
-
-        // 关闭电话和微信内容
-        phoneContent.classList.add('hidden');
-        wechatContent.classList.add('hidden');
-        document.getElementById('phone-icon').classList.remove('ri-close-line');
-        document.getElementById('phone-icon').classList.add('ri-phone-line');
-        document.getElementById('wechat-icon').classList.remove('ri-close-line');
-        document.getElementById('wechat-icon').classList.add('ri-wechat-fill');
-
-        // 切换回到顶部内容
-        backToTopContent.classList.toggle('hidden');
-        if (backToTopContent.classList.contains('hidden')) {
-          backToTopIcon.classList.remove('ri-close-line');
-          backToTopIcon.classList.add('ri-arrow-up-line');
-        } else {
-          backToTopIcon.classList.remove('ri-arrow-up-line');
-          backToTopIcon.classList.add('ri-close-line');
-        }
-      }
-
-      let backToTopTimer;
-      function showBackToTop() {
-        clearTimeout(backToTopTimer);
-        const backToTopContent = document.getElementById('back-to-top-content');
-        backToTopContent.classList.remove('hidden');
-      }
-      function hideBackToTop() {
-        backToTopTimer = setTimeout(() => {
-          const backToTopContent = document.getElementById('back-to-top-content');
-          backToTopContent.classList.add('hidden');
-        }, 1000);
-      }
-
-      // Hero轮播图自动滑动（始终右滑，无限循环）
-      let currentSlide = 0;
-      const slider = document.querySelector('.hero-slider');
-      const totalSlides = slider.children.length;
-      const realSlideCount = totalSlides - 1; // 减去克隆的那张
-      let sliding = false;
-
-      function slideNext() {
-        if (sliding) return;
-        sliding = true;
-
-        currentSlide++;
-        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-        setTimeout(() => {
-          if (currentSlide >= realSlideCount) {
-            // 回到真正的第一张，无动画跳转
-            currentSlide = 0;
-            slider.style.transition = 'none';
-            slider.style.transform = 'translateX(0)';
-            // 强制重绘
-            slider.offsetHeight;
-            slider.style.transition = 'transform 1s ease-in-out';
-          }
-          sliding = false;
-        }, 1000);
-      }
-
-      setInterval(slideNext, 4000);
-
-      // 回收服务项目数据
+      // 回收服务项目数据（仅主页）
       const services = [
         { id: 'tong', name: '西安废铜回收', icon: 'riCopperCoinLine', desc: '专业回收各类废铜，包括黄铜、紫铜、电解铜等高价回收' },
         { id: 'dianlan', name: '西安废旧电缆回收', icon: 'riCableLine', desc: '回收各种规格型号的废旧电线电缆，量大从优' },
@@ -979,7 +758,7 @@
       let currentService = null;
       let currentImageIndex = 0;
       let isExpanded = false;
-      const COLLAPSED_COUNT = 11; // 西安铝合金回收之后折叠
+      const COLLAPSED_COUNT = 11;
 
       function toggleServices() {
         isExpanded = !isExpanded;
@@ -1010,7 +789,7 @@
         `).join('');
 
         if (displayServices.length > 0) {
-          selectService(isExpanded ? 0 : 0);
+          selectService(0);
         }
       }
 
@@ -1019,7 +798,6 @@
         currentService = service;
         currentImageIndex = 0;
 
-        // 更新列表样式
         document.querySelectorAll('.service-item').forEach((el, i) => {
           if (i === index) {
             el.classList.add('bg-white', 'shadow-md');
@@ -1028,30 +806,24 @@
           }
         });
 
-        // 更新标题
         document.getElementById('service-title').innerHTML = `
           <i class="${service.icon} text-accent text-[9px] lg:text-base"></i>
           <span>${service.name}</span>
         `;
 
-        // 根据展开状态设置不同的布局
         const imagesDiv = document.getElementById('service-images');
         if (isExpanded) {
-          // 展开状态：3列布局 (3x3)
           imagesDiv.className = 'grid grid-cols-3 gap-3';
           imagesDiv.style.gridTemplateRows = 'repeat(3, 1fr)';
         } else {
-          // 收起状态：3列1行布局 (1x3)，让图片占满整行高度
           imagesDiv.className = 'grid grid-cols-3 gap-3';
           imagesDiv.style.gridTemplateRows = '1fr';
         }
-        // 根据展开状态显示不同数量的图片 (收起1x3=3张，展开3x3=9张)
         const imageCount = isExpanded ? 9 : 3;
         const contentImg = new URL('/assets/content/content.jpg', import.meta.url).href;
         const imagesHtml = Array(imageCount).fill(`<div class="h-full"><img src="${contentImg}" alt="${service.name}" class="w-full h-full object-cover rounded-lg" /></div>`).join('');
         imagesDiv.innerHTML = imagesHtml;
 
-        // 同步高度
         syncServiceImageHeight();
       }
 
@@ -1075,10 +847,8 @@
         });
       }
 
-      // 初始化服务列表
       initServices();
 
-      // 同步两侧容器高度一致（以左边为基准）
       function syncServiceImageHeight() {
         const leftContainer = document.querySelector('#service-left > div');
         const rightContainer = document.querySelector('#service-right > div');
@@ -1087,50 +857,33 @@
 
         if (!leftContainer || !rightContainer || !imagesDiv) return;
 
-        // 重置高度为auto以获取真实高度
         leftContainer.style.height = 'auto';
         rightContainer.style.height = 'auto';
         imagesDiv.style.height = 'auto';
         imagesDiv.style.overflow = 'visible';
 
-        // 强制重排
         void leftContainer.offsetHeight;
 
-        // 以左边容器高度为基准
         const leftHeight = leftContainer.offsetHeight;
-
-        // 设置右边容器高度等于左边
         rightContainer.style.height = leftHeight + 'px';
 
-        // 计算图片矩阵高度
         const isMobile = window.innerWidth < 1024;
         const titleHeight = titleDiv ? titleDiv.offsetHeight : 0;
-        const titleMargin = isMobile ? 12 : 24; // mb-3 or mb-6
+        const titleMargin = isMobile ? 12 : 24;
 
         const imagesHeight = leftHeight - titleHeight - titleMargin;
         if (imagesHeight > 0) {
           imagesDiv.style.height = imagesHeight + 'px';
-          // 展开时图片超出则滚动
           if (isExpanded) {
             imagesDiv.style.overflowY = 'auto';
           }
         }
       }
 
-      // 初始化后同步一次
       setTimeout(syncServiceImageHeight, 200);
       window.addEventListener('resize', syncServiceImageHeight);
 
-      // 将函数绑定到window，以便HTML onclick调用
-      window.copyPhone = copyPhone;
-      window.togglePhone = togglePhone;
-      window.showPhone = showPhone;
-      window.hidePhone = hidePhone;
-      window.toggleWechat = toggleWechat;
-      window.showWechat = showWechat;
-      window.hideWechat = hideWechat;
-      window.showBackToTop = showBackToTop;
-      window.hideBackToTop = hideBackToTop;
+      // 绑定服务相关函数到window
       window.toggleServices = toggleServices;
       window.selectService = selectService;
       window.prevImage = prevImage;

@@ -4,6 +4,16 @@ export default defineConfig({
   root: '.',
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        about: './about.html',
+        projects: './projects.html',
+        cases: './cases.html',
+        honors: './honors.html',
+        contact: './contact.html',
+      }
+    }
   },
   server: {
     port: 3000,

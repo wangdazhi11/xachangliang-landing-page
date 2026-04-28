@@ -1,0 +1,283 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - generic [ref=e5]: 
+    - generic [ref=e8] [cursor=pointer]: 
+    - generic [ref=e11] [cursor=pointer]: 
+  - banner [ref=e12]:
+    - generic [ref=e13]:
+      - link "logo" [ref=e15] [cursor=pointer]:
+        - /url: "#"
+        - img "logo" [ref=e16]
+      - navigation [ref=e17]:
+        - text: 
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "网站主页" [ref=e20] [cursor=pointer]:
+              - /url: /index.html
+          - listitem [ref=e21]:
+            - link "长亮简介" [ref=e22] [cursor=pointer]:
+              - /url: /about.html
+          - listitem [ref=e23]:
+            - link "回收项目" [ref=e24] [cursor=pointer]:
+              - /url: /projects.html
+          - listitem [ref=e25]:
+            - link "回收案例" [ref=e26] [cursor=pointer]:
+              - /url: /cases.html
+          - listitem [ref=e27]:
+            - link "荣誉资质" [ref=e28] [cursor=pointer]:
+              - /url: /honors.html
+          - listitem [ref=e29]:
+            - link "联系我们" [ref=e30] [cursor=pointer]:
+              - /url: /contact.html
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e35]:
+        - img "hero background" [ref=e36]
+        - img "hero background" [ref=e37]
+        - img "hero background" [ref=e38]
+      - generic [ref=e40]:
+        - heading "专业资源回收" [level=1] [ref=e41]
+        - paragraph [ref=e42]: 专门致力于物资废品回收、电器电缆回收、二手机械设备回收、空调回收等大型机械设备回收
+        - button "联系电话：13619222442 " [ref=e43] [cursor=pointer]:
+          - generic [ref=e44]: 联系电话：13619222442
+          - generic [ref=e45]: 
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - heading " 服务项目" [level=3] [ref=e51]:
+          - generic [ref=e52]: 
+          - generic [ref=e53]: 服务项目
+        - generic [ref=e54]:
+          - generic [ref=e56] [cursor=pointer]: 废铜回收
+          - generic [ref=e58] [cursor=pointer]: 废旧电缆回收
+          - generic [ref=e60] [cursor=pointer]: 高压电缆回收
+          - generic [ref=e62] [cursor=pointer]: 光伏电缆回收
+          - generic [ref=e64] [cursor=pointer]: 通信电缆回收
+          - generic [ref=e66] [cursor=pointer]: 二手电缆回收
+          - generic [ref=e68] [cursor=pointer]: 工地电线回收
+          - generic [ref=e70] [cursor=pointer]: 变压器回收
+          - generic [ref=e72] [cursor=pointer]: 废铝回收
+          - generic [ref=e74] [cursor=pointer]: 铝合金回收
+          - generic [ref=e76] [cursor=pointer]: 不锈钢回收
+        - button "查看更多 " [ref=e78] [cursor=pointer]:
+          - generic [ref=e79]: 查看更多
+          - generic [ref=e80]: 
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - heading "西安废铜回收" [level=3] [ref=e84]:
+            - generic [ref=e85]: 西安废铜回收
+          - generic [ref=e86]:
+            - button "" [ref=e87] [cursor=pointer]:
+              - generic [ref=e88]: 
+            - button "" [ref=e89] [cursor=pointer]:
+              - generic [ref=e90]: 
+        - generic [ref=e91]:
+          - img "西安废铜回收" [ref=e93]
+          - img "西安废铜回收" [ref=e95]
+          - img "西安废铜回收" [ref=e97]
+  - generic [ref=e100]:
+    - img "about_image" [ref=e102]
+    - heading "About us" [level=2] [ref=e103]
+    - heading "公司简介" [level=3] [ref=e104]
+    - generic [ref=e105]:
+      - paragraph [ref=e106]: 西安长亮商贸有限公司成立于2016年。简单来说，我们主要做三大块业务：废旧物资回收、工程拆除和各类物资买卖。
+      - paragraph [ref=e107]: 我们在西安干这行很多年了，经验丰富。只要您有废旧电线电缆、铜铝不锈钢、稀缺金属，或者工厂淘汰下来的机电设备，我们都长期高价上门回收。此外，我们自己就有专业的施工队，不管您是需要拆厂房钢结构、拆卸大型机器，还是做室内外装修，我们都能帮您拆卸+回收一次搞定，省心省力。
+      - paragraph [ref=e108]: 做生意，我们最讲究实在：免费上门估价，看好货直接当面结清，并且绝不泄露客户的任何信息。不管您是厂房要清空大批设备，还是库房里有少量积压，找我们准没错。长亮商贸干活利索，价格公道，期待跟您交个朋友，长期合作！
+  - main [ref=e110]:
+    - generic [ref=e113]:
+      - heading "公司成员" [level=2] [ref=e114]
+      - generic [ref=e117]:
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - img "testimonial_image" [ref=e121]
+            - generic [ref=e122]:
+              - heading "王国栋" [level=3] [ref=e123]
+              - generic [ref=e124]: 西安长亮商贸有限公司
+          - paragraph [ref=e125]: 请您相信我的专业，联系方式：13619222442
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - img "testimonial_image" [ref=e129]
+            - generic [ref=e130]:
+              - heading "苏电涛" [level=3] [ref=e131]
+              - generic [ref=e132]: 西安长亮商贸有限公司
+          - paragraph [ref=e133]: 请您相信我的专业，13649298476
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - img "testimonial_image" [ref=e137]
+            - generic [ref=e138]:
+              - heading "王大志" [level=3] [ref=e139]
+              - generic [ref=e140]: 西安长亮商贸有限公司
+          - paragraph [ref=e141]: 请您相信我的专业，15852064429
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - img "testimonial_image" [ref=e145]
+            - generic [ref=e146]:
+              - heading "王大志" [level=3] [ref=e147]
+              - generic [ref=e148]: 西安长亮商贸有限公司
+          - paragraph [ref=e149]: 请您相信我的专业，13619222442
+    - generic [ref=e151]:
+      - generic [ref=e153]:
+        - heading "招标合作伙伴" [level=2] [ref=e154]
+        - paragraph [ref=e155]: 携手共创 互利共赢
+      - generic [ref=e156]:
+        - generic [ref=e157]:
+          - img "品牌1" [ref=e158]
+          - generic [ref=e159]: 品牌1
+        - generic [ref=e160]:
+          - img "品牌2" [ref=e161]
+          - generic [ref=e162]: 品牌2
+        - generic [ref=e163]:
+          - img "品牌3" [ref=e164]
+          - generic [ref=e165]: 品牌3
+        - generic [ref=e166]:
+          - img "品牌4" [ref=e167]
+          - generic [ref=e168]: 品牌4
+        - generic [ref=e169]:
+          - img "品牌5" [ref=e170]
+          - generic [ref=e171]: 品牌5
+        - generic [ref=e172]:
+          - img "品牌6" [ref=e173]
+          - generic [ref=e174]: 品牌6
+        - generic [ref=e175]:
+          - img "品牌7" [ref=e176]
+          - generic [ref=e177]: 品牌7
+        - generic [ref=e178]:
+          - img "品牌8" [ref=e179]
+          - generic [ref=e180]: 品牌8
+        - generic [ref=e181]:
+          - img "品牌9" [ref=e182]
+          - generic [ref=e183]: 品牌9
+        - generic [ref=e184]:
+          - img "品牌10" [ref=e185]
+          - generic [ref=e186]: 品牌10
+        - generic [ref=e187]:
+          - img "品牌11" [ref=e188]
+          - generic [ref=e189]: 品牌11
+        - generic [ref=e190]:
+          - img "品牌12" [ref=e191]
+          - generic [ref=e192]: 品牌12
+        - generic [ref=e193]:
+          - img "品牌13" [ref=e194]
+          - generic [ref=e195]: 品牌13
+        - generic [ref=e196]:
+          - img "品牌14" [ref=e197]
+          - generic [ref=e198]: 品牌14
+        - generic [ref=e199]:
+          - img "品牌15" [ref=e200]
+          - generic [ref=e201]: 品牌15
+        - generic [ref=e202]:
+          - img "品牌16" [ref=e203]
+          - generic [ref=e204]: 品牌16
+    - generic [ref=e207]:
+      - generic [ref=e208]:
+        - heading "10" [level=3] [ref=e209]
+        - paragraph [ref=e210]: 年行业经验
+      - generic [ref=e211]:
+        - heading "100+" [level=3] [ref=e212]
+        - paragraph [ref=e213]: 完成项目
+      - generic [ref=e214]:
+        - heading "1000+" [level=3] [ref=e215]
+        - paragraph [ref=e216]: 满意客户
+      - generic [ref=e217]:
+        - heading "100%" [level=3] [ref=e218]
+        - paragraph [ref=e219]: 资历合规
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - heading "Follow Our Projects" [level=2] [ref=e223]
+        - paragraph [ref=e224]: It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.
+      - generic [ref=e225]:
+        - generic [ref=e226]:
+          - img "work__image1" [ref=e227]
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - heading "Modern Kitchen" [level=3] [ref=e230]
+              - paragraph [ref=e231]: Decor/Architecture
+            - button "" [ref=e232] [cursor=pointer]:
+              - generic [ref=e233]: 
+        - generic [ref=e234]:
+          - img "work__image1" [ref=e235]
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - heading "Classic Room" [level=3] [ref=e238]
+              - paragraph [ref=e239]: Decor/Architecture
+            - button "" [ref=e240] [cursor=pointer]:
+              - generic [ref=e241]: 
+        - generic [ref=e242]:
+          - img "work__image1" [ref=e243]
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - heading "Learning Space" [level=3] [ref=e246]
+              - paragraph [ref=e247]: Decor/Architecture
+            - button "" [ref=e248] [cursor=pointer]:
+              - generic [ref=e249]: 
+        - generic [ref=e250]:
+          - img "work__image1" [ref=e251]
+          - generic [ref=e252]:
+            - generic [ref=e253]:
+              - heading "Modern Living Room" [level=3] [ref=e254]
+              - paragraph [ref=e255]: Decor/Architecture
+            - button "" [ref=e256] [cursor=pointer]:
+              - generic [ref=e257]: 
+    - generic [ref=e259]:
+      - generic [ref=e260]:
+        - heading "Articles & News" [level=2] [ref=e261]
+        - paragraph [ref=e262]: It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.
+      - generic [ref=e263]:
+        - generic [ref=e264] [cursor=pointer]:
+          - img "news_image_1" [ref=e265]
+          - generic [ref=e266]:
+            - heading "Let’s Get Solution For Building Construction Work" [level=3] [ref=e267]
+            - generic [ref=e268]:
+              - paragraph [ref=e269]: 22 June, 2024
+              - button "" [ref=e270]:
+                - generic [ref=e271]: 
+        - generic [ref=e272] [cursor=pointer]:
+          - img "news_image_1" [ref=e273]
+          - generic [ref=e274]:
+            - heading "Low Cost Latest Invented Interior Designing Ideas." [level=3] [ref=e275]
+            - generic [ref=e276]:
+              - paragraph [ref=e277]: 14 March, 2024
+              - button "" [ref=e278]:
+                - generic [ref=e279]: 
+        - generic [ref=e280] [cursor=pointer]:
+          - img "news_image_1" [ref=e281]
+          - generic [ref=e282]:
+            - heading "Best For Any Office & Business Interior Solution" [level=3] [ref=e283]
+            - generic [ref=e284]:
+              - paragraph [ref=e285]: 05 April, 2024
+              - button "" [ref=e286]:
+                - generic [ref=e287]: 
+    - generic [ref=e290]:
+      - heading "Do you want to joinI Luxespace?" [level=2] [ref=e291]
+      - paragraph [ref=e292]: It is a long established fact will be distracted.
+      - button "Connect With Us " [ref=e293] [cursor=pointer]:
+        - text: Connect With Us
+        - generic [ref=e294]: 
+    - generic [ref=e295]:
+      - generic [ref=e297]:
+        - generic [ref=e298]:
+          - heading "快速导航" [level=3] [ref=e299]
+          - list [ref=e300]:
+            - listitem [ref=e301]:
+              - link "长亮简介" [ref=e302] [cursor=pointer]:
+                - /url: /about.html
+            - listitem [ref=e303]:
+              - link "回收项目" [ref=e304] [cursor=pointer]:
+                - /url: /projects.html
+            - listitem [ref=e305]:
+              - link "回收案例" [ref=e306] [cursor=pointer]:
+                - /url: /cases.html
+            - listitem [ref=e307]:
+              - link "荣誉资质" [ref=e308] [cursor=pointer]:
+                - /url: /honors.html
+        - generic [ref=e309]:
+          - heading "联系" [level=3] [ref=e310]
+          - generic [ref=e311]:
+            - paragraph [ref=e312]: 业务对接：王先生
+            - paragraph [ref=e313]: 咨询热线：13619222442
+            - paragraph [ref=e314]: 公司地址：西安市未央区阳光北郡1号
+        - generic [ref=e315]:
+          - heading "扫一扫关注微信" [level=3] [ref=e316]
+          - img "微信二维码" [ref=e317]
+      - paragraph [ref=e318]: Copyright © 西安长亮商贸有限公司 2026. All rights reserved
