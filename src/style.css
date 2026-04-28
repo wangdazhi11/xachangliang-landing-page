@@ -11,8 +11,14 @@ html {
 }
 
 .scale-wrapper {
-  --content-max-width: calc(1420px / 0.7);
-  zoom: 70%;
+  --content-max-width: calc(1320px / 0.7);
+  zoom: 100%;
+}
+
+@media (min-width: 1024px) {
+  .scale-wrapper {
+    zoom: 70%;
+  }
 }
 
 .scale-wrapper > main,
@@ -50,7 +56,7 @@ h6 {
 }
 
 .h1 {
-  @apply text-[64px] lg:text-[84px] leading-none;
+  @apply text-[32px] sm:text-[48px] lg:text-[84px] leading-none;
 }
 .h1_alt {
   @apply text-[54px] lg:text-[84px] leading-none;
@@ -66,6 +72,13 @@ h6 {
 
 .btn {
   @apply h-[75px] px-[30px] transition-all duration-300 text-white rounded-[18px] flex items-center gap-2;
+}
+
+/* 移动端按钮响应式 */
+@media (max-width: 1023px) {
+  .btn {
+    @apply h-[40px] px-2 text-[15px] rounded-lg gap-1;
+  }
 }
 
 .btn-primary {
@@ -98,14 +111,47 @@ h6 {
 }
 
 /* Hero轮播图样式 */
+/* ============================================
+   调整说明：
+   - 修改 min-height 可改变图片显示高度
+   - 数值越小 → 高度越矮 → 宽度显示越多
+   - 当前设置：手机200px / 平板350px / 桌面450px
+   ============================================ */
+.hero {
+  min-height: 160px;
+}
+
 .hero-slider {
   width: 100%;
   display: flex;
 }
+
 .hero-slider img {
   width: 100%;
+  min-height: 160px;
   flex-shrink: 0;
   object-fit: cover;
+  object-position: 80% center; /* 更靠右显示 */
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 350px;
+  }
+  .hero-slider img {
+    min-height: 350px;
+    transform: scale(1.05);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 450px;
+  }
+  .hero-slider img {
+    min-height: 450px;
+    transform: scale(1.1);
+  }
 }
 
 /* swiper pagination */
