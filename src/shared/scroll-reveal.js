@@ -24,7 +24,7 @@ export function initScrollReveal() {
 
   document.querySelectorAll(".hero__text, .steps__step__1, .steps__step__2, .steps__step__3, .about__text, .about__img, .testimonial__bg, .testimonial__title, .testimonial__slider, .brands__img, .work__title, .work__subtitle, .work__grid, .stats, .stats__item, .news__title, .news__subtitle, .news__item, .contact__container, .contact__text, .footer__item, .footer__copyrights").forEach((el, index) => {
     el.classList.add("reveal");
-    el.dataset.revealDelay = index * 50;
+    el.dataset.revealDelay = Math.min(index * 50, 300);
     revealObserver.observe(el);
   });
 }
