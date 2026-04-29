@@ -911,6 +911,7 @@
 
         leftContainer.style.height = 'auto';
         rightContainer.style.height = 'auto';
+        rightContainer.style.overflow = 'hidden';
         imagesDiv.style.height = 'auto';
         imagesDiv.style.overflow = 'visible';
 
@@ -928,6 +929,8 @@
           imagesDiv.style.height = imagesHeight + 'px';
           if (isExpanded) {
             imagesDiv.style.overflowY = 'auto';
+          } else {
+            imagesDiv.style.overflow = 'hidden';
           }
         }
       }
