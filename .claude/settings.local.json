@@ -15,7 +15,10 @@
       "Bash(taskkill /F /IM chrome.exe)",
       "Bash(taskkill /F /IM chromium.exe)",
       "Bash(curl -s http://localhost:3000)",
-      "Bash(curl -s http://localhost:3002)"
+      "Bash(curl -s http://localhost:3002)",
+      "Bash(git config *)",
+      "Bash(git filter-branch *)",
+      "Bash(git stash *)"
     ]
   }
 }
