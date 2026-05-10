@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>西安长亮商贸有限公司13619222442</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.1.3/swiper-bundle.min.css" />
+    <script type="module" crossorigin src="/assets/main-BanhQzTn.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/copy-phone-CEqWAm3m.js">
+    <link rel="stylesheet" crossorigin href="/assets/copy-phone-DgaxtHtX.css">
+  </head>
+  <body class="bg-gray-100" data-page="home">
+    <!-- 右侧固定图标 -->
+    <div id="sidebar" class="fixed right-6 top-[55%] z-50 flex flex-col gap-4">
+      <!-- 箭头 -->
+      <div class="relative">
+        <a href="#home" onmouseenter="showBackToTop()" onmouseleave="hideBackToTop()" onclick="showBackToTop(); setTimeout(hideBackToTop, 500); window.scrollTo({top:0, behavior:'smooth'}); return false;" class="w-12 h-12 bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="back-to-top-icon" class="ri-arrow-up-line text-2xl"></i>
+        </a>
+        <div id="back-to-top-content" class="absolute right-full top-0 mr-2 bg-white text-primary rounded-lg shadow-xl px-3 py-3 hidden flex items-center justify-center">
+          <span class="whitespace-nowrap text-sm">回到顶部</span>
+        </div>
+      </div>
+      <!-- 电话 -->
+      <div class="relative">
+        <div onclick="togglePhone()" onmouseenter="showPhone()" onmouseleave="hidePhone()" class="w-12 h-12 bg-green-600 flex items-center justify-center text-white hover:bg-green-700 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="phone-icon" class="ri-phone-line text-2xl"></i>
+        </div>
+        <div id="phone-content" class="absolute right-full top-0 mr-2 bg-white rounded-lg shadow-xl p-4 whitespace-nowrap hidden">
+          <p class="text-green-600 font-bold text-lg">13619222442</p>
+          <a href="tel:13619222442" class="text-sm text-blue-600 hover:underline">点击拨打</a>
+        </div>
+      </div>
+      <!-- 微信 -->
+      <div class="relative">
+        <div onclick="toggleWechat()" onmouseenter="showWechat()" onmouseleave="hideWechat()" class="w-12 h-12 bg-green-500 flex items-center justify-center text-white hover:bg-green-600 transition-colors rounded-l-lg shadow-lg cursor-pointer">
+          <i id="wechat-icon" class="ri-wechat-fill text-2xl"></i>
+        </div>
+        <div id="wechat-content" class="absolute right-full top-0 mr-2 bg-white rounded-lg shadow-xl p-4 hidden min-w-[200px]">
+          <p class="text-center text-sm text-gray-600 mb-2">扫码添加微信</p>
+          <img src="/assets/vx-BKo4-ZWk.png" alt="微信二维码" class="w-48 h-auto object-contain" />
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <header class="sticky top-0 shadow-xl z-30 bg-white w-full">
+      <div class="w-full flex items-center justify-between h-full py-2 px-3 lg:px-8">
+        <!-- logo with text -->
+      <div class="flex items-center gap-2 lg:gap-6 flex-shrink-0">
+          <a href="#">
+            <img
+              class="h-8 lg:h-[60px]"
+              src="/assets/logo1-BFN0xMqN.png"
+              alt="logo"
+            />
+          </a>
+          <!-- company info - 移动端只显示电话 -->
+          <div class="flex items-center gap-2 lg:gap-8">
+            <!-- 移动端显示简化电话 -->
+            <a href="tel:13619222442" class="flex lg:hidden items-center gap-1 border-l-2 border-accent pl-2">
+              <img src="/assets/phone-CEijv-aY.jpeg" alt="phone" class="w-4 h-4 object-contain" />
+              <div class="flex flex-col">
+                <span class="text-[8px] text-primary">服务热线</span>
+                <span class="text-xs font-bold text-blue-600">13619222442</span>
+              </div>
+            </a>
+            <!-- 桌面端显示完整信息 -->
+            <div class="hidden xl:flex items-center gap-8">
+              <!-- left text -->
+              <div class="flex flex-col">
+                <h3 class="text-lg font-primary text-primary leading-tight whitespace-nowrap">专业废旧物资回收公司</h3>
+                <p class="text-sm text-secondary font-secondary whitespace-nowrap">主营：物资回收、废品回收、二手机械设备回收</p>
+              </div>
+              <!-- right text - phone -->
+              <div class="flex items-center gap-2 border-l-2 border-accent pl-4">
+                <img src="/assets/phone-CEijv-aY.jpeg" alt="phone" class="w-6 h-6 object-contain" />
+                <div class="flex flex-col">
+                  <span class="text-sm text-primary font-secondary">服务热线</span>
+                  <span class="text-lg font-bold text-blue-600 font-secondary">13619222442</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- nav mobile version -->
+
+        <nav>
+          <div
+            class="cursor-pointer lg:hidden h-8 lg:h-full"
+            id="nav_trigger_btn"
+          >
+            <i class="ri-menu-line text-4xl text-primary"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden top-[70px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li>
+              <a class="text-lg lg:text-base p-4 hover:text-primary" href="/index.html" data-page="home">网站主页</a>
+            </li>
+            <li>
+              <a class="text-lg lg:text-base p-4 hover:text-primary" href="/about.html" data-page="about">长亮简介</a>
+            </li>
+            <li>
+              <a class="text-lg lg:text-base p-4 hover:text-primary" href="/projects.html" data-page="projects">回收项目</a>
+            </li>
+            <li>
+              <a class="text-lg lg:text-base p-4 hover:text-primary" href="/cases.html" data-page="cases">回收案例</a>
+            </li>
+            <li>
+              <a class="text-lg lg:text-base p-4 hover:text-primary" href="/honors.html" data-page="honors">荣誉资质</a>
+            </li>
+            <li>
+              <a class="text-lg lg:text-base p-4 hover:text-primary" href="/contact.html" data-page="contact">联系我们</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- 缩放包装器 -->
+    <div class="scale-wrapper">
+    <!-- page wrapper -->
+    <main class="main-wrapper">
+
+    <!-- hero -->
+    <section
+      id="home"
+      class="hero relative z-20 scroll-mt-[100px]"
+    >
+      <div class="overflow-hidden">
+        <div class="hero-slider flex transition-transform duration-800 ease-in-out">
+          <img
+            src="/assets/bg1-DcTt3HAI.png"
+            alt="hero background"
+            class="w-full flex-shrink-0 object-cover"
+          />
+          <img
+            src="/assets/bg2-9xqIN37J.png"
+            alt="hero background"
+            class="w-full flex-shrink-0 object-cover"
+          />
+          <img
+            src="/assets/bg1-DcTt3HAI.png"
+            alt="hero background"
+            class="w-full flex-shrink-0 object-cover"
+          />
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 container mx-auto flex items-center justify-center xl:justify-start"
+      >
+        <!-- text -->
+        <div
+          class="hero__text w-full max-w-[567px] px-4 flex flex-col items-center text-center xl:text-left lg:items-start xl:ml-10"
+        >
+          <!-- 艺术字标题：金色描边字体 -->
+          <h1 class="artistic-title mb-3 lg:mb-8 px-3 lg:px-6 py-1 lg:py-4 text-2xl sm:text-4xl lg:text-7xl font-primary">
+            专业资源回收
+          </h1>
+          <!-- 黑色小字 -->
+          <p class="artistic-subtitle mb-3 lg:mb-8 text-base lg:text-2xl font-secondary max-w-xl px-2">
+            专门致力于物资废品回收、电器电缆回收、二手机械设备回收、空调回收等大型机械设备回收
+          </p>
+          <!-- 可点击复制的电话 -->
+          <button
+            onclick="copyPhone()"
+            class="btn btn-primary mx-auto xl:mx-0 cursor-pointer"
+            title="点击复制电话号码"
+          >
+            <span id="phone-text">联系电话：13619222442</span>
+            <i class="ri-arrow-right-line text-accent text-sm lg:text-base"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+      <!-- 回收服务项目 -->
+      <section id="services" class="services mt-2 mb-4 lg:mt-4 lg:mb-8 relative z-20 scroll-mt-[100px]">
+        <div class="max-w-[1800px] mx-auto px-4">
+          <!-- 服务内容区域 -->
+          <div class="flex flex-row gap-2 lg:gap-8" id="service-container">
+            <!-- 左侧服务列表 -->
+            <div class="w-[100px] lg:w-1/3 flex-shrink-0" id="service-left">
+              <div class="bg-accent-secondary rounded-lg lg:rounded-[30px] px-1 py-0.5 lg:p-6">
+                <h3 class="text-[9px] lg:text-xl font-bold text-primary mb-0 lg:mb-6 flex items-center gap-0.5 lg:gap-2">
+                  <i class="ri-list-check-2 text-accent text-[9px] lg:text-base"></i>
+                  <span>服务项目</span>
+                </h3>
+                <div class="grid grid-cols-1 gap-0 lg:gap-2" id="service-list">
+                  <!-- 服务项目列表将通过JS动态生成 -->
+                </div>
+                <div id="expand-btn" class="mt-0.5 lg:mt-4 text-center">
+                  <button onclick="toggleServices()" class="text-primary font-medium hover:underline flex items-center justify-center gap-1 lg:gap-2 mx-auto text-[8px] lg:text-xl">
+                    <span id="expand-text">查看更多</span>
+                    <i id="expand-icon" class="ri-arrow-down-s-line text-[8px] lg:text-xl"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 右侧图片展示 -->
+            <div class="flex-1 flex flex-col" id="service-right">
+              <div class="bg-white rounded-xl lg:rounded-[30px] shadow-xl px-3 pt-0.5 pb-3 lg:p-10 flex flex-col">
+                <div class="flex items-center justify-between mb-1 lg:mb-6">
+                  <h3 id="service-title" class="text-[9px] lg:text-xl font-bold text-primary flex items-center gap-0.5 lg:gap-2">
+                    <i class="ri-image-line text-accent text-sm lg:text-base"></i>
+                    <span>请选择服务</span>
+                  </h3>
+                  <div class="flex gap-1 lg:gap-2">
+                    <button onclick="prevImage()" class="w-6 h-6 lg:w-10 lg:h-10 bg-accent-secondary rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                      <i class="ri-arrow-left-s-line text-sm lg:text-xl"></i>
+                    </button>
+                    <button onclick="nextImage()" class="w-6 h-6 lg:w-10 lg:h-10 bg-accent-secondary rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                      <i class="ri-arrow-right-s-line text-sm lg:text-xl"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- 图片网格 -->
+                <div id="service-images" class="grid grid-cols-3 gap-1 lg:gap-3">
+                  <!-- 图片将通过JS动态生成 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    </div>
+    <!-- scale-wrapper结束 -->
+
+    <!-- about - 放在scale-wrapper外，背景色可延伸至视口两端 -->
+    <section id="about" class="about relative z-20 scroll-mt-[100px] bg-blue-100">
+      <div class="max-w-[1400px] mx-auto px-4 lg:px-8 py-6 lg:py-8">
+        <!-- 标题行：图片浮动在右侧 -->
+        <div class="relative">
+          <!-- 图片浮动在右侧 -->
+          <div class="float-right ml-3 mb-2 w-32 xl:w-56 xl:max-w-[25%]">
+            <img src="/assets/gate-D2qTTsnX.png" alt="about_image" class="w-full h-auto" />
+          </div>
+          <!-- 标题 -->
+          <h2 class="text-2xl xl:text-4xl font-bold text-primary">About us</h2>
+          <h3 class="text-base xl:text-xl font-bold text-primary mb-2">公司简介</h3>
+          <!-- 文字环绕 -->
+          <div class="text-sm xl:text-lg text-secondary leading-relaxed text-left">
+            <p class="mb-2">西安长亮商贸有限公司成立于2016年。简单来说，我们主要做三大块业务：废旧物资回收、工程拆除和各类物资买卖。</p>
+            <p class="mb-2">我们在西安干这行很多年了，经验丰富。只要您有废旧电线电缆、铜铝不锈钢、稀缺金属，或者工厂淘汰下来的机电设备，我们都长期高价上门回收。此外，我们自己就有专业的施工队，不管您是需要拆厂房钢结构、拆卸大型机器，还是做室内外装修，我们都能帮您拆卸+回收一次搞定，省心省力。</p>
+            <p>做生意，我们最讲究实在：免费上门估价，看好货直接当面结清，并且绝不泄露客户的任何信息。不管您是厂房要清空大批设备，还是库房里有少量积压，找我们准没错。长亮商贸干活利索，价格公道，期待跟您交个朋友，长期合作！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 新的scale-wrapper开始 -->
+    <div class="scale-wrapper">
+    <main class="main-wrapper pt-[10px] xl:pt-[20px]">
+    <!-- testimonials -->
+      <section
+        id="testimonials"
+        class="testimonial relative z-20 scroll-mt-[100px]"
+      >
+        <div
+          class="testimonial__bg container mx-auto bg-accent-secondary rounded-2xl lg:rounded-[70px] px-4 lg:px-6"
+        >
+          <div class="flex flex-col items-center pt-3 lg:pt-[30px] pb-0">
+            <h2 class="testimonial__title text-xl lg:text-5xl font-bold mb-2 lg:mb-6 text-center">
+              公司成员
+            </h2>
+            <!-- slider -->
+            <div class="w-full">
+              <div class="testimonial__slider swiper h-[280px] lg:h-[480px]">
+                <div class="swiper-wrapper">
+                  <!-- slides 1-->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 pb-6 lg:pb-14 mx-auto shadow-xl"
+                    >
+                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                        <img
+                          src="/assets/01-BNdB6lmU.png"
+                          alt="testimonial_image"
+                          class="w-12 h-12 lg:w-auto lg:h-auto"
+                        />
+                        <div>
+                          <h3 class="text-base lg:text-2xl font-bold">王国栋</h3>
+                          <div class="text-xs lg:text-base">西安长亮商贸有限公司</div>
+                        </div>
+                      </div>
+                      <p class="text-xs lg:text-base">
+                        请您相信我的专业，联系方式：13619222442
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- slides 2 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[1000px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
+                    >
+                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                        <img
+                          src="/assets/02-Cr8kEhzd.png"
+                          alt="testimonial_image"
+                          class="w-12 h-12 lg:w-auto lg:h-auto"
+                        />
+                        <div>
+                          <h3 class="text-base lg:text-2xl font-bold">苏电涛</h3>
+                          <div class="text-xs lg:text-base">西安长亮商贸有限公司</div>
+                        </div>
+                      </div>
+                      <p class="text-xs lg:text-base">
+                        请您相信我的专业，13649298476
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- slides 3 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 pb-6 lg:pb-14 mx-auto shadow-xl"
+                    >
+                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                        <img
+                          src="/assets/03-CeP5kIRV.png"
+                          alt="testimonial_image"
+                          class="w-12 h-12 lg:w-auto lg:h-auto"
+                        />
+                        <div>
+                          <h3 class="text-base lg:text-2xl font-bold">王大志</h3>
+                          <div class="text-xs lg:text-base">西安长亮商贸有限公司</div>
+                        </div>
+                      </div>
+                      <p class="text-xs lg:text-base">
+                        请您相信我的专业，15852064429
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- slides 4 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 pb-6 lg:pb-14 mx-auto shadow-xl"
+                    >
+                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                        <img
+                          src="/assets/04-BL2DQvCG.png"
+                          alt="testimonial_image"
+                          class="w-12 h-12 lg:w-auto lg:h-auto"
+                        />
+                        <div>
+                          <h3 class="text-base lg:text-2xl font-bold">王大志</h3>
+                          <div class="text-xs lg:text-base">西安长亮商贸有限公司</div>
+                        </div>
+                      </div>
+                      <p class="text-xs lg:text-base">
+                        请您相信我的专业，13619222442
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- swiper pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- brands -->
+      <section class="brands mt-2 lg:mt-5 relative z-20 bg-accent">
+        <div class="flex flex-col xl:flex-row items-stretch gap-4 lg:gap-12 px-3 lg:px-8 py-4 lg:py-16">
+              <!-- 左侧标题 -->
+              <div class="flex-shrink-0 flex items-center justify-center xl:justify-start">
+                <div class="text-center xl:text-left">
+                  <h2 class="text-lg xl:text-5xl font-primary text-white mb-1 lg:mb-4">招标合作伙伴</h2>
+                  <p class="text-[10px] lg:text-lg text-white/80 mt-1 lg:mt-4">携手共创 互利共赢</p>
+                </div>
+              </div>
+              <!-- 右侧品牌网格 -->
+              <div class="flex-1 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-1 lg:gap-8 items-center">
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌1" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌1</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌2" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌2</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌3" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌3</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌4" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌4</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌5" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌5</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌6" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌6</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌7" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌7</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌8" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌8</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌9" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌9</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌10" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌10</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌11" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌11</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌12" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌12</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌13" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌13</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌14" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌14</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌15" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌15</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 lg:gap-3">
+                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌16" />
+                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌16</span>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <!-- stats -->
+      <section
+        class="stats relative z-20 bg-accent-secondary py-4 lg:py-16"
+      >
+        <div class="container mx-auto">
+          <!-- grid -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-8">
+            <!-- grid item 1 -->
+            <div class="stats__item text-center lg:border-r lg:border-accent flex flex-col items-center justify-center">
+              <h3 class="text-2xl lg:text-7xl font-primary text-accent leading-none">10</h3>
+              <p class="text-[10px] lg:text-base mt-1">年行业经验</p>
+            </div>
+
+            <!-- grid item 2-->
+            <div class="stats__item text-center lg:border-r lg:border-accent flex flex-col items-center justify-center">
+              <h3 class="text-2xl lg:text-7xl font-primary text-accent leading-none">100+</h3>
+              <p class="text-[10px] lg:text-base mt-1">完成项目</p>
+            </div>
+
+            <!-- grid item 3-->
+            <div class="stats__item text-center lg:border-r lg:border-accent flex flex-col items-center justify-center">
+              <h3 class="text-2xl lg:text-7xl font-primary text-accent leading-none">1000+</h3>
+              <p class="text-[10px] lg:text-base mt-1">满意客户</p>
+            </div>
+
+            <!-- grid item 4-->
+            <div class="stats__item text-center flex flex-col items-center justify-center">
+              <h3 class="text-2xl lg:text-7xl font-primary text-accent leading-none">100%</h3>
+              <p class="text-[10px] lg:text-base mt-1">资历合规</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section id="our_work" class="work mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[100px]">
+        <div class="container mx-auto">
+          <!-- text -->
+          <div class="text-center mb-24">
+            <h2 class="work__title h2 mb-4">Follow Our Projects</h2>
+            <p class="work__subtitle max-w-3xl mx-auto">
+              It is a long established fact that a reader will be distracted by
+              the of readable content of page lookings at its layouts points.
+            </p>
+          </div>
+          <!-- grid -->
+          <div
+            class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
+          >
+            <!-- item 1 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6" src="/assets/01-BsSqqyFd.png" alt="work__image1" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Modern Kitchen</h3>
+                  <p>Decor/Architecture</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6" src="/assets/02-BSV0OUrf.png" alt="work__image1" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Classic Room</h3>
+                  <p>Decor/Architecture</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6" src="/assets/03-DumEPg9D.png" alt="work__image1" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Learning Space</h3>
+                  <p>Decor/Architecture</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6" src="/assets/04-CpnBcnP7.png" alt="work__image1" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Modern Living Room</h3>
+                  <p>Decor/Architecture</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- news -->
+      <section id="news" class="news mt-[80px] xl:mt-[10px] relative z-20 scroll-mt-[100px]">
+        <div class="container mx-auto px-8">
+          <!-- text  -->
+          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
+            <h2 class="news__title h2 mb-3">Articles & News</h2>
+            <p class="news__subtitle">
+              It is a long established fact that a reader will be distracted by
+              the of readable content of a page when lookings at its layouts the
+              points of using.
+            </p>
+          </div>
+
+          <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+            <!-- grid item 1-->
+            <div
+              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+            >
+              <img class="mb-5" src="/assets/01-MRDrZIyk.png" alt="news_image_1" />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3">
+                  Let’s Get Solution For Building Construction Work
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">22 June, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- grid item 2 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+            >
+              <img class="mb-5" src="/assets/02-87ieu_LT.png" alt="news_image_1" />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3">
+                  Low Cost Latest Invented Interior Designing Ideas.
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">14 March, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- grid item 3-->
+            <div
+              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+            >
+              <img class="mb-5" src="/assets/03-BK76cnzP.png" alt="news_image_1" />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3">
+                  Best For Any Office & Business Interior Solution
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">05 April, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section
+        id="contact"
+        class="contact mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[100px]"
+      >
+        <div
+          class="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[80px]"
+        >
+          <div class="contact__text max-w-[640px] mx-auto text-center">
+            <h2 class="h2 text-white mb-4">Do you want to joinI Luxespace?</h2>
+            <p class="text-white mb-8 max-w-sm xl:max-w-none mx-auto">
+              It is a long established fact will be distracted.
+            </p>
+            <button class="btn btn-accent mx-auto">
+              Connect With Us <i class="ri-arrow-right-line text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer mt-[40px] xl:mt-[80px] relative z-20">
+        <div class="container mx-auto px-0">
+          <div class="flex flex-row flex-wrap justify-center gap-4 mb-6 xl:flex-nowrap xl:gap-[100px] xl:justify-center xl:mb-[80px]">
+            <!-- pages -->
+            <div class="footer__item">
+              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">快速导航</h3>
+              <div class="flex flex-col gap-1 xl:gap-4">
+                <a class="xl:text-[20px]" href="/about.html">长亮简介</a>
+                <a class="xl:text-[20px]" href="/projects.html">回收项目</a>
+                <a class="xl:text-[20px]" href="/cases.html">回收案例</a>
+                <a class="xl:text-[20px]" href="/honors.html">荣誉资质</a>
+              </div>
+            </div>
+
+            <!-- contact -->
+            <div class="footer__item">
+              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">联系方式</h3>
+              <div class="flex flex-col gap-1 xl:gap-2">
+                <p class="xl:text-[22px]">业务对接：王先生</p>
+                <p class="xl:text-[22px]">咨询热线：13619222442</p>
+                <p class="xl:text-[22px]">公司地址：西安市未央区阳光北郡1号</p>
+              </div>
+            </div>
+            <!-- wechat -->
+            <div class="footer__item">
+              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">扫一扫关注微信</h3>
+              <img src="/assets/vx-BKo4-ZWk.png" alt="微信二维码" class="w-16 xl:w-32 h-auto object-contain mx-auto xl:mx-0" />
+            </div>
+          </div>
+        </div>
+        <p
+          class="footer_copyright text-center text-[10px] xl:text-lg py-4 xl:py-6 bg-white xl:border-t"
+        >
+          Copyright &copy; 西安长亮商贸有限公司 2026. All rights reserved
+        </p>
+      </footer>
+    </main>
+    </div>
+    <!-- scale-wrapper结束 -->
+
+    <!-- main js -->
+    </div>
+  </body>
+</html>
