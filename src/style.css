@@ -121,11 +121,18 @@ h6 {
 
 /* 艺术字副标题样式 */
 .artistic-subtitle {
-  color: #000000;
-  -webkit-text-stroke: 2px #ffffff;
-  text-stroke: 2px #ffffff;
-  paint-order: stroke fill;
+  color: #ffffff;
   filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.6));
+}
+
+/* 移动端压缩hero区域三行内容 */
+@media (max-width: 639px) {
+  .hero__text .artistic-title {
+    @apply mb-1 px-2 py-0 text-xl;
+  }
+  .hero__text .artistic-subtitle {
+    @apply mb-1 text-sm;
+  }
 }
 
 /* 电话号码保持白色，继承自.btn的text-white */

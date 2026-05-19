@@ -23,7 +23,7 @@ if (swiperEl) {
     modules: [Autoplay],
     autoplay: {
       delay: 500,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
       reverseDirection: false,
       stopOnLastSlide: false,
     },
@@ -32,8 +32,8 @@ if (swiperEl) {
       sticky: false,
     },
     speed: 4000,
-    simulateTouch: false,
-    allowTouchMove: false,
+    simulateTouch: true,
+    allowTouchMove: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -54,12 +54,16 @@ if (swiperEl) {
     },
   });
 
-  // 鼠标悬停停止自动播放
+  // 用户交互后5秒恢复自动播放
+  let autoplayTimer = null;
   const swiperContainer = document.querySelector(".swiper");
-  swiperContainer.addEventListener("mouseenter", () => {
-    swiper.autoplay.stop();
-  });
-  swiperContainer.addEventListener("mouseleave", () => {
-    swiper.autoplay.start();
-  });
+  const resumeAutoplay = () => {
+    clearTimeout(autoplayTimer);
+    autoplayTimer = setTimeout(() => {
+      swiper.autoplay.start();
+    }, 2000);
+  };
+  swiperContainer.addEventListener("touchend", resumeAutoplay);
+  swiperContainer.addEventListener("mouseup", resumeAutoplay);
+  swiper.on("slideChange", resumeAutoplay);
 }
