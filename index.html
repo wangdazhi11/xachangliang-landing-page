@@ -923,22 +923,28 @@
 
       // 回收服务项目数据（仅主页）
       const services = [
-        { id: 'tong', name: '西安废铜回收', icon: 'riCopperCoinLine', desc: '专业回收各类废铜，包括黄铜、紫铜、电解铜等高价回收' },
-        { id: 'dianlan', name: '西安废旧电缆回收', icon: 'riCableLine', desc: '回收各种规格型号的废旧电线电缆，量大从优' },
-        { id: 'gaoya', name: '西安高压电缆回收', icon: 'riFlashlightLine', desc: '专业回收高压电缆、电力电缆、控制电缆等' },
-        { id: 'guangfu', name: '西安光伏电缆回收', icon: 'riSunLine', desc: '回收太阳能光伏电站退役电缆及相关设备' },
-        { id: 'tongxin', name: '西安通信电缆回收', icon: 'riSignalTowerLine', desc: '回收通信光缆、同轴电缆、网络线缆等' },
-        { id: 'gongdi', name: '西安工地电线回收', icon: 'riConstructionLine', desc: '回收建筑工地剩余电线电缆及施工设备' },
-        { id: 'bianyaqi', name: '西安变压器回收', icon: 'riPowerLine', desc: '回收各种容量变压器，干式变压器、油浸式变压器' },
-        { id: 'feilu', name: '西安废铝回收', icon: 'riRecycleLine', desc: '回收工业废铝、建筑铝材、铝合金废料' },
-        { id: 'buxiu', name: '西安304不锈钢回收', icon: 'riShieldStarLine', desc: '回收201、304、316等各型号不锈钢' },
-        { id: 'peidian', name: '西安配电柜回收', icon: 'riDashboardLine', desc: '回收高低压配电柜、控制柜、开关柜等' },
-        { id: 'gaodiya', name: '西安高低压电力设备回收', icon: 'riGovernmentLine', desc: '回收高低压成套电力设备及配套设施' },
-        { id: 'jinshu', name: '西安旧金属回收', icon: 'riGoldLine', desc: '回收各类有色金属、黑色金属废料' },
+        { id: 'gongdi', name: '西安西安周边各种电线电缆回收(主营业务)', icon: 'riConstructionLine', desc: '回收建筑工地剩余电线电缆及施工设备' },
+        { id: 'dianlan', name: '西安→废旧电缆回收', icon: 'riCableLine', desc: '回收各种规格型号的废旧电线电缆，量大从优' },
+        { id: 'gaoya', name: '西安→高压电缆回收', icon: 'riFlashlightLine', desc: '专业回收高压电缆、电力电缆、控制电缆等' },
+        { id: 'guangfu', name: '西安→光伏电缆回收', icon: 'riSunLine', desc: '回收太阳能光伏电站退役电缆及相关设备' },
+        { id: 'tongxin', name: '西安→通信电缆回收', icon: 'riSignalTowerLine', desc: '回收通信光缆、同轴电缆、网络线缆等' },
+        { id: 'kucun', name: '西安库存电缆物资回收', icon: 'riArchiveLine', desc: '回收库存积压电缆及工程剩余材料' },
+        { id: 'jinshu', name: '西安西安周边各类废旧金属回收(主营业务)', icon: 'riGoldLine', desc: '回收各类有色金属、黑色金属废料' },
+        { id: 'tong', name: '西安→西安周边废铜回收', icon: 'riCopperCoinLine', desc: '专业回收各类废铜，包括黄铜、紫铜、电解铜等高价回收' },
+        { id: 'feilu', name: '西安→各类废铝回收', icon: 'riRecycleLine', desc: '回收工业废铝、建筑铝材、铝合金废料' },
+        { id: 'buxiu', name: '西安→各类不锈钢回收', icon: 'riShieldStarLine', desc: '回收201、304、316等各型号不锈钢' },
+        { id: 'tongpipei', name: '西安→废旧铜配件回收', icon: 'riPipeJointLine', desc: '回收铜阀门、铜管件、铜接头、铜配件等各类铜制废旧配件' },
+        { id: 'dianlishebei', name: '西安西安周边各类电力设备回收(主营业务)', icon: 'riConstructionLine', desc: '回收建筑工地剩余电线电缆及电力设备' },
+        { id: 'bianyaqi', name: '西安→变压器废品回收', icon: 'riPowerLine', desc: '回收各种容量变压器，干式变压器、油浸式变压器' },
+        { id: 'dianji', name: '西安→废旧电机回收', icon: 'riMotorLine', desc: '回收各类废旧电机、发电机、电动机，不分型号新旧' },
+        { id: 'huagong', name: '西安→废旧化工设备回收', icon: 'riFlaskLine', desc: '回收废旧反应釜、储罐、换热器、化工管道等化工设备' },
+        { id: 'dianlu', name: '西安→废旧电炉回收', icon: 'riFireLine', desc: '回收工业电炉、电阻炉、感应炉、废旧炉膛等加热设备' },
+        { id: 'peidian', name: '西安→配电柜回收', icon: 'riDashboardLine', desc: '回收高低压配电柜、控制柜、开关柜等' },
+        { id: 'gaodiya', name: '西安→高低压电力设备回收', icon: 'riGovernmentLine', desc: '回收高低压成套电力设备及配套设施' },
+        { id: 'dianli', name: '西安废旧电力器材回收', icon: 'riThunderstormsLine', desc: '回收电力局、变电站退役电力器材' },
+        { id: 'dianlishebei', name: '西安西安周边各类其他物料回收(主营业务)', icon: 'riConstructionLine', desc: '回收建筑工地剩余电线电缆及电力设备' },
         { id: 'feiliao', name: '西安工业废料回收', icon: 'riFactoryLine', desc: '回收工厂工业废料、生产边角料等' },
         { id: 'chaiqian', name: '西安拆迁物资回收', icon: 'riHomeLine', desc: '回收拆迁工地废旧物资、设备及金属' },
-        { id: 'kucun', name: '西安库存电缆物资回收', icon: 'riArchiveLine', desc: '回收库存积压电缆及工程剩余材料' },
-        { id: 'dianli', name: '西安废旧电力器材回收', icon: 'riThunderstormsLine', desc: '回收电力局、变电站退役电力器材' }
       ];
 
       let currentService = null;
