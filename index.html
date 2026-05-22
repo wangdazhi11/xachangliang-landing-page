@@ -55,7 +55,7 @@
     </div>
     <!-- header -->
     <header class="sticky top-0 shadow-xl z-30 bg-white w-full">
-      <div class="w-full flex items-center justify-between h-full py-2 px-3 lg:px-8">
+      <div class="max-w-[1600px] mx-auto flex items-center justify-between h-full py-2 px-3 lg:px-6">
         <!-- logo with text -->
       <div class="flex items-center gap-2 lg:gap-6 flex-shrink-0">
           <a href="#">
@@ -65,14 +65,14 @@
               alt="logo"
             />
           </a>
-          <!-- company info - 移动端只显示电话 -->
+          <!-- company info -->
           <div class="flex items-center gap-2 lg:gap-8">
-            <!-- 移动端显示简化电话 -->
-            <a href="tel:13619222442" class="flex lg:hidden items-center gap-1 border-l-2 border-accent pl-2">
-              <img src="/assets/phone.jpeg" alt="phone" class="w-4 h-4 object-contain" />
+            <!-- 移动端/平板显示：简化电话 -->
+            <a href="tel:13619222442" class="flex xl:hidden items-center gap-1 border-l-2 border-accent pl-2">
+              <img src="/assets/phone.jpeg" alt="phone" class="w-3 h-3 lg:w-4 lg:h-4 object-contain" />
               <div class="flex flex-col">
-                <span class="text-[8px] text-primary">服务热线</span>
-                <span class="text-xs font-bold text-blue-600">13619222442</span>
+                <span class="text-[8px] lg:text-xs text-primary">服务热线</span>
+                <span class="text-xs lg:text-sm font-bold text-blue-600">13619222442</span>
               </div>
             </a>
             <!-- 桌面端显示完整信息 -->
@@ -80,7 +80,7 @@
               <!-- left text -->
               <div class="flex flex-col">
                 <h3 class="text-lg font-primary text-primary leading-tight whitespace-nowrap">专业废旧物资回收公司</h3>
-                <p class="text-sm text-secondary font-secondary whitespace-nowrap">主营：物资回收、废品回收、二手机械设备回收</p>
+                <p class="text-sm text-secondary font-secondary whitespace-nowrap">主营：电缆回二手机械设备回收</p>
               </div>
               <!-- right text - phone -->
               <div class="flex items-center gap-2 border-l-2 border-accent pl-4">
@@ -172,52 +172,63 @@
           <p class="artistic-subtitle mb-3 lg:mb-8 text-base lg:text-2xl font-secondary max-w-xl px-2">
             专门致力于物资废品回收、电器电缆回收、二手机械设备回收、空调回收等大型机械设备回收
           </p>
-          <!-- 可点击复制的电话 -->
+          <!-- 桌面端：点击复制电话 -->
           <button
             onclick="copyPhone()"
-            class="btn btn-primary mx-auto xl:mx-0 cursor-pointer"
+            class="btn btn-primary mx-auto xl:mx-0 cursor-pointer hidden xl:flex"
             title="点击复制电话号码"
           >
             <span id="phone-text">联系电话：13619222442</span>
             <i class="ri-arrow-right-line text-accent text-sm lg:text-base"></i>
           </button>
+          <!-- 移动端：点击拨打电话 -->
+          <a href="tel:13619222442" class="btn btn-primary mx-auto xl:hidden">
+            <span>联系电话：13619222442</span>
+            <i class="ri-arrow-right-line text-accent text-sm lg:text-base"></i>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- 服务优势四栏 -->
-    <section class="py-4 lg:py-6 bg-gray-50 relative z-20">
-      <div class="w-full px-2 lg:px-6">
-        <div class="flex flex-row flex-wrap lg:flex-nowrap gap-4 lg:gap-0">
+    <section class="py-2 md:py-6 bg-gray-50 relative z-20">
+      <div class="w-full px-2 md:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-11 gap-2 md:gap-0">
           <!-- 1 -->
-          <div class="w-1/2 lg:w-1/4 text-center py-3 lg:py-5 px-2 lg:px-4">
-            <i class="ri-shield-check-line text-4xl lg:text-6xl text-green-600 mb-2"></i>
-            <h3 class="text-xl lg:text-3xl font-bold text-primary mb-1">正规回收，公道报价</h3>
-            <p class="text-base lg:text-lg text-gray-500">现场核验结算，交易踏实无忧</p>
+          <div class="text-center py-2 md:py-5 px-1 md:col-span-2 md:px-4">
+            <i class="ri-shield-check-line text-2xl md:text-6xl text-green-600 mb-1"></i>
+            <h3 class="text-sm md:text-3xl font-bold text-primary mb-0.5">正规回收，公道报价</h3>
+            <p class="text-[10px] md:text-lg text-gray-500">现场核验结算，交易踏实无忧</p>
           </div>
-          <!-- 分隔线 -->
-          <div class="hidden lg:block w-[1px] bg-gray-300 self-stretch my-2"></div>
+          <!-- 分隔线1 -->
+          <div class="hidden md:flex items-center justify-center md:col-span-1">
+            <div class="w-[1px] h-3/4 bg-gray-300"></div>
+          </div>
           <!-- 2 -->
-          <div class="w-1/2 lg:w-1/4 text-center py-3 lg:py-5 px-2 lg:px-4">
-            <i class="ri-hand-heart-line text-4xl lg:text-6xl text-green-600 mb-2"></i>
-            <h3 class="text-xl lg:text-3xl font-bold text-primary mb-1">专业回收，贴心靠谱</h3>
-            <p class="text-base lg:text-lg text-gray-500">现款当场结清，合作长久共赢</p>
+          <div class="text-center py-2 md:py-5 px-1 md:col-span-2 md:px-4">
+            <i class="ri-hand-heart-line text-2xl md:text-6xl text-green-600 mb-1"></i>
+            <h3 class="text-sm md:text-3xl font-bold text-primary mb-0.5">专业回收，贴心靠谱</h3>
+            <p class="text-[10px] md:text-lg text-gray-500">现款当场结清，合作长久共赢</p>
           </div>
-          <!-- 分隔线 -->
-          <div class="hidden lg:block w-[1px] bg-gray-300 self-stretch my-2"></div>
+          <!-- 分隔线2 -->
+          <div class="hidden md:flex items-center justify-center md:col-span-1">
+            <div class="w-[1px] h-3/4 bg-gray-300"></div>
+          </div>
           <!-- 3 -->
-          <div class="w-1/2 lg:w-1/4 text-center py-3 lg:py-5 px-2 lg:px-4">
-            <i class="ri-time-line text-4xl lg:text-6xl text-green-600 mb-2"></i>
-            <h3 class="text-xl lg:text-3xl font-bold text-primary mb-1">高效处置，安心交易</h3>
-            <p class="text-base lg:text-lg text-gray-500">规范流程办事，让利诚意回收</p>
+          <div class="text-center py-2 md:py-5 px-1 md:col-span-2 md:px-4">
+            <i class="ri-time-line text-2xl md:text-6xl text-green-600 mb-1"></i>
+            <h3 class="text-sm md:text-3xl font-bold text-primary mb-0.5">高效处置，安心交易</h3>
+            <p class="text-[10px] md:text-lg text-gray-500">规范流程办事，让利诚意回收</p>
           </div>
-          <!-- 分隔线 -->
-          <div class="hidden lg:block w-[1px] bg-gray-300 self-stretch my-2"></div>
+          <!-- 分隔线3 -->
+          <div class="hidden md:flex items-center justify-center md:col-span-1">
+            <div class="w-[1px] h-3/4 bg-gray-300"></div>
+          </div>
           <!-- 4 -->
-          <div class="w-1/2 lg:w-1/4 text-center py-3 lg:py-5 px-2 lg:px-4 flex flex-col justify-center">
-            <h3 class="text-xl lg:text-3xl font-bold text-primary mb-1">全国24小时热线</h3>
-            <p class="text-2xl lg:text-4xl font-bold text-blue-600 mb-1">13619222442</p>
-            <p class="text-2xl lg:text-4xl font-bold text-blue-600 mb-1">13649298476</p>
+          <div class="text-center py-2 md:py-5 px-1 md:col-span-2 md:px-4 flex flex-col justify-center">
+            <h3 class="text-sm md:text-3xl font-bold text-primary mb-0.5">全国24小时热线</h3>
+            <p class="text-base md:text-4xl font-bold text-blue-600 mb-0.5">13619222442</p>
+            <p class="text-base md:text-4xl font-bold text-blue-600">13649298476</p>
           </div>
         </div>
       </div>
@@ -292,7 +303,7 @@
           <!-- 文字环绕 -->
           <div class="text-sm xl:text-lg text-secondary leading-relaxed text-left">
             <p class="mb-2">西安长亮商贸有限公司成立于2016年。简单来说，我们主要做三大块业务：废旧物资回收、工程拆除和各类物资买卖。</p>
-            <p class="mb-2">我们在西安干这行很多年了，经验丰富。只要您有废旧电线电缆、铜铝不锈钢、稀缺金属，或者工厂淘汰下来的机电设备，我们都长期高价上门回收。此外，我们自己就有专业的施工队，不管您是需要拆厂房钢结构、拆卸大型机器，还是做室内外装修，我们都能帮您拆卸+回收一次搞定，省心省力。</p>
+            <p class="mb-2">我们在西安干这行很多年了，经验丰富。只要您有废旧电线电缆、铜铝不锈钢、稀缺金属，或者工厂淘汰下来的机电设备，我们都长期高价上门回收。此外，我们自己就有专业的施工队，不管您是需要拆厂房钢结构、还是拆卸大型机器，我们都能帮您拆卸+回收一次搞定，省心省力。</p>
             <p>做生意，我们最讲究实在：免费上门估价，看好货直接当面结清，并且绝不泄露客户的任何信息。不管您是厂房要清空大批设备，还是库房里有少量积压，找我们准没错。长亮商贸干活利索，价格公道，期待跟您交个朋友，长期合作！</p>
           </div>
         </div>
@@ -362,100 +373,214 @@
       </div>
     </section>
 
+    <!-- 公司成员 - 放在features中轴线最下方 -->
+    <section
+      id="testimonials"
+      class="testimonial relative z-20 scroll-mt-[100px] mt-0 lg:mt-0"
+    >
+      <div
+        class="testimonial__bg container mx-auto bg-accent-secondary rounded-2xl lg:rounded-[70px] px-4 lg:px-6"
+      >
+        <div class="flex flex-col items-center pt-3 lg:pt-[30px] pb-0">
+          <h2 class="testimonial__title text-xl lg:text-5xl font-bold mb-2 lg:mb-6 text-center">
+            公司成员
+          </h2>
+          <!-- slider -->
+          <div class="w-full">
+            <div class="testimonial__slider swiper h-[280px] lg:h-[480px]">
+              <div class="swiper-wrapper">
+                <!-- slides 1-->
+                <div class="swiper-slide">
+                  <!-- item -->
+                  <div
+                    class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
+                  >
+                    <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                      <img
+                        src="/assets/members/wangguodong.png"
+                        alt="testimonial_image"
+                        class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
+                      />
+                      <div>
+                        <h3 class="text-base lg:text-3xl font-bold">王国栋</h3>
+                        <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
+                      </div>
+                    </div>
+                    <p class="text-xs lg:text-xl">
+                      联系方式：13619222442。从业多年回收专员，精通废铜废铝电缆估价，诚信实在，上门快捷，做事靠谱利落。
+                    </p>
+                  </div>
+                </div>
+
+                <!-- slides 2 -->
+                <div class="swiper-slide">
+                  <!-- item -->
+                  <div
+                    class="testimonial__item w-full max-w-[1000px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
+                  >
+                    <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                      <img
+                        src="/assets/members/sudiantao.png"
+                        alt="testimonial_image"
+                        class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
+                      />
+                      <div>
+                        <h3 class="text-base lg:text-3xl font-bold">苏电涛</h3>
+                        <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
+                      </div>
+                    </div>
+                    <p class="text-xs lg:text-xl">
+                      联系方式：13649298476。一线清运主管，专注物资装卸运输，执行力强，效率出众，高效完成各类回收作业。
+                    </p>
+                  </div>
+                </div>
+
+                <!-- slides 3 -->
+                <div class="swiper-slide">
+                  <!-- item -->
+                  <div
+                    class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
+                  >
+                    <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                      <img
+                        src="/assets/members/wangdazhi.png"
+                        alt="testimonial_image"
+                        class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
+                      />
+                      <div>
+                        <h3 class="text-base lg:text-3xl font-bold">王大志</h3>
+                        <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
+                      </div>
+                    </div>
+                    <p class="text-xs lg:text-xl">
+                      联系方式：13619222442。市场行情专员，熟知本地回收价格走势，报价透明公正，诚心对接大小货源客户。
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- swiper pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 新的scale-wrapper开始 -->
     <div class="scale-wrapper">
     <main class="main-wrapper pt-[10px] xl:pt-[20px]">
-    <!-- testimonials -->
-      <section
-        id="testimonials"
-        class="testimonial relative z-20 scroll-mt-[100px]"
-      >
-        <div
-          class="testimonial__bg container mx-auto bg-accent-secondary rounded-2xl lg:rounded-[70px] px-4 lg:px-6"
-        >
-          <div class="flex flex-col items-center pt-3 lg:pt-[30px] pb-0">
-            <h2 class="testimonial__title text-xl lg:text-5xl font-bold mb-2 lg:mb-6 text-center">
-              公司成员
-            </h2>
-            <!-- slider -->
-            <div class="w-full">
-              <div class="testimonial__slider swiper h-[280px] lg:h-[480px]">
-                <div class="swiper-wrapper">
-                  <!-- slides 1-->
-                  <div class="swiper-slide">
-                    <!-- item -->
-                    <div
-                      class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
-                    >
-                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
-                        <img
-                          src="/assets/members/wangguodong.png"
-                          alt="testimonial_image"
-                          class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
-                        />
-                        <div>
-                          <h3 class="text-base lg:text-3xl font-bold">王国栋</h3>
-                          <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-xl">
-                        联系方式：13619222442。从业多年回收专员，精通废铜废铝电缆估价，诚信实在，上门快捷，做事靠谱利落。
-                      </p>
-                    </div>
-                  </div>
 
-                  <!-- slides 2 -->
-                  <div class="swiper-slide">
-                    <!-- item -->
-                    <div
-                      class="testimonial__item w-full max-w-[1000px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
-                    >
-                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
-                        <img
-                          src="/assets/members/sudiantao.png"
-                          alt="testimonial_image"
-                          class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
-                        />
-                        <div>
-                          <h3 class="text-base lg:text-3xl font-bold">苏电涛</h3>
-                          <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-xl">
-                        联系方式：13649298476。一线清运主管，专注物资装卸运输，执行力强，效率出众，高效完成各类回收作业。
-                      </p>
-                    </div>
-                  </div>
+    <!-- 分割线 -->
+      <div class="flex items-center justify-center py-4 lg:py-6">
+        <div class="flex-1 h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      </div>
 
-                  <!-- slides 3 -->
-                  <div class="swiper-slide">
-                    <!-- item -->
-                    <div
-                      class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
-                    >
-                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
-                        <img
-                          src="/assets/members/wangdazhi.png"
-                          alt="testimonial_image"
-                          class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
-                        />
-                        <div>
-                          <h3 class="text-base lg:text-3xl font-bold">王大志</h3>
-                          <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-xl">
-                        联系方式：13619222442。市场行情专员，熟知本地回收价格走势，报价透明公正，诚心对接大小货源客户。
-                      </p>
-                    </div>
-                  </div>
+      <!-- news -->
+      <section id="news" class="news mt-0 xl:mt-0 relative z-20 scroll-mt-[100px]">
+        <div class="w-full px-4">
+          <!-- text  -->
+          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
+            <h2 class="news__title h2 mb-3">新闻中心</h2>
+            <p class="news__subtitle">
+              你可以及时了解公司以及公司产品的相关动态
+            </p>
+          </div>
 
+          <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-2">
+            <!-- grid item 1-->
+            <div
+              class="news__item w-full border border-primary/20 rounded-[62px] p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+            >
+              <img class="mb-5 w-full h-[480px] object-cover rounded-2xl" src="/assets/news/2e94c871f5e1a0c48d6ff22b5a4be4fc.jpg" alt="news_image_1" />
+              <div class="flex flex-col gap-4">
+                <div>
+                  <span class="text-xl text-accent font-medium">精选推荐</span>
+                  <h3 class="text-4xl font-bold mt-2">
+                    人生感悟专区
+                  </h3>
+                  <p class="text-xl text-gray-500 mt-3">分享废旧物资回收的点滴感悟</p>
                 </div>
-                <!-- swiper pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="flex items-center justify-between">
+                  <p class="text-3xl text-gray-400" id="date-1"></p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- grid item 2 -->
+            <div
+              class="news__item w-full border border-primary/20 rounded-[62px] p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+            >
+              <img class="mb-5 w-full h-[480px] object-cover rounded-2xl" src="/assets/news/5a2e06fdca602f799b24113e07217a1b.jpeg" alt="news_image_1" />
+              <div class="flex flex-col gap-4">
+                <div>
+                  <span class="text-xl text-green-600 font-medium">实用知识</span>
+                  <h3 class="text-4xl font-bold mt-2">
+                    生活常识专区
+                  </h3>
+                  <p class="text-xl text-gray-500 mt-3">废旧物资回收生活中的实用技巧与小知识</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-3xl text-gray-400" id="date-2"></p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- grid item 3-->
+            <div
+              class="news__item w-full border border-primary/20 rounded-[62px] p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+            >
+              <img class="mb-5 w-full h-[480px] object-cover rounded-2xl" src="/assets/news/dcc874704e40c39122d3e81ff8598be0.jpeg" alt="news_image_1" />
+              <div class="flex flex-col gap-4">
+                <div>
+                  <span class="text-xl text-blue-600 font-medium">行业洞察</span>
+                  <h3 class="text-4xl font-bold mt-2">
+                    行业认知专区
+                  </h3>
+                  <p class="text-xl text-gray-500 mt-3">深入了解回收行业的专业知识与动态</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-3xl text-gray-400" id="date-3"></p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- 动态日期脚本 -->
+          <script>
+            function formatDate(daysAgo) {
+              const date = new Date();
+              date.setDate(date.getDate() - daysAgo);
+              const year = date.getFullYear();
+              const month = String(date.getMonth() + 1).padStart(2, '0');
+              const day = String(date.getDate()).padStart(2, '0');
+              return `${year}-${month}-${day}`;
+            }
+            document.getElementById('date-1').textContent = formatDate(5);
+            document.getElementById('date-2').textContent = formatDate(10);
+            document.getElementById('date-3').textContent = formatDate(7);
+          </script>
         </div>
       </section>
 
@@ -573,198 +698,47 @@
         </div>
       </section>
 
-      <!-- work -->
-      <section id="our_work" class="work mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[100px]">
-        <div class="container mx-auto">
-          <!-- text -->
-          <div class="text-center mb-24">
-            <h2 class="work__title h2 mb-4">Follow Our Projects</h2>
-            <p class="work__subtitle max-w-3xl mx-auto">
-              It is a long established fact that a reader will be distracted by
-              the of readable content of page lookings at its layouts points.
-            </p>
-          </div>
-          <!-- grid -->
-          <div
-            class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
-          >
-            <!-- item 1 -->
-            <div class="w-full max-w-[548px] h-full mx-auto">
-              <img class="mb-6" src="assets/work/01.png" alt="work__image1" />
-              <div class="flex justify-between items-center w-full">
-                <div>
-                  <h3 class="h3">Modern Kitchen</h3>
-                  <p>Decor/Architecture</p>
-                </div>
-                <button
-                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
-                >
-                  <i
-                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                  ></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="w-full max-w-[548px] h-full mx-auto">
-              <img class="mb-6" src="assets/work/02.png" alt="work__image1" />
-              <div class="flex justify-between items-center w-full">
-                <div>
-                  <h3 class="h3">Classic Room</h3>
-                  <p>Decor/Architecture</p>
-                </div>
-                <button
-                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
-                >
-                  <i
-                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                  ></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="w-full max-w-[548px] h-full mx-auto">
-              <img class="mb-6" src="assets/work/03.png" alt="work__image1" />
-              <div class="flex justify-between items-center w-full">
-                <div>
-                  <h3 class="h3">Learning Space</h3>
-                  <p>Decor/Architecture</p>
-                </div>
-                <button
-                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
-                >
-                  <i
-                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                  ></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- item 4 -->
-            <div class="w-full max-w-[548px] h-full mx-auto">
-              <img class="mb-6" src="assets/work/04.png" alt="work__image1" />
-              <div class="flex justify-between items-center w-full">
-                <div>
-                  <h3 class="h3">Modern Living Room</h3>
-                  <p>Decor/Architecture</p>
-                </div>
-                <button
-                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
-                >
-                  <i
-                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                  ></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- news -->
-      <section id="news" class="news mt-[80px] xl:mt-[10px] relative z-20 scroll-mt-[100px]">
-        <div class="container mx-auto px-8">
-          <!-- text  -->
-          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
-            <h2 class="news__title h2 mb-3">Articles & News</h2>
-            <p class="news__subtitle">
-              It is a long established fact that a reader will be distracted by
-              the of readable content of a page when lookings at its layouts the
-              points of using.
-            </p>
-          </div>
-
-          <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
-            <!-- grid item 1-->
-            <div
-              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
-            >
-              <img class="mb-5" src="/assets/news/01.png" alt="news_image_1" />
-              <div class="flex flex-col gap-[30px]">
-                <h3 class="h3">
-                  Let’s Get Solution For Building Construction Work
-                </h3>
-                <div class="flex items-center justify-between">
-                  <p class="text-base">22 June, 2024</p>
-                  <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
-                  >
-                    <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- grid item 2 -->
-            <div
-              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
-            >
-              <img class="mb-5" src="/assets/news/02.png" alt="news_image_1" />
-              <div class="flex flex-col gap-[30px]">
-                <h3 class="h3">
-                  Low Cost Latest Invented Interior Designing Ideas.
-                </h3>
-                <div class="flex items-center justify-between">
-                  <p class="text-base">14 March, 2024</p>
-                  <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
-                  >
-                    <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- grid item 3-->
-            <div
-              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
-            >
-              <img class="mb-5" src="/assets/news/03.png" alt="news_image_1" />
-              <div class="flex flex-col gap-[30px]">
-                <h3 class="h3">
-                  Best For Any Office & Business Interior Solution
-                </h3>
-                <div class="flex items-center justify-between">
-                  <p class="text-base">05 April, 2024</p>
-                  <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
-                  >
-                    <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- contact -->
       <section
         id="contact"
-        class="contact mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[100px]"
+        class="contact mt-8 xl:mt-12 relative z-20 scroll-mt-[100px]"
       >
         <div
-          class="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[80px]"
+          class="contact__container container mx-auto py-4"
         >
           <div class="contact__text max-w-[640px] mx-auto text-center">
-            <h2 class="h2 text-white mb-4">Do you want to joinI Luxespace?</h2>
-            <p class="text-white mb-8 max-w-sm xl:max-w-none mx-auto">
-              It is a long established fact will be distracted.
+            <h2 class="h2 text-primary mb-4">谢谢您读完了长亮的网站</h2>
+            <p class="text-secondary mb-8 max-w-sm xl:max-w-none mx-auto">
+              如您有物资需要回收，回收电话请点击下方
             </p>
-            <button class="btn btn-accent mx-auto">
-              Connect With Us <i class="ri-arrow-right-line text-primary"></i>
+            <!-- 桌面端：点击复制电话 -->
+            <button class="btn btn-accent mx-auto hidden xl:flex" onclick="copyPhoneNumber()">
+              联系我们13619222442 <i class="ri-arrow-right-line text-primary"></i>
             </button>
+            <!-- 移动端：点击拨打电话 -->
+            <a href="tel:13619222442" class="btn btn-accent mx-auto xl:hidden">
+              联系我们 13619222442 <i class="ri-arrow-right-line text-primary"></i>
+            </a>
           </div>
         </div>
       </section>
+
+      <script>
+        function copyPhoneNumber() {
+          navigator.clipboard.writeText('13619222442').then(() => {
+            alert('电话号码已复制到剪贴板！');
+          }).catch(() => {
+            // fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = '13619222442';
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('电话号码已复制到剪贴板！');
+          });
+        }
+      </script>
 
       <!-- footer -->
       <footer class="footer mt-[40px] xl:mt-[80px] relative z-20">
@@ -772,35 +746,35 @@
           <div class="flex flex-row flex-wrap justify-center gap-4 mb-6 xl:flex-nowrap xl:gap-[100px] xl:justify-center xl:mb-[80px]">
             <!-- pages -->
             <div class="footer__item">
-              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">快速导航</h3>
-              <div class="flex flex-col gap-1 xl:gap-4">
-                <a class="xl:text-[20px]" href="/about.html">长亮简介</a>
-                <a class="xl:text-[20px]" href="/projects.html">回收项目</a>
-                <a class="xl:text-[20px]" href="/cases.html">回收案例</a>
-                <a class="xl:text-[20px]" href="/honors.html">荣誉资质</a>
+              <h3 class="text-xs xl:text-[32px] mb-1 xl:mb-4 font-bold">快速导航</h3>
+              <div class="flex flex-col gap-1 xl:gap-5">
+                <a class="xl:text-[26px]" href="/about.html">长亮简介</a>
+                <a class="xl:text-[26px]" href="/projects.html">回收项目</a>
+                <a class="xl:text-[26px]" href="/cases.html">回收案例</a>
+                <a class="xl:text-[26px]" href="/honors.html">荣誉资质</a>
               </div>
             </div>
 
             <!-- contact -->
             <div class="footer__item">
-              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">联系方式</h3>
-              <div class="flex flex-col gap-1 xl:gap-2">
-                <p class="xl:text-[22px]">业务对接：王先生</p>
-                <p class="xl:text-[22px]">咨询热线：13619222442</p>
-                <p class="xl:text-[22px]">公司地址：西安市未央区阳光北郡1号</p>
+              <h3 class="text-xs xl:text-[32px] mb-1 xl:mb-4 font-bold">联系方式</h3>
+              <div class="flex flex-col gap-1 xl:gap-3">
+                <p class="xl:text-[28px]">业务对接：王先生</p>
+                <p class="xl:text-[28px]">咨询热线：13619222442</p>
+                <p class="xl:text-[28px]">公司地址：西安市未央区阳光北郡1号</p>
               </div>
             </div>
             <!-- wechat -->
             <div class="footer__item">
-              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">扫一扫关注微信</h3>
-              <img src="/assets/hero/side/vx.png" alt="微信二维码" class="w-16 xl:w-32 h-auto object-contain mx-auto xl:mx-0" />
+              <h3 class="text-xs xl:text-[32px] mb-1 xl:mb-4 font-bold">扫一扫关注微信</h3>
+              <img src="/assets/hero/side/vx.png" alt="微信二维码" class="w-16 xl:w-40 h-auto object-contain mx-auto xl:mx-0" />
             </div>
           </div>
         </div>
         <p
-          class="footer_copyright text-center text-[10px] xl:text-lg py-4 xl:py-6 bg-white xl:border-t"
+          class="footer_copyright text-center text-[10px] xl:text-xl py-4 xl:py-6 bg-white xl:border-t"
         >
-          Copyright &copy; 西安长亮商贸有限公司 2026. All rights reserved
+          Copyright &copy; 西安长亮商贸有限公司 2026. 版权所有 | <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">陕ICP备2026012431号</a>
         </p>
       </footer>
     </main>
