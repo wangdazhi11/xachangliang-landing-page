@@ -11,7 +11,7 @@ html {
 }
 
 .scale-wrapper {
-  --content-max-width: calc(1320px / 0.7);
+  --content-max-width: calc(1320px / 0.65);
   zoom: 100%;
 }
 
