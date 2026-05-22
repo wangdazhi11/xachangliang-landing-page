@@ -23,7 +23,10 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
       "mcp__playwright__browser_resize",
       "Bash(mkdir -p public/assets)",
-      "Bash(cp -r assets/services public/assets/)"
+      "Bash(cp -r assets/services public/assets/)",
+      "Bash(mkdir -p public/fonts)",
+      "Bash(curl -L \"https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css\" -o public/fonts/remixicon.min.css)",
+      "Bash(curl *)"
     ]
   }
 }
