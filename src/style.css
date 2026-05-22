@@ -219,6 +219,11 @@ h6 {
 .service-item {
   font-size: 18px;
 }
+@media (min-width: 960px) {
+  .service-item {
+    font-size: 28px;
+  }
+}
 .service-item:hover {
   transform: translateX(4px);
 }

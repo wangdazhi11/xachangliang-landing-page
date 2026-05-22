@@ -236,14 +236,14 @@
 
       <!-- 回收服务项目 -->
       <section id="services" class="services mt-2 mb-4 lg:mt-4 lg:mb-8 relative z-20 scroll-mt-[100px]">
-        <div class="max-w-[1800px] mx-auto px-4">
+        <div class="px-4">
           <!-- 服务内容区域 -->
           <div class="flex flex-row gap-2 lg:gap-8" id="service-container">
             <!-- 左侧服务列表 -->
             <div class="w-[100px] lg:w-1/3 flex-shrink-0" id="service-left">
               <div class="bg-accent-secondary rounded-lg lg:rounded-[30px] px-1 py-0.5 lg:p-6">
-                <h3 class="text-[9px] lg:text-2xl font-bold text-primary mb-0 lg:mb-6 flex items-center gap-0.5 lg:gap-2">
-                  <i class="ri-list-check-2 text-accent text-[9px] lg:text-xl"></i>
+                <h3 class="text-[9px] lg:text-3xl font-bold text-primary mb-0 lg:mb-6 flex items-center gap-0.5 lg:gap-2">
+                  <i class="ri-list-check-2 text-accent text-[9px] lg:text-2xl"></i>
                   <span>回收服务项目</span>
                 </h3>
                 <div class="grid grid-cols-1 gap-0 lg:gap-2" id="service-list">
@@ -251,8 +251,8 @@
                 </div>
                 <div id="expand-btn" class="mt-0.5 lg:mt-4 text-center">
                   <button onclick="toggleServices()" class="text-primary font-medium hover:underline flex items-center justify-center gap-1 lg:gap-2 mx-auto text-[8px] lg:text-2xl">
-                    <span id="expand-text">查看更多</span>
-                    <i id="expand-icon" class="ri-arrow-down-s-line text-[8px] lg:text-2xl"></i>
+                    <span id="expand-text">收起</span>
+                    <i id="expand-icon" class="ri-arrow-up-s-line text-[8px] lg:text-2xl"></i>
                   </button>
                 </div>
               </div>
@@ -262,8 +262,8 @@
             <div class="flex-1 flex flex-col" id="service-right">
               <div class="bg-white rounded-xl lg:rounded-[30px] shadow-xl px-3 pt-0.5 pb-3 lg:p-10 flex flex-col">
                 <div class="flex items-center justify-between mb-1 lg:mb-6">
-                  <h3 id="service-title" class="text-[9px] lg:text-2xl font-bold text-primary flex items-center gap-0.5 lg:gap-2">
-                    <i class="ri-image-line text-accent text-sm lg:text-xl"></i>
+                  <h3 id="service-title" class="text-[9px] lg:text-3xl font-bold text-primary flex items-center gap-0.5 lg:gap-2">
+                    <i class="ri-image-line text-accent text-sm lg:text-2xl"></i>
                     <span>请选择服务</span>
                   </h3>
                   <div class="flex gap-1 lg:gap-2">
@@ -290,7 +290,7 @@
 
     <!-- about - 放在scale-wrapper外，背景色可延伸至视口两端 -->
     <section id="about" class="about relative z-20 scroll-mt-[100px] bg-blue-100">
-      <div class="max-w-[1400px] mx-auto px-4 lg:px-8 py-6 lg:py-8">
+      <div class="max-w-[1400px] mx-auto px-4 lg:px-8 py-6 lg:py-16">
         <!-- 标题行：图片浮动在右侧 -->
         <div class="relative">
           <!-- 图片浮动在右侧 -->
@@ -1112,7 +1112,7 @@
 
       let currentService = null;
       let currentImageIndex = 0;
-      let isExpanded = false;
+      let isExpanded = true;
       const COLLAPSED_COUNT = 11;
 
       function toggleServices() {
@@ -1139,9 +1139,9 @@
         const activeIndex = keepIndex !== undefined ? keepIndex : 0;
 
         serviceList.innerHTML = displayServices.map((s, i) => `
-          <div class="service-item leading-none py-0.5 px-0.5 lg:py-0.5 lg:px-2 rounded lg:rounded-xl cursor-pointer transition-all duration-300 hover:bg-white flex items-center gap-0 lg:gap-2 ${s.sub ? 'lg:pl-6' : ''} ${services.indexOf(s) === activeIndex ? 'bg-white shadow-md' : ''}" onclick="selectService(${services.indexOf(s)})" id="service-${s.id}">
-            <i class="${s.icon} text-xs lg:text-2xl text-accent"></i>
-            <span class="text-primary font-medium text-[9px] lg:text-2xl truncate">${s.name.replace('西安', '')}</span>
+          <div class="service-item leading-tight py-0.5 px-0.5 lg:py-1 lg:px-3 rounded lg:rounded-xl cursor-pointer transition-all duration-300 hover:bg-white flex items-start lg:items-center gap-0 lg:gap-3 ${s.sub ? 'pl-4 lg:pl-8' : ''} ${services.indexOf(s) === activeIndex ? 'bg-white shadow-md' : ''}" onclick="selectService(${services.indexOf(s)})" id="service-${s.id}">
+            <i class="${s.icon} text-[10px] lg:text-[28px] text-accent mt-0.5 lg:mt-0"></i>
+            <span class="text-primary font-medium text-[9px] lg:text-[28px] break-all lg:break-normal">${s.name.replace('西安', '')}</span>
           </div>
         `).join('');
 
