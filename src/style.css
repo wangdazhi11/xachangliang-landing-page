@@ -242,3 +242,14 @@ h6 {
   transform: scale(1.03);
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
+
+/* 公司优势懒加载动画 */
+.feature-item {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.feature-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
