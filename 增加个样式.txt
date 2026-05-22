@@ -1,0 +1,978 @@
+<div id="smv_con_66_15" ctype="slideset" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="" iscontainer="True" pvid="" tareaid="" re-direction="y" daxis="Y" isdeletable="True" style="height: 271px; width: 100%; left: 0px; top: 1268px;z-index:26;" selectarea="Area0"><div class="yibuFrameContent con_66_15  slideset_Style3  " style="overflow:visible;;">
+<!--w-slide-->
+<div id="lider_smv_con_66_15_wrapper">
+    
+<div class="w-slide" id="slider_smv_con_66_15" data-jssor-slider="1" style="left: -913.5px; width: 3027px; visibility: visible; height: 270.984px;">
+        <div style="position: absolute; display: block; top: 0px; left: 0px; width: 3027px; height: 270.984px;"><div style="position: absolute; display: block; top: 0px; left: 0px; width: 3027px; height: 270.984px;" data-scale-ratio="1"><div class="w-slide-inner" data-u="slides" style="width: 3027px; z-index: 0; position: absolute; top: 0px; left: 0px;"><div style="top: 0px; left: 0px; width: 3027px; height: 270.984px; position: absolute; z-index: 0; pointer-events: none;"></div></div><div class="w-slide-inner" data-u="slides" style="width: 3027px; z-index: 0; position: absolute; overflow: hidden; top: 0px; left: 0px;"><div style="top: 0px; left: 0px; width: 3027px; height: 270.984px; position: absolute; background-color: rgb(0, 0, 0); opacity: 0; z-index: 0;"></div>
+
+                <div class="content-box" data-area="Area0" style="z-index: 1; top: 0px; left: 0px; width: 3027px; height: 270.984px; position: absolute; overflow: hidden;">
+                    <div id="smc_Area0" cid="con_66_15" class="smAreaC slideset_AreaC" style="z-index: 1; width: 1200px; position: relative; margin: 0px auto;">
+                        <div id="smv_con_112_1" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item3" areaid="Area0" iscontainer="False" pvid="con_66_15" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 36px; width: 1049px; left: 75px; top: 127px; z-index: 3;"><div class="yibuFrameContent con_112_1  text_Style1  " style="overflow: hidden; z-index: 1;"><div id="txt_con_112_1" style="height: 100%; z-index: 1;">
+    <div class="editableContent" id="txtc_con_112_1" style="height: 100%; overflow-wrap: break-word; z-index: 1;">
+        <p style="text-align: center; z-index: 1;"><span style="font-size: 18px; z-index: 1;"><span style="color: rgb(255, 255, 255); z-index: 1;"><span style="font-family: &quot;Source Han Sans&quot;, Geneva, sans-serif; z-index: 1;">常州天顺再生资源有限公司多年来专注废旧物资回收的再利用和厂房拆除、整厂打包业务</span></span></span></p>
+
+    </div>
+</div>
+
+<script style="z-index: 1;">
+    var tables = $(' #smv_con_112_1').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>                    </div>
+                    <div class="content-box-inner" style="background-image: url(&quot;//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467830.jpg&quot;); background-position: 50% 50%; background-size: cover; background-color: rgb(255, 255, 255); opacity: 1; z-index: 1;"></div>
+                <div style="top: 0px; left: 0px; width: 3027px; height: 270.984px; z-index: 1000; display: none;"></div></div>
+        </div></div></div>
+        <!-- Bullet Navigator -->
+        <div style="position: absolute; display: block; right: 16px; bottom: 16px; left: 1506px; width: 15px; height: 15px;"><div data-u="navigator" class="w-slide-btn-box   f-hide " data-autocenter="1" data-scale-ratio="1" style="width: 15px; left: 0px; height: 15px; top: 0px;">
+            <!-- bullet navigator item prototype -->
+            
+        <div class="w-slide-btn w-slide-btnav" data-u="prototype" data-jssor-button="1" style="position: absolute; left: 0px; top: 0px;"></div></div></div>
+        <!-- 1Arrow Navigator -->
+        <div style="position: absolute; display: block; top: 135.492px; left: 10px; width: 0px; height: 0px;"><span data-u="arrowleft" class="w-slide-arrowl slideArrow f-hide w-slide-arrowlds" data-autocenter="2" id="left_con_66_15" data-jssor-button="1" data-scale-ratio="1" style="top: 4px; left: 0px; pointer-events: none;">
+            <i class="w-itemicon mw-iconfont">ꂃ</i>
+        </span></div>
+        <div style="position: absolute; display: block; top: 135.492px; right: 10px; width: 0px; height: 0px;"><span data-u="arrowright" class="w-slide-arrowr slideArrow f-hide w-slide-arrowrds" data-autocenter="2" id="right_con_66_15" data-jssor-button="1" data-scale-ratio="1" style="top: 4px; left: 0px; pointer-events: none;">
+            <i class="w-itemicon mw-iconfont">ꁹ</i>
+        </span></div>
+    </div></div>
+
+<!--/w-slide-->
+<script type="text/javascript">
+    var jssorCache_con_66_15 = {
+            CtrlId:"con_66_15",
+            SliderId: "slider_smv_con_66_15",
+            Html: $("#slider_smv_con_66_15")[0].outerHTML,
+            On: function (slideIndex, fromIndex) {
+               slideAnimation_con_66_15 (slideIndex, fromIndex);
+            }
+    };
+    var slideAnimation_con_66_15 = function (slideIndex, fromIndex) {
+        var $slideWrapper = $("#slider_smv_con_66_15 .w-slide-inner:last");
+        var len = $slideWrapper.find(">.content-box").length
+
+        var $nextSlide = $slideWrapper.find(".content-box:eq(" + ((slideIndex + 1)%len) + ")");
+        $nextSlide.find(".animated").smanimate("stop");
+
+        var $curSlide = $slideWrapper.find(".content-box:eq(" + slideIndex + ")");
+        $curSlide.find(".animated").smanimate("replay")
+
+        // var $fromSlide = $slideWrapper.find(".content-box:eq(" + fromIndex + ")");
+        // $fromSlide.find(".animated").smanimate("stop");
+
+        $("#switch_con_66_15 .page").html(slideIndex + 1);
+        $("#smv_con_66_15").attr("selectArea", $curSlide.attr("data-area"));
+
+        return false;
+    };
+    con_66_15_page = 1;
+    var slide_con_66_15;
+    con_66_15_sliderset3_init = function () {
+        var jssor_1_options_con_66_15 = {
+            $AutoPlay: "False"=="True"?false:"on" == "on",//自动播放
+            $PlayOrientation: 1,//2为向上滑，1为向左滑
+            $Loop: 1,//循环
+            $Idle: parseInt("3000"),//切换间隔
+            $SlideDuration: "1000",//延时
+            $SlideEasing: $Jease$.$OutQuint,
+            
+             $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: GetSlideAnimation("3", "1000"),
+                $TransitionsOrder: 1
+            },
+            
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $ActionMode: "1"
+            }
+        };
+        //初始化幻灯
+        var slide = slide_con_66_15 = new $JssorSlider$("slider_smv_con_66_15", jssor_1_options_con_66_15);
+        if (typeof (LayoutConverter) !== "undefined") {
+            jssorCache_con_66_15 .JssorOpt= jssor_1_options_con_66_15,
+            jssorCache_con_66_15 .Jssor = slide;
+        }
+        $('#smv_con_66_15').data('jssor_slide', slide);
+         //resize游览器的时候触发自动缩放幻灯秀
+
+        //幻灯栏目自动或手动切换时触发的事件
+        slide.$On($JssorSlider$.$EVT_PARK, slideAnimation_con_66_15);
+        //切换栏点击事件
+        $("#switch_con_66_15 .left").unbind("click").click(function () {
+            if(con_66_15_page==1){
+                con_66_15_page =1;
+            } else {
+                con_66_15_page = con_66_15_page - 1;
+            }
+            $("#switch_con_66_15 .page").html(con_66_15_page);
+            slide.$Prev();
+            return false;
+        });
+        $("#switch_con_66_15 .right").unbind("click").click(function () {
+            if(con_66_15_page==1){
+                con_66_15_page = 1;
+            } else {
+                con_66_15_page = con_66_15_page + 1;
+            }
+           $("#switch_con_66_15 .page").html(con_66_15_page);
+         slide.$Next();
+         return false;
+        });
+
+        /** 在Ipad上页面有缩放，选择最大值重新计算尺寸 Start */
+        var $this = $('#slider_smv_con_66_15');
+        var ww = $(window).width();
+        var tw = $this.parent().width();
+        if (ww !== tw) {
+            slide.$ScaleWidth(Math.max(ww, tw));
+        }
+        /** 在Ipad上页面有缩放，选择最大值重新计算尺寸 End */
+    };
+    $(function () {
+        var jssorCopyTmp = document.getElementById('slider_smv_con_66_15').cloneNode(true);
+
+        var $jssorIntt = function (skipInit) {
+        //获取幻灯显示动画类型
+            var $this = $('#slider_smv_con_66_15');
+            var dh = $(document).height();
+            var wh = $(window).height();
+            var ww = $(window).width();
+            //如果在内容区,区内容区宽度（不区分header ，footer ，main）
+            var width = 1000;
+            //区分页头、页尾、内容区宽度
+            if ($this.parents(".header").length > 0) {
+                width = $this.parents(".header").width();
+            } else if ($this.parents(".footer").length > 0) {
+                width = $this.parents(".footer").width();
+            } else {
+                width = $this.parents(".smvContainer").width();
+            }
+
+            if (ww > width) {
+                var left = parseInt((ww - width) * 10 / 2) / 10;
+                $this.css({ 'left': -left, 'width': ww });
+            } else {
+                $this.css({ 'left': 0, 'width': ww });
+            }
+
+            if (VisitFromMobile() && typeof (LayoutConverter) === "undefined") {
+                $this.css("min-width", width);
+                setTimeout(function () {
+                    var boxleft = (width - 330) / 2;
+                    $this.find(".w-slide-btn-box").css("left", boxleft + "px");
+                }, 300);
+            }
+            $this.children().not(".slideArrow").css({ "width": $this.width() });
+
+             if (!skipInit) {
+                con_66_15_sliderset3_init();
+             }
+
+            var areaId = $("#smv_con_66_15").attr("tareaid");
+            if(areaId==""){
+                var mainWidth = $("#smv_Main").width();
+                $("#smv_con_66_15 .slideset_AreaC").css({"width":mainWidth+"px","position":"relative","margin":"0 auto"});
+            }else{
+                var controlWidth = $("#smv_con_66_15").width();
+                $("#smv_con_66_15 .slideset_AreaC").css({"width":controlWidth+"px","position":"relative","margin":"0 auto"});
+            }
+            $("#smv_con_66_15").attr("selectArea", "Area0");
+
+            var arrowHeight = $('#slider_smv_con_66_15 .w-slide-arrowl').eq(-1).outerHeight();
+            var arrowTop = (18 - arrowHeight) / 2;
+            $('#slider_smv_con_66_15 .w-slide-arrowl').eq(-1).css('top', arrowTop);
+            $('#slider_smv_con_66_15 .w-slide-arrowr').eq(-1).css('top', arrowTop);
+        }
+        $jssorIntt();
+
+            
+        function ScaleSlider() {
+                     slide_con_66_15.$Off($JssorSlider$.$EVT_PARK,slideAnimation_con_66_15);
+                     var inst = $('#slider_smv_con_66_15');
+                     var orginWidth = inst.width();
+                     if (orginWidth == $(window).width()) return;
+                    var inst_parent = inst.parent();
+                    inst.remove()
+                    inst_parent.append(jssorCopyTmp.cloneNode(true));
+                    inst_parent.find('.animated').smanimate().stop();
+                    $jssorIntt();
+                  }
+        if (typeof (LayoutConverter) === "undefined") {
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+        }
+        
+            if (typeof (LayoutConverter) !== "undefined") {
+            jssorCache_con_66_15 .ResizeFunc = $jssorIntt;
+            LayoutConverter.CtrlJsVariableList.push(jssorCache_con_66_15 );
+        }
+    });
+
+
+
+</script>
+</div></div>
+
+
+<div id="smv_con_73_56" ctype="banner" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item0" areaid="" iscontainer="True" pvid="" tareaid="" re-direction="y" daxis="Y" isdeletable="True" style="height: 1065px; width: 100%; left: 0px; top: 1538px;z-index:0;"><div class="yibuFrameContent con_73_56  banner_Style1  " style="overflow:visible;;"><div class="fullcolumn-inner smAreaC" id="smc_Area0" cid="con_73_56" style="width:1200px">
+    <div id="smv_con_68_22" ctype="image" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Left&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 1px; top: 2px; z-index: 1; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_68_22  image_Style3  " style="overflow:visible;;">
+<div class="w-image-box" data-filltype="1" id="div_con_68_22" style="height: 253px;">
+    <a target="_self">
+        <img src="//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467383.jpg" alt="" title="" id="img_smv_con_68_22" style="width: 498px; height: auto; margin-top: -60.25px; margin-left: 0px;">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        InitImageSmv("con_68_22","498","253","1");
+            
+        $('#smv_con_68_22 .w-image-box').hover(function () {
+            $(this).find("img").css({ "transform": "scale(1.3)", "transition": "all,.4s" })
+        }, function () {
+            $(this).find("img").css({ "transform": "", "transition": "" })
+        });
+            
+    });
+</script></div></div><div id="smv_con_71_28" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 695px; top: 0px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_71_28  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_71_28">
+        <div id="smv_con_69_23" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_71_28" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 104px; width: 500px; left: 0px; top: 32px;z-index:29;"><div class="yibuFrameContent con_69_23  text_Style1  " style="overflow:hidden;;"><div id="txt_con_69_23" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_69_23" style="height: 100%; word-wrap:break-word;">
+        <h2><span style="line-height:1.5"><span style="font-size:30px"><span style="color:#009944">多年回收经验，实力强大</span></span></span></h2>
+
+<p><span style="font-size:20px"><span style="line-height:1.5"><span style="color:#666666">MANY YEARS OF RECYCLING EXPERIENCE,STRONG</span></span></span></p>
+
+<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_69_23').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div><div id="smv_con_70_25" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_71_28" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 91px; width: 500px; left: 0px; top: 141px;z-index:30;"><div class="yibuFrameContent con_70_25  text_Style1  " style="overflow:hidden;;"><div id="txt_con_70_25" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_70_25" style="height: 100%; word-wrap:break-word;">
+        <p style="text-align:justify"><span style="line-height:1.75"><span style="font-size:16px">我们是一家正规、规模较大、收购区域广、综合实力较强的企业，自创办以来与全省及整个长三角地区的各个生产商、酒店宾馆、商场等事业单位建立了良好稳定的业务合作关系。</span></span></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_70_25').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>    </div>
+</div></div></div><div id="smv_con_76_42" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Left&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 2px; top: 258px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_76_42  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_76_42">
+        <div id="smv_con_77_42" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_76_42" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 104px; width: 500px; left: 0px; top: 32px;z-index:29;"><div class="yibuFrameContent con_77_42  text_Style1  " style="overflow:hidden;;"><div id="txt_con_77_42" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_77_42" style="height: 100%; word-wrap:break-word;">
+        <h2><span style="line-height:1.5"><span style="font-size:30px"><span style="color:#009944">回收项目多 服务范围广</span></span></span></h2>
+
+<p><span style="line-height:1.5"><span style="font-size:22px"><span style="color:#666666">MANY RECYCLING PROJECTS</span></span></span></p>
+
+<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_77_42').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div><div id="smv_con_78_42" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_76_42" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 85px; width: 500px; left: 0px; top: 141px;z-index:30;"><div class="yibuFrameContent con_78_42  text_Style1  " style="overflow:hidden;;"><div id="txt_con_78_42" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_78_42" style="height: 100%; word-wrap:break-word;">
+        <p style="text-align:justify"><span style="line-height:1.75"><span style="font-size:16px">回收范围广泛，公司长期收购各种废旧金属、库存电子产品、废旧电缆线、废铝、废铜、废机械、废不锈钢及各种废旧金属物资。可根据当下行情给予您合理的回收价格。</span></span></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_78_42').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>    </div>
+</div></div></div><div id="smv_con_79_59" ctype="image" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 695px; top: 256px; z-index: 1; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_79_59  image_Style3  " style="overflow:visible;;">
+<div class="w-image-box" data-filltype="1" id="div_con_79_59" style="height: 253px;">
+    <a target="_self">
+        <img src="//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467334.jpg" alt="" title="" id="img_smv_con_79_59" style="width: 498px; height: auto; margin-top: -60.25px; margin-left: 0px;">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        InitImageSmv("con_79_59","498","253","1");
+            
+        $('#smv_con_79_59 .w-image-box').hover(function () {
+            $(this).find("img").css({ "transform": "scale(1.3)", "transition": "all,.4s" })
+        }, function () {
+            $(this).find("img").css({ "transform": "", "transition": "" })
+        });
+            
+    });
+</script></div></div><div id="smv_con_80_39" ctype="button" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 60px; width: 100px; left: 549px; top: 95px;z-index:32;"><div class="yibuFrameContent con_80_39  button_Style3  " style="overflow:visible;;"><a target="_self" class="w-button f-ellipsis" style="width: 100px; height: 60px; line-height: 60px;">
+    <span class="w-button-position">
+        <em class="w-button-text f-ellipsis">
+            <i class="mw-iconfont w-button-icon w-icon-hide"></i>
+            <span class="mw-txt">01</span>
+        </em>
+    </span>
+</a>
+    <script type="text/javascript">
+        $(function () {
+        });
+    </script>
+</div></div><div id="smv_con_81_54" ctype="button" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 60px; width: 100px; left: 549px; top: 350px;z-index:32;"><div class="yibuFrameContent con_81_54  button_Style3  " style="overflow:visible;;"><a target="_self" class="w-button f-ellipsis" style="width: 100px; height: 60px; line-height: 60px;">
+    <span class="w-button-position">
+        <em class="w-button-text f-ellipsis">
+            <i class="mw-iconfont w-button-icon w-icon-hide"></i>
+            <span class="mw-txt">02</span>
+        </em>
+    </span>
+</a>
+    <script type="text/javascript">
+        $(function () {
+        });
+    </script>
+</div></div><div id="smv_con_82_16" ctype="image" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Left&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 0px; top: 514px; z-index: 1; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_82_16  image_Style3  " style="overflow:visible;;">
+<div class="w-image-box" data-filltype="1" id="div_con_82_16" style="height: 253px;">
+    <a target="_self">
+        <img src="//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467179.jpg" alt="" title="" id="img_smv_con_82_16" style="width: 498px; height: auto; margin-top: -60.25px; margin-left: 0px;">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        InitImageSmv("con_82_16","498","253","1");
+            
+        $('#smv_con_82_16 .w-image-box').hover(function () {
+            $(this).find("img").css({ "transform": "scale(1.3)", "transition": "all,.4s" })
+        }, function () {
+            $(this).find("img").css({ "transform": "", "transition": "" })
+        });
+            
+    });
+</script></div></div><div id="smv_con_83_54" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 696px; top: 512px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_83_54  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_83_54">
+        <div id="smv_con_84_54" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_83_54" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 104px; width: 500px; left: 0px; top: 32px;z-index:29;"><div class="yibuFrameContent con_84_54  text_Style1  " style="overflow:hidden;;"><div id="txt_con_84_54" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_84_54" style="height: 100%; word-wrap:break-word;">
+        <h2><span style="line-height:1.5"><span style="font-size:30px"><span style="color:#009944">上门高价回收 简单快捷</span></span></span></h2>
+
+<p><span style="line-height:1.5"><span style="font-size:22px"><span style="color:#666666">HIGH-PRICED RECYCLING IS SIMPLE AND FAST</span></span></span></p>
+
+<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_84_54').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div><div id="smv_con_85_54" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_83_54" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 142px; width: 500px; left: 0px; top: 141px;z-index:30;"><div class="yibuFrameContent con_85_54  text_Style1  " style="overflow:hidden;;"><div id="txt_con_85_54" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_85_54" style="height: 100%; word-wrap:break-word;">
+        <p style="text-align:justify"><span style="line-height:1.75"><span style="font-size:16px">公司拥有大、小型货车，专业上门服务，为您排难解忧!长期免费上门估价，高价现金回收各类二手设备。<br>
+拥有自己的运输车辆和回收团队，高价现金回收旧机械物资，快速上门服务，为您排忧解难，长期免费上门估价，专业的回收团队，提供一站式的专业回收报价、拆除、运输服务。</span></span></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_85_54').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>    </div>
+</div></div></div><div id="smv_con_86_5" ctype="button" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 60px; width: 100px; left: 549px; top: 609px;z-index:32;"><div class="yibuFrameContent con_86_5  button_Style3  " style="overflow:visible;;"><a target="_self" class="w-button f-ellipsis" style="width: 100px; height: 60px; line-height: 60px;">
+    <span class="w-button-position">
+        <em class="w-button-text f-ellipsis">
+            <i class="mw-iconfont w-button-icon w-icon-hide"></i>
+            <span class="mw-txt">03</span>
+        </em>
+    </span>
+</a>
+    <script type="text/javascript">
+        $(function () {
+        });
+    </script>
+</div></div><div id="smv_con_87_27" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Left&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 2px; top: 771px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_87_27  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_87_27">
+        <div id="smv_con_88_27" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_87_27" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 104px; width: 500px; left: 0px; top: 32px;z-index:29;"><div class="yibuFrameContent con_88_27  text_Style1  " style="overflow:hidden;;"><div id="txt_con_88_27" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_88_27" style="height: 100%; word-wrap:break-word;">
+        <h2><span style="line-height:1.5"><span style="font-size:30px"><span style="color:#009944">完善的服务团队</span></span></span></h2>
+
+<p><span style="line-height:1.5"><span style="font-size:22px"><span style="color:#666666">PERFECT SERVICE TEAM</span></span></span></p>
+
+<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_88_27').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div><div id="smv_con_89_27" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_87_27" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 85px; width: 500px; left: 0px; top: 141px;z-index:30;"><div class="yibuFrameContent con_89_27  text_Style1  " style="overflow:hidden;;"><div id="txt_con_89_27" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_89_27" style="height: 100%; word-wrap:break-word;">
+        <p style="text-align:justify"><span style="line-height:1.75"><span style="font-size:16px">完善的服务体系促进了我们对作业的流畅，使得工作效率大大提高，提升了与客户之间繁锁的交易方式，使得合作轻松、快捷、保密!线上线下结合，快速响应第一时间解决您各类问题。</span></span></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_89_27').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>    </div>
+</div></div></div><div id="smv_con_90_44" ctype="image" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 696px; top: 801px; z-index: 1; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_90_44  image_Style3  " style="overflow:visible;;">
+<div class="w-image-box" data-filltype="1" id="div_con_90_44" style="height: 253px;">
+    <a target="_self">
+        <img src="//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467055.jpg" alt="" title="" id="img_smv_con_90_44" style="width: 498px; height: auto; margin-top: -60.25px; margin-left: 0px;">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        InitImageSmv("con_90_44","498","253","1");
+            
+        $('#smv_con_90_44 .w-image-box').hover(function () {
+            $(this).find("img").css({ "transform": "scale(1.3)", "transition": "all,.4s" })
+        }, function () {
+            $(this).find("img").css({ "transform": "", "transition": "" })
+        });
+            
+    });
+</script></div></div><div id="smv_con_92_23" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 697px; top: 1056px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_92_23  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_92_23">
+            </div>
+</div></div></div><div id="smv_con_98_21" ctype="button" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 60px; width: 100px; left: 549px; top: 854px;z-index:32;"><div class="yibuFrameContent con_98_21  button_Style3  " style="overflow:visible;;"><a target="_self" class="w-button f-ellipsis" style="width: 100px; height: 60px; line-height: 60px;">
+    <span class="w-button-position">
+        <em class="w-button-text f-ellipsis">
+            <i class="mw-iconfont w-button-icon w-icon-hide"></i>
+            <span class="mw-txt">04</span>
+        </em>
+    </span>
+</a>
+    <script type="text/javascript">
+        $(function () {
+        });
+    </script>
+</div></div><div id="smv_con_110_10" ctype="line" class="esmartMargin smartAbs " cpid="32" cstyle="Style2" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="y" daxis="All" isdeletable="True" style="height: 1031px; width: 20px; left: 589px; top: 17px;z-index:1;"><div class="yibuFrameContent con_110_10  line_Style2  " style="overflow:visible;;"><!-- w-line -->
+<div style="position:relative; width:100%">
+    <div class="w-line" style="position:absolute;left:50%;" linetype="vertical"></div>
+</div>
+</div></div></div>
+<div id="bannerWrap_con_73_56" class="fullcolumn-outer" style="position: absolute; top: 0px; bottom: 0px; left: -407.5px; width: 2015px;">
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+        var resize = function () {
+            $("#smv_con_73_56 >.yibuFrameContent>.fullcolumn-inner").width($("#smv_con_73_56").parent().width());
+            $('#bannerWrap_con_73_56').fullScreen(function (t) {
+                if (VisitFromMobile()) {
+                    t.css("min-width", t.parent().width())
+                }
+            });
+        }
+        if (typeof (LayoutConverter) !== "undefined") {
+            LayoutConverter.CtrlJsVariableList.push({
+                CtrlId: "con_73_56",
+                ResizeFunc: resize,
+            });
+        } else {
+            $(window).resize(function (e) {
+                if (e.target == this) {
+                    resize();
+                }
+            });
+        }
+
+        resize();
+    });
+</script>
+</div></div>
+
+
+<div class="yibuFrameContent con_73_56  banner_Style1  " style="overflow:visible;;"><div class="fullcolumn-inner smAreaC" id="smc_Area0" cid="con_73_56" style="width:1200px">
+    <div id="smv_con_68_22" ctype="image" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Left&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 1px; top: 2px; z-index: 1; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_68_22  image_Style3  " style="overflow:visible;;">
+<div class="w-image-box" data-filltype="1" id="div_con_68_22" style="height: 253px;">
+    <a target="_self">
+        <img src="//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467383.jpg" alt="" title="" id="img_smv_con_68_22" style="width: 498px; height: auto; margin-top: -60.25px; margin-left: 0px;">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        InitImageSmv("con_68_22","498","253","1");
+            
+        $('#smv_con_68_22 .w-image-box').hover(function () {
+            $(this).find("img").css({ "transform": "scale(1.3)", "transition": "all,.4s" })
+        }, function () {
+            $(this).find("img").css({ "transform": "", "transition": "" })
+        });
+            
+    });
+</script></div></div><div id="smv_con_71_28" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 695px; top: 0px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_71_28  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_71_28">
+        <div id="smv_con_69_23" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_71_28" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 104px; width: 500px; left: 0px; top: 32px;z-index:29;"><div class="yibuFrameContent con_69_23  text_Style1  " style="overflow:hidden;;"><div id="txt_con_69_23" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_69_23" style="height: 100%; word-wrap:break-word;">
+        <h2><span style="line-height:1.5"><span style="font-size:30px"><span style="color:#009944">多年回收经验，实力强大</span></span></span></h2>
+
+<p><span style="font-size:20px"><span style="line-height:1.5"><span style="color:#666666">MANY YEARS OF RECYCLING EXPERIENCE,STRONG</span></span></span></p>
+
+<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_69_23').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div><div id="smv_con_70_25" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_71_28" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 91px; width: 500px; left: 0px; top: 141px;z-index:30;"><div class="yibuFrameContent con_70_25  text_Style1  " style="overflow:hidden;;"><div id="txt_con_70_25" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_70_25" style="height: 100%; word-wrap:break-word;">
+        <p style="text-align:justify"><span style="line-height:1.75"><span style="font-size:16px">我们是一家正规、规模较大、收购区域广、综合实力较强的企业，自创办以来与全省及整个长三角地区的各个生产商、酒店宾馆、商场等事业单位建立了良好稳定的业务合作关系。</span></span></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_70_25').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>    </div>
+</div></div></div><div id="smv_con_76_42" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Left&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 2px; top: 258px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_76_42  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_76_42">
+        <div id="smv_con_77_42" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_76_42" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 104px; width: 500px; left: 0px; top: 32px;z-index:29;"><div class="yibuFrameContent con_77_42  text_Style1  " style="overflow:hidden;;"><div id="txt_con_77_42" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_77_42" style="height: 100%; word-wrap:break-word;">
+        <h2><span style="line-height:1.5"><span style="font-size:30px"><span style="color:#009944">回收项目多 服务范围广</span></span></span></h2>
+
+<p><span style="line-height:1.5"><span style="font-size:22px"><span style="color:#666666">MANY RECYCLING PROJECTS</span></span></span></p>
+
+<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_77_42').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div><div id="smv_con_78_42" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_76_42" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 85px; width: 500px; left: 0px; top: 141px;z-index:30;"><div class="yibuFrameContent con_78_42  text_Style1  " style="overflow:hidden;;"><div id="txt_con_78_42" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_78_42" style="height: 100%; word-wrap:break-word;">
+        <p style="text-align:justify"><span style="line-height:1.75"><span style="font-size:16px">回收范围广泛，公司长期收购各种废旧金属、库存电子产品、废旧电缆线、废铝、废铜、废机械、废不锈钢及各种废旧金属物资。可根据当下行情给予您合理的回收价格。</span></span></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_78_42').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>    </div>
+</div></div></div><div id="smv_con_79_59" ctype="image" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 695px; top: 256px; z-index: 1; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_79_59  image_Style3  " style="overflow:visible;;">
+<div class="w-image-box" data-filltype="1" id="div_con_79_59" style="height: 253px;">
+    <a target="_self">
+        <img src="//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467334.jpg" alt="" title="" id="img_smv_con_79_59" style="width: 498px; height: auto; margin-top: -60.25px; margin-left: 0px;">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        InitImageSmv("con_79_59","498","253","1");
+            
+        $('#smv_con_79_59 .w-image-box').hover(function () {
+            $(this).find("img").css({ "transform": "scale(1.3)", "transition": "all,.4s" })
+        }, function () {
+            $(this).find("img").css({ "transform": "", "transition": "" })
+        });
+            
+    });
+</script></div></div><div id="smv_con_80_39" ctype="button" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 60px; width: 100px; left: 549px; top: 95px;z-index:32;"><div class="yibuFrameContent con_80_39  button_Style3  " style="overflow:visible;;"><a target="_self" class="w-button f-ellipsis" style="width: 100px; height: 60px; line-height: 60px;">
+    <span class="w-button-position">
+        <em class="w-button-text f-ellipsis">
+            <i class="mw-iconfont w-button-icon w-icon-hide"></i>
+            <span class="mw-txt">01</span>
+        </em>
+    </span>
+</a>
+    <script type="text/javascript">
+        $(function () {
+        });
+    </script>
+</div></div><div id="smv_con_81_54" ctype="button" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 60px; width: 100px; left: 549px; top: 350px;z-index:32;"><div class="yibuFrameContent con_81_54  button_Style3  " style="overflow:visible;;"><a target="_self" class="w-button f-ellipsis" style="width: 100px; height: 60px; line-height: 60px;">
+    <span class="w-button-position">
+        <em class="w-button-text f-ellipsis">
+            <i class="mw-iconfont w-button-icon w-icon-hide"></i>
+            <span class="mw-txt">02</span>
+        </em>
+    </span>
+</a>
+    <script type="text/javascript">
+        $(function () {
+        });
+    </script>
+</div></div><div id="smv_con_82_16" ctype="image" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Left&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 0px; top: 514px; z-index: 1; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_82_16  image_Style3  " style="overflow:visible;;">
+<div class="w-image-box" data-filltype="1" id="div_con_82_16" style="height: 253px;">
+    <a target="_self">
+        <img src="//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467179.jpg" alt="" title="" id="img_smv_con_82_16" style="width: 498px; height: auto; margin-top: -60.25px; margin-left: 0px;">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        InitImageSmv("con_82_16","498","253","1");
+            
+        $('#smv_con_82_16 .w-image-box').hover(function () {
+            $(this).find("img").css({ "transform": "scale(1.3)", "transition": "all,.4s" })
+        }, function () {
+            $(this).find("img").css({ "transform": "", "transition": "" })
+        });
+            
+    });
+</script></div></div><div id="smv_con_83_54" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 696px; top: 512px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_83_54  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_83_54">
+        <div id="smv_con_84_54" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_83_54" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 104px; width: 500px; left: 0px; top: 32px;z-index:29;"><div class="yibuFrameContent con_84_54  text_Style1  " style="overflow:hidden;;"><div id="txt_con_84_54" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_84_54" style="height: 100%; word-wrap:break-word;">
+        <h2><span style="line-height:1.5"><span style="font-size:30px"><span style="color:#009944">上门高价回收 简单快捷</span></span></span></h2>
+
+<p><span style="line-height:1.5"><span style="font-size:22px"><span style="color:#666666">HIGH-PRICED RECYCLING IS SIMPLE AND FAST</span></span></span></p>
+
+<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_84_54').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div><div id="smv_con_85_54" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_83_54" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 142px; width: 500px; left: 0px; top: 141px;z-index:30;"><div class="yibuFrameContent con_85_54  text_Style1  " style="overflow:hidden;;"><div id="txt_con_85_54" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_85_54" style="height: 100%; word-wrap:break-word;">
+        <p style="text-align:justify"><span style="line-height:1.75"><span style="font-size:16px">公司拥有大、小型货车，专业上门服务，为您排难解忧!长期免费上门估价，高价现金回收各类二手设备。<br>
+拥有自己的运输车辆和回收团队，高价现金回收旧机械物资，快速上门服务，为您排忧解难，长期免费上门估价，专业的回收团队，提供一站式的专业回收报价、拆除、运输服务。</span></span></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_85_54').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>    </div>
+</div></div></div><div id="smv_con_86_5" ctype="button" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 60px; width: 100px; left: 549px; top: 609px;z-index:32;"><div class="yibuFrameContent con_86_5  button_Style3  " style="overflow:visible;;"><a target="_self" class="w-button f-ellipsis" style="width: 100px; height: 60px; line-height: 60px;">
+    <span class="w-button-position">
+        <em class="w-button-text f-ellipsis">
+            <i class="mw-iconfont w-button-icon w-icon-hide"></i>
+            <span class="mw-txt">03</span>
+        </em>
+    </span>
+</a>
+    <script type="text/javascript">
+        $(function () {
+        });
+    </script>
+</div></div><div id="smv_con_87_27" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Left&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 2px; top: 771px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_87_27  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_87_27">
+        <div id="smv_con_88_27" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_87_27" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 104px; width: 500px; left: 0px; top: 32px;z-index:29;"><div class="yibuFrameContent con_88_27  text_Style1  " style="overflow:hidden;;"><div id="txt_con_88_27" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_88_27" style="height: 100%; word-wrap:break-word;">
+        <h2><span style="line-height:1.5"><span style="font-size:30px"><span style="color:#009944">完善的服务团队</span></span></span></h2>
+
+<p><span style="line-height:1.5"><span style="font-size:22px"><span style="color:#666666">PERFECT SERVICE TEAM</span></span></span></p>
+
+<p><u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_88_27').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div><div id="smv_con_89_27" ctype="text" class="esmartMargin smartAbs " cpid="32" cstyle="Style1" ccolor="Item4" areaid="Area0" iscontainer="False" pvid="con_87_27" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 85px; width: 500px; left: 0px; top: 141px;z-index:30;"><div class="yibuFrameContent con_89_27  text_Style1  " style="overflow:hidden;;"><div id="txt_con_89_27" style="height: 100%;">
+    <div class="editableContent" id="txtc_con_89_27" style="height: 100%; word-wrap:break-word;">
+        <p style="text-align:justify"><span style="line-height:1.75"><span style="font-size:16px">完善的服务体系促进了我们对作业的流畅，使得工作效率大大提高，提升了与客户之间繁锁的交易方式，使得合作轻松、快捷、保密!线上线下结合，快速响应第一时间解决您各类问题。</span></span></p>
+
+    </div>
+</div>
+
+<script>
+    var tables = $(' #smv_con_89_27').find('table')
+    for (var i = 0; i < tables.length; i++) {
+        var tab = tables[i]
+        var borderWidth = $(tab).attr('border')
+        if (borderWidth <= 0 || !borderWidth) {
+            console.log(tab)
+            $(tab).addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tbody").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("thead").children("tr").children("th").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("td").addClass('hidden-border')
+            $(tab).children("tfoot").children("tr").children("th").addClass('hidden-border')
+        }
+    }
+</script></div></div>    </div>
+</div></div></div><div id="smv_con_90_44" ctype="image" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 696px; top: 801px; z-index: 1; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_90_44  image_Style3  " style="overflow:visible;;">
+<div class="w-image-box" data-filltype="1" id="div_con_90_44" style="height: 253px;">
+    <a target="_self">
+        <img src="//nwzimg.wezhan.cn/contents/sitefiles2068/10342741/images/51467055.jpg" alt="" title="" id="img_smv_con_90_44" style="width: 498px; height: auto; margin-top: -60.25px; margin-left: 0px;">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        InitImageSmv("con_90_44","498","253","1");
+            
+        $('#smv_con_90_44 .w-image-box').hover(function () {
+            $(this).find("img").css({ "transform": "scale(1.3)", "transition": "all,.4s" })
+        }, function () {
+            $(this).find("img").css({ "transform": "", "transition": "" })
+        });
+            
+    });
+</script></div></div><div id="smv_con_92_23" ctype="area" smanim="{&quot;delay&quot;:0.75,&quot;duration&quot;:0.75,&quot;direction&quot;:&quot;Right&quot;,&quot;animationName&quot;:&quot;slideIn&quot;,&quot;infinite&quot;:&quot;1&quot;}" class="esmartMargin smartAbs animated" cpid="32" cstyle="Style1" ccolor="Item0" areaid="Area0" iscontainer="True" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 253px; width: 500px; left: 697px; top: 1056px; z-index: 31; opacity: 1;" sm-finished="true" smexecuted="1"><div class="yibuFrameContent con_92_23  area_Style1  " style="overflow:visible;;"><div class="w-container" data-effect-name="enterTop">
+    <div class="smAreaC" id="smc_Area0" cid="con_92_23">
+            </div>
+</div></div></div><div id="smv_con_98_21" ctype="button" class="esmartMargin smartAbs " cpid="32" cstyle="Style3" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="all" daxis="All" isdeletable="True" style="height: 60px; width: 100px; left: 549px; top: 854px;z-index:32;"><div class="yibuFrameContent con_98_21  button_Style3  " style="overflow:visible;;"><a target="_self" class="w-button f-ellipsis" style="width: 100px; height: 60px; line-height: 60px;">
+    <span class="w-button-position">
+        <em class="w-button-text f-ellipsis">
+            <i class="mw-iconfont w-button-icon w-icon-hide"></i>
+            <span class="mw-txt">04</span>
+        </em>
+    </span>
+</a>
+    <script type="text/javascript">
+        $(function () {
+        });
+    </script>
+</div></div><div id="smv_con_110_10" ctype="line" class="esmartMargin smartAbs " cpid="32" cstyle="Style2" ccolor="Item0" areaid="Area0" iscontainer="False" pvid="con_73_56" tareaid="" re-direction="y" daxis="All" isdeletable="True" style="height: 1031px; width: 20px; left: 589px; top: 17px;z-index:1;"><div class="yibuFrameContent con_110_10  line_Style2  " style="overflow:visible;;"><!-- w-line -->
+<div style="position:relative; width:100%">
+    <div class="w-line" style="position:absolute;left:50%;" linetype="vertical"></div>
+</div>
+</div></div></div>
+<div id="bannerWrap_con_73_56" class="fullcolumn-outer" style="position: absolute; top: 0px; bottom: 0px; left: -407.5px; width: 2015px;">
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+        var resize = function () {
+            $("#smv_con_73_56 >.yibuFrameContent>.fullcolumn-inner").width($("#smv_con_73_56").parent().width());
+            $('#bannerWrap_con_73_56').fullScreen(function (t) {
+                if (VisitFromMobile()) {
+                    t.css("min-width", t.parent().width())
+                }
+            });
+        }
+        if (typeof (LayoutConverter) !== "undefined") {
+            LayoutConverter.CtrlJsVariableList.push({
+                CtrlId: "con_73_56",
+                ResizeFunc: resize,
+            });
+        } else {
+            $(window).resize(function (e) {
+                if (e.target == this) {
+                    resize();
+                }
+            });
+        }
+
+        resize();
+    });
+</script>
+</div>
