@@ -120,6 +120,7 @@ h6 {
 .artistic-title {
   color: #2563eb;
   -webkit-text-stroke: 4px #ffffff;
+  text-stroke: 4px #ffffff;
   paint-order: stroke fill;
   filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.4));
 }
