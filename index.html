@@ -311,62 +311,72 @@
     </section>
 
     <!-- 公司优势展示 -->
-    <section class="company-features py-6 lg:py-10 relative z-20">
+    <section class="company-features py-4 lg:py-10 relative z-20">
       <div class="max-w-[1200px] mx-auto px-4">
-        <!-- 中间竖线 -->
+        <!-- 移动端左侧竖线 -->
+        <div class="lg:hidden absolute left-8 top-0 bottom-0 w-[2px] bg-gray-300 z-0"></div>
+        <!-- 桌面端中间竖线 -->
         <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-300 -translate-x-1/2 z-0"></div>
-        <!-- 中轴线顶部三角形 -->
+        <!-- 中轴线顶部三角形（仅桌面端） -->
         <div class="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 z-[1]" style="width:0;height:0;border-left:50px solid transparent;border-right:50px solid transparent;border-top:60px solid #dbeafe;"></div>
 
         <!-- 第1组：图片左 文字右 -->
-        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 mb-6 lg:mb-10">
+        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 mb-4 lg:mb-10 pl-14 lg:pl-0 relative">
+          <!-- 移动端序号 -->
+          <div class="lg:hidden absolute left-[17px] top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">01</div>
           <div class="lg:pr-12 overflow-hidden rounded-lg group">
-            <img src="/assets/services/feitonghuishou/2d02862a139507ca67468869d15e6e39.jpg" alt="多年回收经验" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+            <img src="/assets/services/feitonghuishou/2d02862a139507ca67468869d15e6e39.jpg" alt="多年回收经验" class="w-full h-32 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="lg:pl-12 flex flex-col justify-center relative">
             <div class="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-14 h-14 bg-primary text-white rounded-full items-center justify-center text-lg font-bold shadow-lg">01</div>
-            <h3 class="text-2xl lg:text-3xl font-bold text-green-600 mb-1">多年回收经验，实力强大</h3>
-            <p class="text-base lg:text-lg text-gray-500 mb-3">MANY YEARS OF RECYCLING EXPERIENCE, STRONG</p>
-            <p class="text-sm lg:text-base text-gray-600 leading-relaxed">西安长亮商贸有限公司成立以来深耕废旧物资回收行业，与全省及周边地区的各大生产商、酒店宾馆、商场等企事业单位建立了长期稳定的业务合作关系，综合实力雄厚。</p>
+            <h3 class="text-lg lg:text-3xl font-bold text-green-600 mb-1">多年回收经验，实力强大</h3>
+            <p class="text-xs lg:text-lg text-gray-500 mb-2 lg:mb-3">MANY YEARS OF RECYCLING EXPERIENCE, STRONG</p>
+            <p class="text-xs lg:text-base text-gray-600 leading-relaxed">西安长亮商贸有限公司成立以来深耕废旧物资回收行业，与全省及周边地区的各大生产商、酒店宾馆、商场等企事业单位建立了长期稳定的业务合作关系，综合实力雄厚。</p>
           </div>
         </div>
 
         <!-- 第2组：文字左 图片右 -->
-        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 mb-6 lg:mb-10">
+        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 mb-4 lg:mb-10 pl-14 lg:pl-0 relative">
+          <!-- 移动端序号 -->
+          <div class="lg:hidden absolute left-[17px] top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">02</div>
           <div class="lg:pr-12 flex flex-col justify-center order-2 lg:order-1 relative">
             <div class="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-14 h-14 bg-primary text-white rounded-full items-center justify-center text-lg font-bold shadow-lg">02</div>
-            <h3 class="text-2xl lg:text-3xl font-bold text-green-600 mb-1">回收项目多 服务范围广</h3>
-            <p class="text-base lg:text-lg text-gray-500 mb-3">MANY RECYCLING PROJECTS</p>
-            <p class="text-sm lg:text-base text-gray-600 leading-relaxed">回收范围广泛，公司长期收购各种废旧金属、库存电子产品、废旧电缆线、废铝、废铜、废机械、废不锈钢及各种废旧金属物资。可根据当下行情给予您合理的回收价格。</p>
+            <h3 class="text-lg lg:text-3xl font-bold text-green-600 mb-1">回收项目多 服务范围广</h3>
+            <p class="text-xs lg:text-lg text-gray-500 mb-2 lg:mb-3">MANY RECYCLING PROJECTS</p>
+            <p class="text-xs lg:text-base text-gray-600 leading-relaxed">回收范围广泛，公司长期收购各种废旧金属、库存电子产品、废旧电缆线、废铝、废铜、废机械、废不锈钢及各种废旧金属物资。可根据当下行情给予您合理的回收价格。</p>
           </div>
           <div class="lg:pl-12 overflow-hidden rounded-lg group order-1 lg:order-2">
-            <img src="/assets/services/feijiudianlanhuishou/0764b48e0ea280fb5ac681cea2f2b174.jpg" alt="回收项目多" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+            <img src="/assets/services/feijiudianlanhuishou/0764b48e0ea280fb5ac681cea2f2b174.jpg" alt="回收项目多" class="w-full h-32 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
           </div>
         </div>
 
         <!-- 第3组：图片左 文字右 -->
-        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 mb-6 lg:mb-10">
+        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 mb-4 lg:mb-10 pl-14 lg:pl-0 relative">
+          <!-- 移动端序号 -->
+          <div class="lg:hidden absolute left-[17px] top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">03</div>
           <div class="lg:pr-12 overflow-hidden rounded-lg group">
-            <img src="/assets/services/gaoyadianlanhuishou/0c63c55dd8d7c4a41387ef30d7b1c17a.jpeg" alt="上门高价回收" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+            <img src="/assets/services/gaoyadianlanhuishou/0c63c55dd8d7c4a41387ef30d7b1c17a.jpeg" alt="上门高价回收" class="w-full h-32 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="lg:pl-12 flex flex-col justify-center relative">
             <div class="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-14 h-14 bg-primary text-white rounded-full items-center justify-center text-lg font-bold shadow-lg">03</div>
-            <h3 class="text-2xl lg:text-3xl font-bold text-green-600 mb-1">上门高价回收 简单快捷</h3>
-            <p class="text-base lg:text-lg text-gray-500 mb-3">HIGH-PRICED RECYCLING IS SIMPLE AND FAST</p>
-            <p class="text-sm lg:text-base text-gray-600 leading-relaxed">公司拥有大、小型货车，专业上门服务，为您排难解忧！长期免费上门估价，高价现金回收各类二手设备。拥有自己的运输车辆和回收团队，快速上门服务，提供一站式的专业回收报价、拆除、运输服务。</p>
+            <h3 class="text-lg lg:text-3xl font-bold text-green-600 mb-1">上门高价回收 简单快捷</h3>
+            <p class="text-xs lg:text-lg text-gray-500 mb-2 lg:mb-3">HIGH-PRICED RECYCLING IS SIMPLE AND FAST</p>
+            <p class="text-xs lg:text-base text-gray-600 leading-relaxed">公司拥有大、小型货车，专业上门服务，为您排难解忧！长期免费上门估价，高价现金回收各类二手设备。拥有自己的运输车辆和回收团队，快速上门服务，提供一站式的专业回收报价、拆除、运输服务。</p>
           </div>
         </div>
 
         <!-- 第4组：文字左 图片右 -->
-        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0">
+        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 pl-14 lg:pl-0 relative">
+          <!-- 移动端序号 -->
+          <div class="lg:hidden absolute left-[17px] top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">04</div>
           <div class="lg:pr-12 flex flex-col justify-center order-2 lg:order-1 relative">
             <div class="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-14 h-14 bg-primary text-white rounded-full items-center justify-center text-lg font-bold shadow-lg">04</div>
-            <h3 class="text-2xl lg:text-3xl font-bold text-green-600 mb-1">完善的服务团队</h3>
-            <p class="text-base lg:text-lg text-gray-500 mb-3">PERFECT SERVICE TEAM</p>
-            <p class="text-sm lg:text-base text-gray-600 leading-relaxed">完善的服务体系促进了我们对作业的流畅，使得工作效率大大提高，提升了与客户之间繁锁的交易方式，使得合作轻松、快捷、保密！线上线下结合，快速响应第一时间解决您各类问题。</p>
+            <h3 class="text-lg lg:text-3xl font-bold text-green-600 mb-1">完善的服务团队</h3>
+            <p class="text-xs lg:text-lg text-gray-500 mb-2 lg:mb-3">PERFECT SERVICE TEAM</p>
+            <p class="text-xs lg:text-base text-gray-600 leading-relaxed">完善的服务体系促进了我们对作业的流畅，使得工作效率大大提高，提升了与客户之间繁锁的交易方式，使得合作轻松、快捷、保密！线上线下结合，快速响应第一时间解决您各类问题。</p>
           </div>
           <div class="lg:pl-12 overflow-hidden rounded-lg group order-1 lg:order-2">
-            <img src="/assets/services/feilvhuishou/06046fcab410adc30a29724e5d380479.jpeg" alt="完善的服务团队" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+            <img src="/assets/services/feilvhuishou/06046fcab410adc30a29724e5d380479.jpeg" alt="完善的服务团队" class="w-full h-32 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
           </div>
         </div>
 
@@ -480,9 +490,9 @@
       <section id="news" class="news mt-0 xl:mt-0 relative z-20 scroll-mt-[100px]">
         <div class="w-full px-4">
           <!-- text  -->
-          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
-            <h2 class="news__title h2 mb-3">新闻中心</h2>
-            <p class="news__subtitle">
+          <div class="max-w-[810px] mx-auto text-center mb-8 lg:mb-[52px]">
+            <h2 class="text-xl lg:text-4xl font-bold mb-2 lg:mb-3">新闻中心</h2>
+            <p class="text-sm lg:text-base">
               你可以及时了解公司以及公司产品的相关动态
             </p>
           </div>
@@ -490,24 +500,24 @@
           <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-2">
             <!-- grid item 1-->
             <div
-              class="news__item w-full border border-primary/20 rounded-[62px] p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+              class="news__item w-full border border-primary/20 rounded-2xl lg:rounded-[62px] p-3 lg:p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
             >
-              <img class="mb-5 w-full h-[480px] object-cover rounded-2xl" src="/assets/news/2e94c871f5e1a0c48d6ff22b5a4be4fc.jpg" alt="news_image_1" />
-              <div class="flex flex-col gap-4">
+              <img class="mb-3 lg:mb-5 w-full h-48 lg:h-[480px] object-cover rounded-xl lg:rounded-2xl" src="/assets/news/2e94c871f5e1a0c48d6ff22b5a4be4fc.jpg" alt="news_image_1" />
+              <div class="flex flex-col gap-2 lg:gap-4">
                 <div>
-                  <span class="text-xl text-accent font-medium">精选推荐</span>
-                  <h3 class="text-4xl font-bold mt-2">
+                  <span class="text-sm lg:text-xl text-accent font-medium">精选推荐</span>
+                  <h3 class="text-lg lg:text-4xl font-bold mt-1 lg:mt-2">
                     人生感悟专区
                   </h3>
-                  <p class="text-xl text-gray-500 mt-3">分享废旧物资回收的点滴感悟</p>
+                  <p class="text-sm lg:text-xl text-gray-500 mt-1 lg:mt-3">分享废旧物资回收的点滴感悟</p>
                 </div>
                 <div class="flex items-center justify-between">
-                  <p class="text-3xl text-gray-400" id="date-1"></p>
+                  <p class="text-base lg:text-3xl text-gray-400" id="date-1"></p>
                   <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                    class="bg-accent-secondary w-8 h-8 lg:w-[52px] lg:h-[52px] rounded-full group-hover:bg-white transition-all"
                   >
                     <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                      class="ri-arrow-right-s-line text-lg lg:text-3xl text-primary pl-1"
                     ></i>
                   </button>
                 </div>
@@ -516,24 +526,24 @@
 
             <!-- grid item 2 -->
             <div
-              class="news__item w-full border border-primary/20 rounded-[62px] p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+              class="news__item w-full border border-primary/20 rounded-2xl lg:rounded-[62px] p-3 lg:p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
             >
-              <img class="mb-5 w-full h-[480px] object-cover rounded-2xl" src="/assets/news/5a2e06fdca602f799b24113e07217a1b.jpeg" alt="news_image_1" />
-              <div class="flex flex-col gap-4">
+              <img class="mb-3 lg:mb-5 w-full h-48 lg:h-[480px] object-cover rounded-xl lg:rounded-2xl" src="/assets/news/5a2e06fdca602f799b24113e07217a1b.jpeg" alt="news_image_1" />
+              <div class="flex flex-col gap-2 lg:gap-4">
                 <div>
-                  <span class="text-xl text-green-600 font-medium">实用知识</span>
-                  <h3 class="text-4xl font-bold mt-2">
+                  <span class="text-sm lg:text-xl text-green-600 font-medium">实用知识</span>
+                  <h3 class="text-lg lg:text-4xl font-bold mt-1 lg:mt-2">
                     生活常识专区
                   </h3>
-                  <p class="text-xl text-gray-500 mt-3">废旧物资回收生活中的实用技巧与小知识</p>
+                  <p class="text-sm lg:text-xl text-gray-500 mt-1 lg:mt-3">废旧物资回收生活中的实用技巧与小知识</p>
                 </div>
                 <div class="flex items-center justify-between">
-                  <p class="text-3xl text-gray-400" id="date-2"></p>
+                  <p class="text-base lg:text-3xl text-gray-400" id="date-2"></p>
                   <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                    class="bg-accent-secondary w-8 h-8 lg:w-[52px] lg:h-[52px] rounded-full group-hover:bg-white transition-all"
                   >
                     <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                      class="ri-arrow-right-s-line text-lg lg:text-3xl text-primary pl-1"
                     ></i>
                   </button>
                 </div>
@@ -542,24 +552,24 @@
 
             <!-- grid item 3-->
             <div
-              class="news__item w-full border border-primary/20 rounded-[62px] p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+              class="news__item w-full border border-primary/20 rounded-2xl lg:rounded-[62px] p-3 lg:p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
             >
-              <img class="mb-5 w-full h-[480px] object-cover rounded-2xl" src="/assets/news/dcc874704e40c39122d3e81ff8598be0.jpeg" alt="news_image_1" />
-              <div class="flex flex-col gap-4">
+              <img class="mb-3 lg:mb-5 w-full h-48 lg:h-[480px] object-cover rounded-xl lg:rounded-2xl" src="/assets/news/dcc874704e40c39122d3e81ff8598be0.jpeg" alt="news_image_1" />
+              <div class="flex flex-col gap-2 lg:gap-4">
                 <div>
-                  <span class="text-xl text-blue-600 font-medium">行业洞察</span>
-                  <h3 class="text-4xl font-bold mt-2">
+                  <span class="text-sm lg:text-xl text-blue-600 font-medium">行业洞察</span>
+                  <h3 class="text-lg lg:text-4xl font-bold mt-1 lg:mt-2">
                     行业认知专区
                   </h3>
-                  <p class="text-xl text-gray-500 mt-3">深入了解回收行业的专业知识与动态</p>
+                  <p class="text-sm lg:text-xl text-gray-500 mt-1 lg:mt-3">深入了解回收行业的专业知识与动态</p>
                 </div>
                 <div class="flex items-center justify-between">
-                  <p class="text-3xl text-gray-400" id="date-3"></p>
+                  <p class="text-base lg:text-3xl text-gray-400" id="date-3"></p>
                   <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                    class="bg-accent-secondary w-8 h-8 lg:w-[52px] lg:h-[52px] rounded-full group-hover:bg-white transition-all"
                   >
                     <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                      class="ri-arrow-right-s-line text-lg lg:text-3xl text-primary pl-1"
                     ></i>
                   </button>
                 </div>
@@ -707,8 +717,8 @@
           class="contact__container container mx-auto py-4"
         >
           <div class="contact__text max-w-[640px] mx-auto text-center">
-            <h2 class="h2 text-primary mb-4">谢谢您读完了长亮的网站</h2>
-            <p class="text-secondary mb-8 max-w-sm xl:max-w-none mx-auto">
+            <h2 class="text-xl lg:text-4xl text-primary mb-3 lg:mb-4">谢谢您读完了长亮的网站</h2>
+            <p class="text-sm lg:text-base text-secondary mb-4 lg:mb-8 max-w-sm xl:max-w-none mx-auto">
               如您有物资需要回收，回收电话请点击下方
             </p>
             <!-- 桌面端：点击复制电话 -->

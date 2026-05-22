@@ -18,7 +18,10 @@
       "Bash(curl -s http://localhost:3002)",
       "Bash(git config *)",
       "Bash(git filter-branch *)",
-      "Bash(git stash *)"
+      "Bash(git stash *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
+      "mcp__playwright__browser_resize"
     ]
   }
 }
