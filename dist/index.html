@@ -18,9 +18,9 @@
     />
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.1.3/swiper-bundle.min.css" />
-    <script type="module" crossorigin src="/assets/main-BanhQzTn.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/copy-phone-CEqWAm3m.js">
-    <link rel="stylesheet" crossorigin href="/assets/copy-phone-DgaxtHtX.css">
+    <script type="module" crossorigin src="/assets/main-D96UR8R3.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/copy-phone-JRuGmBWi.js">
+    <link rel="stylesheet" crossorigin href="/assets/copy-phone-Bu_W_YBp.css">
   </head>
   <body class="bg-gray-100" data-page="home">
     <!-- 右侧固定图标 -->
@@ -57,7 +57,7 @@
     </div>
     <!-- header -->
     <header class="sticky top-0 shadow-xl z-30 bg-white w-full">
-      <div class="w-full flex items-center justify-between h-full py-2 px-3 lg:px-8">
+      <div class="max-w-[1600px] mx-auto flex items-center justify-between h-full py-2 px-3 lg:px-6">
         <!-- logo with text -->
       <div class="flex items-center gap-2 lg:gap-6 flex-shrink-0">
           <a href="#">
@@ -67,14 +67,14 @@
               alt="logo"
             />
           </a>
-          <!-- company info - 移动端只显示电话 -->
+          <!-- company info -->
           <div class="flex items-center gap-2 lg:gap-8">
-            <!-- 移动端显示简化电话 -->
-            <a href="tel:13619222442" class="flex lg:hidden items-center gap-1 border-l-2 border-accent pl-2">
-              <img src="/assets/phone-CEijv-aY.jpeg" alt="phone" class="w-4 h-4 object-contain" />
+            <!-- 移动端/平板显示：简化电话 -->
+            <a href="tel:13619222442" class="flex xl:hidden items-center gap-1 border-l-2 border-accent pl-2">
+              <img src="/assets/phone-CEijv-aY.jpeg" alt="phone" class="w-3 h-3 lg:w-4 lg:h-4 object-contain" />
               <div class="flex flex-col">
-                <span class="text-[8px] text-primary">服务热线</span>
-                <span class="text-xs font-bold text-blue-600">13619222442</span>
+                <span class="text-[8px] lg:text-xs text-primary">服务热线</span>
+                <span class="text-xs lg:text-sm font-bold text-blue-600">13619222442</span>
               </div>
             </a>
             <!-- 桌面端显示完整信息 -->
@@ -82,7 +82,7 @@
               <!-- left text -->
               <div class="flex flex-col">
                 <h3 class="text-lg font-primary text-primary leading-tight whitespace-nowrap">专业废旧物资回收公司</h3>
-                <p class="text-sm text-secondary font-secondary whitespace-nowrap">主营：物资回收、废品回收、二手机械设备回收</p>
+                <p class="text-sm text-secondary font-secondary whitespace-nowrap">主营：电缆回二手机械设备回收</p>
               </div>
               <!-- right text - phone -->
               <div class="flex items-center gap-2 border-l-2 border-accent pl-4">
@@ -174,15 +174,64 @@
           <p class="artistic-subtitle mb-3 lg:mb-8 text-base lg:text-2xl font-secondary max-w-xl px-2">
             专门致力于物资废品回收、电器电缆回收、二手机械设备回收、空调回收等大型机械设备回收
           </p>
-          <!-- 可点击复制的电话 -->
+          <!-- 桌面端：点击复制电话 -->
           <button
             onclick="copyPhone()"
-            class="btn btn-primary mx-auto xl:mx-0 cursor-pointer"
+            class="btn btn-primary mx-auto xl:mx-0 cursor-pointer hidden xl:flex"
             title="点击复制电话号码"
           >
             <span id="phone-text">联系电话：13619222442</span>
             <i class="ri-arrow-right-line text-accent text-sm lg:text-base"></i>
           </button>
+          <!-- 移动端：点击拨打电话 -->
+          <a href="tel:13619222442" class="btn btn-primary mx-auto xl:hidden">
+            <span>联系电话：13619222442</span>
+            <i class="ri-arrow-right-line text-accent text-sm lg:text-base"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 服务优势四栏 -->
+    <section class="py-2 md:py-6 bg-gray-50 relative z-20">
+      <div class="w-full px-2 md:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-11 gap-2 md:gap-0">
+          <!-- 1 -->
+          <div class="text-center py-2 md:py-5 px-1 md:col-span-2 md:px-4">
+            <i class="ri-shield-check-line text-2xl md:text-6xl text-green-600 mb-1"></i>
+            <h3 class="text-sm md:text-3xl font-bold text-primary mb-0.5">正规回收，公道报价</h3>
+            <p class="text-[10px] md:text-lg text-gray-500">现场核验结算，交易踏实无忧</p>
+          </div>
+          <!-- 分隔线1 -->
+          <div class="hidden md:flex items-center justify-center md:col-span-1">
+            <div class="w-[1px] h-3/4 bg-gray-300"></div>
+          </div>
+          <!-- 2 -->
+          <div class="text-center py-2 md:py-5 px-1 md:col-span-2 md:px-4">
+            <i class="ri-hand-heart-line text-2xl md:text-6xl text-green-600 mb-1"></i>
+            <h3 class="text-sm md:text-3xl font-bold text-primary mb-0.5">专业回收，贴心靠谱</h3>
+            <p class="text-[10px] md:text-lg text-gray-500">现款当场结清，合作长久共赢</p>
+          </div>
+          <!-- 分隔线2 -->
+          <div class="hidden md:flex items-center justify-center md:col-span-1">
+            <div class="w-[1px] h-3/4 bg-gray-300"></div>
+          </div>
+          <!-- 3 -->
+          <div class="text-center py-2 md:py-5 px-1 md:col-span-2 md:px-4">
+            <i class="ri-time-line text-2xl md:text-6xl text-green-600 mb-1"></i>
+            <h3 class="text-sm md:text-3xl font-bold text-primary mb-0.5">高效处置，安心交易</h3>
+            <p class="text-[10px] md:text-lg text-gray-500">规范流程办事，让利诚意回收</p>
+          </div>
+          <!-- 分隔线3 -->
+          <div class="hidden md:flex items-center justify-center md:col-span-1">
+            <div class="w-[1px] h-3/4 bg-gray-300"></div>
+          </div>
+          <!-- 4 -->
+          <div class="text-center py-2 md:py-5 px-1 md:col-span-2 md:px-4 flex flex-col justify-center">
+            <h3 class="text-sm md:text-3xl font-bold text-primary mb-0.5">全国24小时热线</h3>
+            <p class="text-base md:text-4xl font-bold text-blue-600 mb-0.5">13619222442</p>
+            <p class="text-base md:text-4xl font-bold text-blue-600">13649298476</p>
+          </div>
         </div>
       </div>
     </section>
@@ -195,17 +244,17 @@
             <!-- 左侧服务列表 -->
             <div class="w-[100px] lg:w-1/3 flex-shrink-0" id="service-left">
               <div class="bg-accent-secondary rounded-lg lg:rounded-[30px] px-1 py-0.5 lg:p-6">
-                <h3 class="text-[9px] lg:text-xl font-bold text-primary mb-0 lg:mb-6 flex items-center gap-0.5 lg:gap-2">
-                  <i class="ri-list-check-2 text-accent text-[9px] lg:text-base"></i>
-                  <span>服务项目</span>
+                <h3 class="text-[9px] lg:text-2xl font-bold text-primary mb-0 lg:mb-6 flex items-center gap-0.5 lg:gap-2">
+                  <i class="ri-list-check-2 text-accent text-[9px] lg:text-xl"></i>
+                  <span>回收服务项目</span>
                 </h3>
                 <div class="grid grid-cols-1 gap-0 lg:gap-2" id="service-list">
                   <!-- 服务项目列表将通过JS动态生成 -->
                 </div>
                 <div id="expand-btn" class="mt-0.5 lg:mt-4 text-center">
-                  <button onclick="toggleServices()" class="text-primary font-medium hover:underline flex items-center justify-center gap-1 lg:gap-2 mx-auto text-[8px] lg:text-xl">
+                  <button onclick="toggleServices()" class="text-primary font-medium hover:underline flex items-center justify-center gap-1 lg:gap-2 mx-auto text-[8px] lg:text-2xl">
                     <span id="expand-text">查看更多</span>
-                    <i id="expand-icon" class="ri-arrow-down-s-line text-[8px] lg:text-xl"></i>
+                    <i id="expand-icon" class="ri-arrow-down-s-line text-[8px] lg:text-2xl"></i>
                   </button>
                 </div>
               </div>
@@ -215,8 +264,8 @@
             <div class="flex-1 flex flex-col" id="service-right">
               <div class="bg-white rounded-xl lg:rounded-[30px] shadow-xl px-3 pt-0.5 pb-3 lg:p-10 flex flex-col">
                 <div class="flex items-center justify-between mb-1 lg:mb-6">
-                  <h3 id="service-title" class="text-[9px] lg:text-xl font-bold text-primary flex items-center gap-0.5 lg:gap-2">
-                    <i class="ri-image-line text-accent text-sm lg:text-base"></i>
+                  <h3 id="service-title" class="text-[9px] lg:text-2xl font-bold text-primary flex items-center gap-0.5 lg:gap-2">
+                    <i class="ri-image-line text-accent text-sm lg:text-xl"></i>
                     <span>请选择服务</span>
                   </h3>
                   <div class="flex gap-1 lg:gap-2">
@@ -229,7 +278,7 @@
                   </div>
                 </div>
                 <!-- 图片网格 -->
-                <div id="service-images" class="grid grid-cols-3 gap-1 lg:gap-3">
+                <div id="service-images" class="grid grid-cols-3 gap-1 lg:gap-2">
                   <!-- 图片将通过JS动态生成 -->
                 </div>
               </div>
@@ -256,8 +305,175 @@
           <!-- 文字环绕 -->
           <div class="text-sm xl:text-lg text-secondary leading-relaxed text-left">
             <p class="mb-2">西安长亮商贸有限公司成立于2016年。简单来说，我们主要做三大块业务：废旧物资回收、工程拆除和各类物资买卖。</p>
-            <p class="mb-2">我们在西安干这行很多年了，经验丰富。只要您有废旧电线电缆、铜铝不锈钢、稀缺金属，或者工厂淘汰下来的机电设备，我们都长期高价上门回收。此外，我们自己就有专业的施工队，不管您是需要拆厂房钢结构、拆卸大型机器，还是做室内外装修，我们都能帮您拆卸+回收一次搞定，省心省力。</p>
+            <p class="mb-2">我们在西安干这行很多年了，经验丰富。只要您有废旧电线电缆、铜铝不锈钢、稀缺金属，或者工厂淘汰下来的机电设备，我们都长期高价上门回收。此外，我们自己就有专业的施工队，不管您是需要拆厂房钢结构、还是拆卸大型机器，我们都能帮您拆卸+回收一次搞定，省心省力。</p>
             <p>做生意，我们最讲究实在：免费上门估价，看好货直接当面结清，并且绝不泄露客户的任何信息。不管您是厂房要清空大批设备，还是库房里有少量积压，找我们准没错。长亮商贸干活利索，价格公道，期待跟您交个朋友，长期合作！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 公司优势展示 -->
+    <section class="company-features py-4 lg:py-10 relative z-20">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <!-- 移动端左侧竖线 -->
+        <div class="lg:hidden absolute left-8 top-0 bottom-0 w-[2px] bg-gray-300 z-0"></div>
+        <!-- 桌面端中间竖线 -->
+        <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-300 -translate-x-1/2 z-0"></div>
+        <!-- 中轴线顶部三角形（仅桌面端） -->
+        <div class="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 z-[1]" style="width:0;height:0;border-left:50px solid transparent;border-right:50px solid transparent;border-top:60px solid #dbeafe;"></div>
+
+        <!-- 第1组：图片左 文字右 -->
+        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 mb-4 lg:mb-10 pl-14 lg:pl-0 relative">
+          <!-- 移动端序号 -->
+          <div class="lg:hidden absolute left-[17px] top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">01</div>
+          <div class="lg:pr-12 overflow-hidden rounded-lg group">
+            <img src="/assets/2d02862a139507ca67468869d15e6e39-BC4zz_-g.jpg" alt="多年回收经验" class="w-full h-32 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div class="lg:pl-12 flex flex-col justify-center relative">
+            <div class="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-14 h-14 bg-primary text-white rounded-full items-center justify-center text-lg font-bold shadow-lg">01</div>
+            <h3 class="text-lg lg:text-3xl font-bold text-green-600 mb-1">多年回收经验，实力强大</h3>
+            <p class="text-xs lg:text-lg text-gray-500 mb-2 lg:mb-3">MANY YEARS OF RECYCLING EXPERIENCE, STRONG</p>
+            <p class="text-xs lg:text-base text-gray-600 leading-relaxed">西安长亮商贸有限公司成立以来深耕废旧物资回收行业，与全省及周边地区的各大生产商、酒店宾馆、商场等企事业单位建立了长期稳定的业务合作关系，综合实力雄厚。</p>
+          </div>
+        </div>
+
+        <!-- 第2组：文字左 图片右 -->
+        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 mb-4 lg:mb-10 pl-14 lg:pl-0 relative">
+          <!-- 移动端序号 -->
+          <div class="lg:hidden absolute left-[17px] top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">02</div>
+          <div class="lg:pr-12 flex flex-col justify-center order-2 lg:order-1 relative">
+            <div class="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-14 h-14 bg-primary text-white rounded-full items-center justify-center text-lg font-bold shadow-lg">02</div>
+            <h3 class="text-lg lg:text-3xl font-bold text-green-600 mb-1">回收项目多 服务范围广</h3>
+            <p class="text-xs lg:text-lg text-gray-500 mb-2 lg:mb-3">MANY RECYCLING PROJECTS</p>
+            <p class="text-xs lg:text-base text-gray-600 leading-relaxed">回收范围广泛，公司长期收购各种废旧金属、库存电子产品、废旧电缆线、废铝、废铜、废机械、废不锈钢及各种废旧金属物资。可根据当下行情给予您合理的回收价格。</p>
+          </div>
+          <div class="lg:pl-12 overflow-hidden rounded-lg group order-1 lg:order-2">
+            <img src="/assets/0764b48e0ea280fb5ac681cea2f2b174-CaR2sRrR.jpg" alt="回收项目多" class="w-full h-32 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+          </div>
+        </div>
+
+        <!-- 第3组：图片左 文字右 -->
+        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 mb-4 lg:mb-10 pl-14 lg:pl-0 relative">
+          <!-- 移动端序号 -->
+          <div class="lg:hidden absolute left-[17px] top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">03</div>
+          <div class="lg:pr-12 overflow-hidden rounded-lg group">
+            <img src="/assets/0c63c55dd8d7c4a41387ef30d7b1c17a-DaM2yM-D.jpeg" alt="上门高价回收" class="w-full h-32 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div class="lg:pl-12 flex flex-col justify-center relative">
+            <div class="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-14 h-14 bg-primary text-white rounded-full items-center justify-center text-lg font-bold shadow-lg">03</div>
+            <h3 class="text-lg lg:text-3xl font-bold text-green-600 mb-1">上门高价回收 简单快捷</h3>
+            <p class="text-xs lg:text-lg text-gray-500 mb-2 lg:mb-3">HIGH-PRICED RECYCLING IS SIMPLE AND FAST</p>
+            <p class="text-xs lg:text-base text-gray-600 leading-relaxed">公司拥有大、小型货车，专业上门服务，为您排难解忧！长期免费上门估价，高价现金回收各类二手设备。拥有自己的运输车辆和回收团队，快速上门服务，提供一站式的专业回收报价、拆除、运输服务。</p>
+          </div>
+        </div>
+
+        <!-- 第4组：文字左 图片右 -->
+        <div class="feature-item grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-0 pl-14 lg:pl-0 relative">
+          <!-- 移动端序号 -->
+          <div class="lg:hidden absolute left-[17px] top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">04</div>
+          <div class="lg:pr-12 flex flex-col justify-center order-2 lg:order-1 relative">
+            <div class="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-14 h-14 bg-primary text-white rounded-full items-center justify-center text-lg font-bold shadow-lg">04</div>
+            <h3 class="text-lg lg:text-3xl font-bold text-green-600 mb-1">完善的服务团队</h3>
+            <p class="text-xs lg:text-lg text-gray-500 mb-2 lg:mb-3">PERFECT SERVICE TEAM</p>
+            <p class="text-xs lg:text-base text-gray-600 leading-relaxed">完善的服务体系促进了我们对作业的流畅，使得工作效率大大提高，提升了与客户之间繁锁的交易方式，使得合作轻松、快捷、保密！线上线下结合，快速响应第一时间解决您各类问题。</p>
+          </div>
+          <div class="lg:pl-12 overflow-hidden rounded-lg group order-1 lg:order-2">
+            <img src="/assets/06046fcab410adc30a29724e5d380479-Cm8yb3-4.jpeg" alt="完善的服务团队" class="w-full h-32 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 公司成员 - 放在features中轴线最下方 -->
+    <section
+      id="testimonials"
+      class="testimonial relative z-20 scroll-mt-[100px] mt-0 lg:mt-0"
+    >
+      <div
+        class="testimonial__bg container mx-auto bg-accent-secondary rounded-2xl lg:rounded-[70px] px-4 lg:px-6"
+      >
+        <div class="flex flex-col items-center pt-3 lg:pt-[30px] pb-0">
+          <h2 class="testimonial__title text-xl lg:text-5xl font-bold mb-2 lg:mb-6 text-center">
+            公司成员
+          </h2>
+          <!-- slider -->
+          <div class="w-full">
+            <div class="testimonial__slider swiper h-[280px] lg:h-[480px]">
+              <div class="swiper-wrapper">
+                <!-- slides 1-->
+                <div class="swiper-slide">
+                  <!-- item -->
+                  <div
+                    class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
+                  >
+                    <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                      <img
+                        src="/assets/wangguodong-BKkOn_7M.png"
+                        alt="testimonial_image"
+                        class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
+                      />
+                      <div>
+                        <h3 class="text-base lg:text-3xl font-bold">王国栋</h3>
+                        <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
+                      </div>
+                    </div>
+                    <p class="text-xs lg:text-xl">
+                      联系方式：13619222442。从业多年回收专员，精通废铜废铝电缆估价，诚信实在，上门快捷，做事靠谱利落。
+                    </p>
+                  </div>
+                </div>
+
+                <!-- slides 2 -->
+                <div class="swiper-slide">
+                  <!-- item -->
+                  <div
+                    class="testimonial__item w-full max-w-[1000px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
+                  >
+                    <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                      <img
+                        src="/assets/sudiantao-D_y7nbUY.png"
+                        alt="testimonial_image"
+                        class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
+                      />
+                      <div>
+                        <h3 class="text-base lg:text-3xl font-bold">苏电涛</h3>
+                        <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
+                      </div>
+                    </div>
+                    <p class="text-xs lg:text-xl">
+                      联系方式：13649298476。一线清运主管，专注物资装卸运输，执行力强，效率出众，高效完成各类回收作业。
+                    </p>
+                  </div>
+                </div>
+
+                <!-- slides 3 -->
+                <div class="swiper-slide">
+                  <!-- item -->
+                  <div
+                    class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
+                  >
+                    <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
+                      <img
+                        src="/assets/wangdazhi-PMbx5ZDP.png"
+                        alt="testimonial_image"
+                        class="w-16 h-16 lg:w-32 lg:h-32 object-cover rounded-full"
+                      />
+                      <div>
+                        <h3 class="text-base lg:text-3xl font-bold">王大志</h3>
+                        <div class="text-xs lg:text-lg">西安长亮商贸有限公司</div>
+                      </div>
+                    </div>
+                    <p class="text-xs lg:text-xl">
+                      联系方式：13619222442。市场行情专员，熟知本地回收价格走势，报价透明公正，诚心对接大小货源客户。
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- swiper pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -266,197 +482,195 @@
     <!-- 新的scale-wrapper开始 -->
     <div class="scale-wrapper">
     <main class="main-wrapper pt-[10px] xl:pt-[20px]">
-    <!-- testimonials -->
-      <section
-        id="testimonials"
-        class="testimonial relative z-20 scroll-mt-[100px]"
-      >
-        <div
-          class="testimonial__bg container mx-auto bg-accent-secondary rounded-2xl lg:rounded-[70px] px-4 lg:px-6"
-        >
-          <div class="flex flex-col items-center pt-3 lg:pt-[30px] pb-0">
-            <h2 class="testimonial__title text-xl lg:text-5xl font-bold mb-2 lg:mb-6 text-center">
-              公司成员
-            </h2>
-            <!-- slider -->
-            <div class="w-full">
-              <div class="testimonial__slider swiper h-[280px] lg:h-[480px]">
-                <div class="swiper-wrapper">
-                  <!-- slides 1-->
-                  <div class="swiper-slide">
-                    <!-- item -->
-                    <div
-                      class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 pb-6 lg:pb-14 mx-auto shadow-xl"
-                    >
-                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
-                        <img
-                          src="/assets/01-BNdB6lmU.png"
-                          alt="testimonial_image"
-                          class="w-12 h-12 lg:w-auto lg:h-auto"
-                        />
-                        <div>
-                          <h3 class="text-base lg:text-2xl font-bold">王国栋</h3>
-                          <div class="text-xs lg:text-base">西安长亮商贸有限公司</div>
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-base">
-                        请您相信我的专业，联系方式：13619222442
-                      </p>
-                    </div>
-                  </div>
 
-                  <!-- slides 2 -->
-                  <div class="swiper-slide">
-                    <!-- item -->
-                    <div
-                      class="testimonial__item w-full max-w-[1000px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 mx-auto shadow-xl"
-                    >
-                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
-                        <img
-                          src="/assets/02-Cr8kEhzd.png"
-                          alt="testimonial_image"
-                          class="w-12 h-12 lg:w-auto lg:h-auto"
-                        />
-                        <div>
-                          <h3 class="text-base lg:text-2xl font-bold">苏电涛</h3>
-                          <div class="text-xs lg:text-base">西安长亮商贸有限公司</div>
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-base">
-                        请您相信我的专业，13649298476
-                      </p>
-                    </div>
-                  </div>
+    <!-- 分割线 -->
+      <div class="flex items-center justify-center py-4 lg:py-6">
+        <div class="flex-1 h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      </div>
 
-                  <!-- slides 3 -->
-                  <div class="swiper-slide">
-                    <!-- item -->
-                    <div
-                      class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 pb-6 lg:pb-14 mx-auto shadow-xl"
-                    >
-                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
-                        <img
-                          src="/assets/03-CeP5kIRV.png"
-                          alt="testimonial_image"
-                          class="w-12 h-12 lg:w-auto lg:h-auto"
-                        />
-                        <div>
-                          <h3 class="text-base lg:text-2xl font-bold">王大志</h3>
-                          <div class="text-xs lg:text-base">西安长亮商贸有限公司</div>
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-base">
-                        请您相信我的专业，15852064429
-                      </p>
-                    </div>
-                  </div>
+      <!-- news -->
+      <section id="news" class="news mt-0 xl:mt-0 relative z-20 scroll-mt-[100px]">
+        <div class="w-full px-4">
+          <!-- text  -->
+          <div class="max-w-[810px] mx-auto text-center mb-8 lg:mb-[52px]">
+            <h2 class="text-xl lg:text-4xl font-bold mb-2 lg:mb-3">新闻中心</h2>
+            <p class="text-sm lg:text-base">
+              你可以及时了解公司以及公司产品的相关动态
+            </p>
+          </div>
 
-                  <!-- slides 4 -->
-                  <div class="swiper-slide">
-                    <!-- item -->
-                    <div
-                      class="testimonial__item w-full max-w-[600px] h-[240px] lg:h-[420px] bg-white rounded-2xl lg:rounded-[30px] flex flex-col justify-center p-4 lg:p-10 pb-6 lg:pb-14 mx-auto shadow-xl"
-                    >
-                      <div class="flex gap-2 lg:gap-4 mb-3 lg:mb-6">
-                        <img
-                          src="/assets/04-BL2DQvCG.png"
-                          alt="testimonial_image"
-                          class="w-12 h-12 lg:w-auto lg:h-auto"
-                        />
-                        <div>
-                          <h3 class="text-base lg:text-2xl font-bold">王大志</h3>
-                          <div class="text-xs lg:text-base">西安长亮商贸有限公司</div>
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-base">
-                        请您相信我的专业，13619222442
-                      </p>
-                    </div>
-                  </div>
+          <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-2">
+            <!-- grid item 1-->
+            <div
+              class="news__item w-full border border-primary/20 rounded-2xl lg:rounded-[62px] p-3 lg:p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+            >
+              <img class="mb-3 lg:mb-5 w-full h-48 lg:h-[480px] object-cover rounded-xl lg:rounded-2xl" src="/assets/2e94c871f5e1a0c48d6ff22b5a4be4fc-Bkn8cJGE.jpg" alt="news_image_1" />
+              <div class="flex flex-col gap-2 lg:gap-4">
+                <div>
+                  <span class="text-sm lg:text-xl text-accent font-medium">精选推荐</span>
+                  <h3 class="text-lg lg:text-4xl font-bold mt-1 lg:mt-2">
+                    人生感悟专区
+                  </h3>
+                  <p class="text-sm lg:text-xl text-gray-500 mt-1 lg:mt-3">分享废旧物资回收的点滴感悟</p>
                 </div>
-                <!-- swiper pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="flex items-center justify-between">
+                  <p class="text-base lg:text-3xl text-gray-400" id="date-1"></p>
+                  <button
+                    class="bg-accent-secondary w-8 h-8 lg:w-[52px] lg:h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-lg lg:text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- grid item 2 -->
+            <div
+              class="news__item w-full border border-primary/20 rounded-2xl lg:rounded-[62px] p-3 lg:p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+            >
+              <img class="mb-3 lg:mb-5 w-full h-48 lg:h-[480px] object-cover rounded-xl lg:rounded-2xl" src="/assets/5a2e06fdca602f799b24113e07217a1b--B9FEGoi.jpeg" alt="news_image_1" />
+              <div class="flex flex-col gap-2 lg:gap-4">
+                <div>
+                  <span class="text-sm lg:text-xl text-green-600 font-medium">实用知识</span>
+                  <h3 class="text-lg lg:text-4xl font-bold mt-1 lg:mt-2">
+                    生活常识专区
+                  </h3>
+                  <p class="text-sm lg:text-xl text-gray-500 mt-1 lg:mt-3">废旧物资回收生活中的实用技巧与小知识</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-base lg:text-3xl text-gray-400" id="date-2"></p>
+                  <button
+                    class="bg-accent-secondary w-8 h-8 lg:w-[52px] lg:h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-lg lg:text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- grid item 3-->
+            <div
+              class="news__item w-full border border-primary/20 rounded-2xl lg:rounded-[62px] p-3 lg:p-5 hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0 flex flex-col"
+            >
+              <img class="mb-3 lg:mb-5 w-full h-48 lg:h-[480px] object-cover rounded-xl lg:rounded-2xl" src="/assets/dcc874704e40c39122d3e81ff8598be0-BugbvCOC.jpeg" alt="news_image_1" />
+              <div class="flex flex-col gap-2 lg:gap-4">
+                <div>
+                  <span class="text-sm lg:text-xl text-blue-600 font-medium">行业洞察</span>
+                  <h3 class="text-lg lg:text-4xl font-bold mt-1 lg:mt-2">
+                    行业认知专区
+                  </h3>
+                  <p class="text-sm lg:text-xl text-gray-500 mt-1 lg:mt-3">深入了解回收行业的专业知识与动态</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="text-base lg:text-3xl text-gray-400" id="date-3"></p>
+                  <button
+                    class="bg-accent-secondary w-8 h-8 lg:w-[52px] lg:h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-lg lg:text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- 动态日期脚本 -->
+          <script>
+            function formatDate(daysAgo) {
+              const date = new Date();
+              date.setDate(date.getDate() - daysAgo);
+              const year = date.getFullYear();
+              const month = String(date.getMonth() + 1).padStart(2, '0');
+              const day = String(date.getDate()).padStart(2, '0');
+              return `${year}-${month}-${day}`;
+            }
+            document.getElementById('date-1').textContent = formatDate(5);
+            document.getElementById('date-2').textContent = formatDate(10);
+            document.getElementById('date-3').textContent = formatDate(7);
+          </script>
         </div>
       </section>
 
       <!-- brands -->
       <section class="brands mt-2 lg:mt-5 relative z-20 bg-accent">
-        <div class="flex flex-col xl:flex-row items-stretch gap-4 lg:gap-12 px-3 lg:px-8 py-4 lg:py-16">
+        <div class="flex flex-col xl:flex-row items-stretch gap-4 lg:gap-8 px-3 lg:px-8 py-3 lg:py-6">
               <!-- 左侧标题 -->
               <div class="flex-shrink-0 flex items-center justify-center xl:justify-start">
                 <div class="text-center xl:text-left">
-                  <h2 class="text-lg xl:text-5xl font-primary text-white mb-1 lg:mb-4">招标合作伙伴</h2>
-                  <p class="text-[10px] lg:text-lg text-white/80 mt-1 lg:mt-4">携手共创 互利共赢</p>
+                  <h2 class="text-lg xl:text-4xl font-primary text-white mb-1 lg:mb-2">招标合作平台</h2>
+                  <p class="text-[10px] lg:text-base text-white/80 mt-0 lg:mt-1">携手共创 互利共赢</p>
                 </div>
               </div>
               <!-- 右侧品牌网格 -->
-              <div class="flex-1 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-1 lg:gap-8 items-center">
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌1" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌1</span>
+              <div class="flex-1 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-1 lg:gap-4 items-center">
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-40 lg:h-40 object-contain" src="/assets/xian-DRf9151e.png" alt="全国公共资源交易平台" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">全国公共资源交易平台</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌2" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌2</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/36895f7b-0331-462f-a778-3a93ee7c4a0f-BfTnfFP7.png" alt="西部产权交易所" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">西部产权交易所</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌3" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌3</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/643239bfb32189bc4fb00a52a50355b4-mbToWPOv.jpeg" alt="北京产权交易所" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">北京产权交易所</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌4" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌4</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/403cf7228609a0ceb75f8c19e4d29145-BNXFN_zx.png" alt="大连产权交易所" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">大连产权交易所</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌5" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌5</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="data:image/png;base64,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" alt="天津产权交易所" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">天津产权交易所</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌6" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌6</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/header_logo.7a9e4ee-CS01IhyR.png" alt="河北产权市场" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">河北产权市场</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌7" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌7</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/0f4f1671bac1552e35927dff503b86ae-CmhwpMfm.jpeg" alt="航天电子采购平台" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">航天电子采购平台</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌8" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌8</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/3e2742e1cb069cf66a68f1e263855268-C4PL-AfG.jpg" alt="中船集团闲废物资处置平台" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">中船集团闲废物资处置平台</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌9" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌9</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/c0c67fd8f8f22edfd00eed159e5905f4-B4auNvzO.jpeg" alt="铁建云链门户招标" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">铁建云链门户招标</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌10" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌10</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/huarun-CpMcc0qg.jpeg" alt="华润集团守正电子招标平台" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">华润集团守正电子招标平台</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌11" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌11</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/e5c113f78273b0677a5294bd4756fa6a-BDvAtJ1F.jpeg" alt="中国移动采购与招标网" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">中国移动采购与招标网</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌12" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌12</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/c581e1a5fad86df2a3ab8365893d353e-wPCZCTWR.jpeg" alt="陕煤物资调剂竞买平台" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">陕煤物资调剂竞买平台</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌13" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌13</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/7be05b0a1d645c505570be0cd86ee4fd-D_RgL2li.jpeg" alt="爱采购" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">爱采购</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌14" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌14</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/69e765f251ea5615bde4b73b3a819044-CcH-yQjX.jpeg" alt="中拍平台" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">中拍平台</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌15" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌15</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/b4c7372c3b1fec3ddc0dfe40b2dfd13a-DlqDPLJP.png" alt="延长云商" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">延长云商</span>
                 </div>
-                <div class="flex flex-col items-center gap-1 lg:gap-3">
-                  <img class="brands__img w-10 h-10 lg:w-24 lg:h-24 object-contain" src="/assets/01-CcIO62dE.svg" alt="品牌16" />
-                  <span class="text-[8px] lg:text-sm text-white font-medium">品牌16</span>
+                <div class="flex flex-col items-center gap-1 lg:gap-2">
+                  <img class="brands__img w-16 h-16 lg:w-36 lg:h-36 object-contain" src="/assets/logo.b71b6055-Ckh6cLEu.png" alt="壹资产" />
+                  <span class="text-[10px] lg:text-base text-white font-medium">壹资产</span>
                 </div>
               </div>
             </div>
@@ -496,198 +710,47 @@
         </div>
       </section>
 
-      <!-- work -->
-      <section id="our_work" class="work mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[100px]">
-        <div class="container mx-auto">
-          <!-- text -->
-          <div class="text-center mb-24">
-            <h2 class="work__title h2 mb-4">Follow Our Projects</h2>
-            <p class="work__subtitle max-w-3xl mx-auto">
-              It is a long established fact that a reader will be distracted by
-              the of readable content of page lookings at its layouts points.
-            </p>
-          </div>
-          <!-- grid -->
-          <div
-            class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
-          >
-            <!-- item 1 -->
-            <div class="w-full max-w-[548px] h-full mx-auto">
-              <img class="mb-6" src="/assets/01-BsSqqyFd.png" alt="work__image1" />
-              <div class="flex justify-between items-center w-full">
-                <div>
-                  <h3 class="h3">Modern Kitchen</h3>
-                  <p>Decor/Architecture</p>
-                </div>
-                <button
-                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
-                >
-                  <i
-                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                  ></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="w-full max-w-[548px] h-full mx-auto">
-              <img class="mb-6" src="/assets/02-BSV0OUrf.png" alt="work__image1" />
-              <div class="flex justify-between items-center w-full">
-                <div>
-                  <h3 class="h3">Classic Room</h3>
-                  <p>Decor/Architecture</p>
-                </div>
-                <button
-                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
-                >
-                  <i
-                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                  ></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="w-full max-w-[548px] h-full mx-auto">
-              <img class="mb-6" src="/assets/03-DumEPg9D.png" alt="work__image1" />
-              <div class="flex justify-between items-center w-full">
-                <div>
-                  <h3 class="h3">Learning Space</h3>
-                  <p>Decor/Architecture</p>
-                </div>
-                <button
-                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
-                >
-                  <i
-                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                  ></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- item 4 -->
-            <div class="w-full max-w-[548px] h-full mx-auto">
-              <img class="mb-6" src="/assets/04-CpnBcnP7.png" alt="work__image1" />
-              <div class="flex justify-between items-center w-full">
-                <div>
-                  <h3 class="h3">Modern Living Room</h3>
-                  <p>Decor/Architecture</p>
-                </div>
-                <button
-                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
-                >
-                  <i
-                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                  ></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- news -->
-      <section id="news" class="news mt-[80px] xl:mt-[10px] relative z-20 scroll-mt-[100px]">
-        <div class="container mx-auto px-8">
-          <!-- text  -->
-          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
-            <h2 class="news__title h2 mb-3">Articles & News</h2>
-            <p class="news__subtitle">
-              It is a long established fact that a reader will be distracted by
-              the of readable content of a page when lookings at its layouts the
-              points of using.
-            </p>
-          </div>
-
-          <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
-            <!-- grid item 1-->
-            <div
-              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
-            >
-              <img class="mb-5" src="/assets/01-MRDrZIyk.png" alt="news_image_1" />
-              <div class="flex flex-col gap-[30px]">
-                <h3 class="h3">
-                  Let’s Get Solution For Building Construction Work
-                </h3>
-                <div class="flex items-center justify-between">
-                  <p class="text-base">22 June, 2024</p>
-                  <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
-                  >
-                    <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- grid item 2 -->
-            <div
-              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
-            >
-              <img class="mb-5" src="/assets/02-87ieu_LT.png" alt="news_image_1" />
-              <div class="flex flex-col gap-[30px]">
-                <h3 class="h3">
-                  Low Cost Latest Invented Interior Designing Ideas.
-                </h3>
-                <div class="flex items-center justify-between">
-                  <p class="text-base">14 March, 2024</p>
-                  <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
-                  >
-                    <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- grid item 3-->
-            <div
-              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
-            >
-              <img class="mb-5" src="/assets/03-BK76cnzP.png" alt="news_image_1" />
-              <div class="flex flex-col gap-[30px]">
-                <h3 class="h3">
-                  Best For Any Office & Business Interior Solution
-                </h3>
-                <div class="flex items-center justify-between">
-                  <p class="text-base">05 April, 2024</p>
-                  <button
-                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
-                  >
-                    <i
-                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
-                    ></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- contact -->
       <section
         id="contact"
-        class="contact mt-[80px] xl:mt-[150px] relative z-20 scroll-mt-[100px]"
+        class="contact mt-8 xl:mt-12 relative z-20 scroll-mt-[100px]"
       >
         <div
-          class="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[80px]"
+          class="contact__container container mx-auto py-4"
         >
           <div class="contact__text max-w-[640px] mx-auto text-center">
-            <h2 class="h2 text-white mb-4">Do you want to joinI Luxespace?</h2>
-            <p class="text-white mb-8 max-w-sm xl:max-w-none mx-auto">
-              It is a long established fact will be distracted.
+            <h2 class="text-xl lg:text-4xl text-primary mb-3 lg:mb-4">谢谢您读完了长亮的网站</h2>
+            <p class="text-sm lg:text-base text-secondary mb-4 lg:mb-8 max-w-sm xl:max-w-none mx-auto">
+              如您有物资需要回收，回收电话请点击下方
             </p>
-            <button class="btn btn-accent mx-auto">
-              Connect With Us <i class="ri-arrow-right-line text-primary"></i>
+            <!-- 桌面端：点击复制电话 -->
+            <button class="btn btn-accent mx-auto hidden xl:flex" onclick="copyPhoneNumber()">
+              联系我们13619222442 <i class="ri-arrow-right-line text-primary"></i>
             </button>
+            <!-- 移动端：点击拨打电话 -->
+            <a href="tel:13619222442" class="btn btn-accent mx-auto xl:hidden">
+              联系我们 13619222442 <i class="ri-arrow-right-line text-primary"></i>
+            </a>
           </div>
         </div>
       </section>
+
+      <script>
+        function copyPhoneNumber() {
+          navigator.clipboard.writeText('13619222442').then(() => {
+            alert('电话号码已复制到剪贴板！');
+          }).catch(() => {
+            // fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = '13619222442';
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('电话号码已复制到剪贴板！');
+          });
+        }
+      </script>
 
       <!-- footer -->
       <footer class="footer mt-[40px] xl:mt-[80px] relative z-20">
@@ -695,35 +758,35 @@
           <div class="flex flex-row flex-wrap justify-center gap-4 mb-6 xl:flex-nowrap xl:gap-[100px] xl:justify-center xl:mb-[80px]">
             <!-- pages -->
             <div class="footer__item">
-              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">快速导航</h3>
-              <div class="flex flex-col gap-1 xl:gap-4">
-                <a class="xl:text-[20px]" href="/about.html">长亮简介</a>
-                <a class="xl:text-[20px]" href="/projects.html">回收项目</a>
-                <a class="xl:text-[20px]" href="/cases.html">回收案例</a>
-                <a class="xl:text-[20px]" href="/honors.html">荣誉资质</a>
+              <h3 class="text-xs xl:text-[32px] mb-1 xl:mb-4 font-bold">快速导航</h3>
+              <div class="flex flex-col gap-1 xl:gap-5">
+                <a class="xl:text-[26px]" href="/about.html">长亮简介</a>
+                <a class="xl:text-[26px]" href="/projects.html">回收项目</a>
+                <a class="xl:text-[26px]" href="/cases.html">回收案例</a>
+                <a class="xl:text-[26px]" href="/honors.html">荣誉资质</a>
               </div>
             </div>
 
             <!-- contact -->
             <div class="footer__item">
-              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">联系方式</h3>
-              <div class="flex flex-col gap-1 xl:gap-2">
-                <p class="xl:text-[22px]">业务对接：王先生</p>
-                <p class="xl:text-[22px]">咨询热线：13619222442</p>
-                <p class="xl:text-[22px]">公司地址：西安市未央区阳光北郡1号</p>
+              <h3 class="text-xs xl:text-[32px] mb-1 xl:mb-4 font-bold">联系方式</h3>
+              <div class="flex flex-col gap-1 xl:gap-3">
+                <p class="xl:text-[28px]">业务对接：王先生</p>
+                <p class="xl:text-[28px]">咨询热线：13619222442</p>
+                <p class="xl:text-[28px]">公司地址：西安市未央区阳光北郡1号</p>
               </div>
             </div>
             <!-- wechat -->
             <div class="footer__item">
-              <h3 class="text-xs xl:text-[25px] mb-1 xl:mb-3 font-bold">扫一扫关注微信</h3>
-              <img src="/assets/vx-BKo4-ZWk.png" alt="微信二维码" class="w-16 xl:w-32 h-auto object-contain mx-auto xl:mx-0" />
+              <h3 class="text-xs xl:text-[32px] mb-1 xl:mb-4 font-bold">扫一扫关注微信</h3>
+              <img src="/assets/vx-BKo4-ZWk.png" alt="微信二维码" class="w-16 xl:w-40 h-auto object-contain mx-auto xl:mx-0" />
             </div>
           </div>
         </div>
         <p
-          class="footer_copyright text-center text-[10px] xl:text-lg py-4 xl:py-6 bg-white xl:border-t"
+          class="footer_copyright text-center text-[10px] xl:text-xl py-4 xl:py-6 bg-white xl:border-t"
         >
-          Copyright &copy; 西安长亮商贸有限公司 2026. All rights reserved
+          Copyright &copy; 西安长亮商贸有限公司 2026. 版权所有 | <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">陕ICP备2026012431号</a>
         </p>
       </footer>
     </main>
@@ -731,6 +794,28 @@
     <!-- scale-wrapper结束 -->
 
     <!-- main js -->
+
+    <!-- 公司优势懒加载动画 -->
+    <script>
+      (function() {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              var items = entry.target.querySelectorAll('.feature-item');
+              items.forEach(function(item, index) {
+                setTimeout(function() {
+                  item.classList.add('animate');
+                }, index * 400);
+              });
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+
+        var section = document.querySelector('.company-features');
+        if (section) observer.observe(section);
+      })();
+    </script>
     </div>
   </body>
 </html>
