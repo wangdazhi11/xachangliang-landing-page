@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  *,:before,:after {
+    --tw-shadow-color: #0000;
+  }
+}
+
 body {
   @apply font-secondary text-[22px] text-secondary;
 }
