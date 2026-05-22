@@ -4,7 +4,7 @@
 
 @layer base {
   *,:before,:after {
-    --tw-shadow-color: #0000;
+    --tw-shadow-color: transparent;
   }
 }
 
