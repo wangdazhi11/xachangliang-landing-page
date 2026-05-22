@@ -21,7 +21,9 @@
       "Bash(git stash *)",
       "Bash(curl -s http://localhost:5173)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
-      "mcp__playwright__browser_resize"
+      "mcp__playwright__browser_resize",
+      "Bash(mkdir -p public/assets)",
+      "Bash(cp -r assets/services public/assets/)"
     ]
   }
 }
