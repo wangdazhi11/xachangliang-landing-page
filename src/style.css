@@ -5,6 +5,7 @@
 @layer base {
   *,:before,:after {
     --tw-shadow-color: transparent;
+    --tw-contain-style: none;
   }
 }
 
